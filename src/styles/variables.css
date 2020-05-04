@@ -1,0 +1,40 @@
+:root {
+  --orange-hue: 29;
+  --orange-4: hsl(var(--orange-hue), 80%, 40%);
+  --orange-5: hsl(var(--orange-hue), 78%, 50%);
+  --orange-6: hsl(var(--orange-hue), 82%, 60%);
+  --orange-7: hsl(var(--orange-hue), 85%, 70%); /* primary */
+  --orange-8: hsl(var(--orange-hue), 87%, 80%);
+  --orange-9: hsl(var(--orange-hue), 90%, 90%);
+  --orange-sub-5: hsl(var(--orange-hue), 28%, 60%);
+  --brand-primary: var(--orange-7);
+
+  --blue: hsl(222, 18.5%, 21.2%);
+
+  --white: #fefefe;
+  --black: hsl(315, 5%, 7%);
+  --gray-1: hsl(315, 4%, 12%);
+  --gray-2: hsl(315, 3.2%, 24.7%);
+  --gray-3: hsl(275, 10%, 33%);
+  --gray-4: hsl(250, 7.5%, 40%);
+  --gray-6: hsl(224, 7.5%, 61%);
+  --gray-7: hsl(224, 7.5%, 69%);
+  --gray-8: hsl(224, 5.5%, 79%);
+  --dark-gray: var(--gray-2);
+  --gray-dark: var(--gray-2);
+  --gray-light: var(--gray-6);
+
+  --border-radius: 0.3em;
+
+  --font-heading: Playfair Display, serif;
+  --font-body: Lato, sans-serif;
+
+  /* stylelint-disable unit-whitelist */
+  --fill-height: calc(100vh - 70px);
+  /* stylelint-disable unit-whitelist */
+
+  --card-bg: var(--gray-dark);
+  --card-border: rgba(255, 255, 255, 0.1);
+
+  --gap-size: 0.6rem;
+}

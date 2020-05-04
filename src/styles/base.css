@@ -1,0 +1,48 @@
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  color: var(--white);
+  background-repeat: no-repeat;
+  background-color: var(--gray-dark);
+  background-image: url(/static/images/paisley-left.svg);
+  background-size: 500px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--brand-primary);
+  font-weight: 400;
+  transition: color 0.2s linear;
+  text-decoration-color: var(--white);
+}
+a:hover {
+  color: var(--orange-6);
+  transition: none;
+}
+a:active {
+  color: var(--orange-5);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--gray-4);
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 3px solid hsla(var(--orange-hue), 85%, 70%, 0.7);
+}

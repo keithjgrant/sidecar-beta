@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
-
+// TODO: add <Meta> ?
 // import '../css/blog-post.css'; // make it pretty!
 
 export default function DrinkTemplate({ data }) {
@@ -22,7 +22,7 @@ export default function DrinkTemplate({ data }) {
 }
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query DrinkPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {

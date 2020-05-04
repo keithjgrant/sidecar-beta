@@ -1,21 +1,56 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
+import Meta from '../components/Meta';
+import HomeTiles from '../components/homepage/HomeTiles';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+function getDrinkObjects(result) {
+  return result.edges.map((item) => item.node.frontmatter);
+}
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+export default function IndexPage({ data: { recent, featured } }) {
+  console.log(getDrinkObjects(featured));
+  return (
+    <Layout>
+      <Meta title="Home" />
+      <HomeTiles
+        recent={getDrinkObjects(recent)}
+        featured={getDrinkObjects(featured)}
+      />
+    </Layout>
+  );
+}
 
-export default IndexPage
+export const pageQuery = graphql`
+  query FeaturedDrinks {
+    featured: allMarkdownRemark(
+      filter: { frontmatter: { featured: { eq: true } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            date(formatString: "DD MMM YYYY")
+            title
+            glass
+            tags
+          }
+        }
+      }
+    }
+    recent: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 2
+    ) {
+      edges {
+        node {
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            glass
+            tags
+          }
+        }
+      }
+    }
+  }
+`;
