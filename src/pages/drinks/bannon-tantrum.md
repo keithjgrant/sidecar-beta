@@ -22,6 +22,7 @@ image:
   url: "/images/drinks/bannon-tantrum.jpg"
   alt: "A crystal glass with the cocktail in front of a bottle of Dry Fly vodka and a meyer lemon"
   align: "40% 45%"
+featured: false
 intro: |
   “The media should keep its mouth shut and just listen for awhile”&mdash;_Steve Bannon throwing a tantrum on Jan 26, 2017_
 

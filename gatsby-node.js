@@ -8,7 +8,8 @@ const path = require('path');
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  const drinkTemplate = path.resolve(`src/templates/drink.js`);
+  const DrinkTemplate = path.resolve(`src/templates/drink.js`);
+  const IngredientTemplate = path.resolve(`src/templates/ingredient.js`);
 
   const result = await graphql(`
     {
@@ -30,10 +31,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
+  const templates = {
+    drinks: DrinkTemplate,
+    ingredients: IngredientTemplate,
+  };
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const [, dirname] = node.frontmatter.path.split('/');
+    console.log(dirname);
     createPage({
       path: node.frontmatter.path,
-      component: drinkTemplate,
+      component: templates[dirname],
       context: {}, // additional data can be passed via context
     });
   });
