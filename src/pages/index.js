@@ -9,7 +9,6 @@ function getDrinkObjects(result) {
 }
 
 export default function IndexPage({ data: { recent, featured } }) {
-  console.log(getDrinkObjects(featured));
   return (
     <Layout>
       <Meta title="Home" />

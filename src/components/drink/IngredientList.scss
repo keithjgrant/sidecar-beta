@@ -1,0 +1,37 @@
+.ingredients {
+  margin-top: 0.3em;
+  padding: 0.5em 0.5em 0.5em 1.5em;
+  border-bottom: 1px solid var(--gray-4);
+  font-style: italic;
+  list-style-type: none;
+
+  > li {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0.15em;
+      left: -0.9em;
+      content: '\2022 ';
+      color: var(--brand-primary);
+      line-height: 1;
+    }
+  }
+
+  .ingredients__garnish {
+    margin-top: 0.5em;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .ingredients__label {
+    margin-right: 0.4em;
+    color: var(--brand-primary);
+    font-size: 0.64em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+}

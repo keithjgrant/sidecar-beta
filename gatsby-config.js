@@ -2,10 +2,11 @@ module.exports = {
   siteMetadata: {
     title: 'Sidecar',
     description: 'A curated collection of cocktails',
-    author: '@keithjgrant',
+    author: 'https://keithjgrant.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

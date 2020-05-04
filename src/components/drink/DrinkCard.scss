@@ -1,0 +1,202 @@
+// .drink-card {
+//   margin: 0;
+//   line-height: 1.2;
+// }
+
+// .drink-card__body {
+//   max-width: 40em;
+//   border: 1px solid var(--card-border);
+//   border-radius: var(--border-radius);
+//   color: var(--white);
+//   background-color: var(--card-bg);
+//   background-image: linear-gradient(to right, hsl(315, 3.2%, 23%), var(--gray-2));
+// }
+
+// .drink-card__tabs {
+//   display: flex;
+//
+//   > * {
+//     margin-left: 0.2em;
+//     border: 1px solid var(--gray-4);
+//     border-top-width: 0;
+//     border-radius: 0 0 var(--border-radius) var(--border-radius);
+//     padding: 0.5em;
+//     background-color: var(--gray-2);
+//   }
+//
+//   > :empty {
+//     display: none;
+//   }
+// }
+
+.drink-card__image {
+  grid-column: 1;
+
+  > img {
+    width: 100%;
+    max-height: 25vh;
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    object-fit: cover;
+    box-shadow: 0.1em 0.1em 0.3em rgba(0, 0, 0, 0.1);
+  }
+
+  svg {
+    height: auto;
+    max-height: 30vh;
+    color: var(--orange-8);
+    opacity: 0.3;
+  }
+
+  + .drink-card__content {
+    margin-top: 1em;
+  }
+}
+.drink-card--no-image {
+  .drink-card__image {
+    display: none;
+  }
+}
+
+// .drink-card__content {
+//   display: flex;
+//   grid-column: 2;
+//   flex-direction: column;
+//   padding: 0 1em 1em;
+//
+//   .e-instructions {
+//     flex-grow: 1;
+//   }
+// }
+
+@media (min-width: 25em) {
+  // .drink-card {
+  //   margin: 1em;
+  // }
+
+  .drink-card--no-image {
+    padding-top: 1em;
+  }
+}
+
+@media (min-width: 30em) {
+  // .drink-card {
+  //   margin: 3rem 1rem;
+  // }
+
+  // .drink-card__body {
+  //   display: grid;
+  //   grid-gap: 1rem;
+  //   grid-template-columns: 1fr 1.62fr;
+  //   padding: 1em 1em 1em 2em;
+  // }
+
+  .drink-card--no-image {
+    .drink-card__image {
+      display: block;
+    }
+  }
+
+  .drink-card__image {
+    > img,
+    > svg {
+      max-height: initial;
+      margin-top: -3rem;
+      border-radius: var(--border-radius);
+    }
+
+    > img {
+      width: calc(100% + 5rem);
+      margin-left: -5rem;
+    }
+
+    + .drink-card__content {
+      margin-top: 0;
+    }
+  }
+
+  // .drink-card__content {
+  //   padding: 0;
+  // }
+}
+
+@media (min-width: 40em) {
+  // .drink-card {
+  //   display: flex;
+  // }
+
+  // .drink-card__body {
+  //   grid-gap: 2rem;
+  //   padding: 1em 2em;
+  // }
+
+  .drink-card__image > img {
+    min-height: 15em;
+  }
+
+  // .drink-card__tabs {
+  //   flex-direction: column;
+  //   margin: 1em 0;
+  //
+  //   > * {
+  //     margin-left: 0;
+  //     margin-top: 0.2em;
+  //     border-top-width: 1px;
+  //     border-left: 0;
+  //     border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  //   }
+  // }
+}
+
+// .card-title {
+//   position: relative;
+//   margin-top: 0;
+//   color: var(--white);
+//   font-weight: normal;
+//   font-size: 1.8rem;
+//   line-height: 1.1;
+//
+//   &::after {
+//     position: absolute;
+//     bottom: -0.5em;
+//     left: 0;
+//     content: '';
+//     width: 3em;
+//     /* stylelint-disable-next-line unit-whitelist */
+//     height: 4px;
+//     background-color: var(--brand-primary);
+//   }
+//
+//   @media (min-width: 35em) {
+//     font-size: 2.6rem;
+//   }
+// }
+
+// .recipe-intro {
+//   color: var(--gray-7);
+// }
+
+.recipe-intro + .ingredients {
+  margin-top: 1em;
+  border-top: 1px solid var(--gray-4);
+}
+
+.garnish {
+  margin: 0;
+  color: var(--gray-4);
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: var(--font-heading);
+}
+.ingredients + .garnish {
+  margin-top: -0.7rem;
+}
+.garnish + .ingredients {
+  margin-top: 0;
+}
+
+// .publish-date {
+//   margin-top: 2rem;
+//   color: var(--gray-6);
+//   font-size: 0.8rem;
+// }

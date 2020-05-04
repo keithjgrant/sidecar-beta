@@ -18,9 +18,9 @@ module.exports = {
       },
     ],
     'object-curly-spacing': 0,
-    // 'react/prop-types': false,
+    'react/prop-types': 0,
+    'react/display-name': 0,
     // 'react/react-in-jsx-scope': false,
-    // 'react/display-name': false,
   },
   globals: {
     document: true,

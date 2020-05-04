@@ -1,5 +1,6 @@
 import React from 'react';
 import glasses from './svg/glasses';
+// TODO: add styles
 
 const GENERIC_IMAGE = {
   url: '/images/bartender.jpg',
