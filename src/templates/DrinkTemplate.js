@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
 import Meta from '../components/Meta';
 import DrinkCard from '../components/drink/DrinkCard';
 import styled from 'styled-components';
@@ -19,10 +20,12 @@ export default function DrinkTemplate({ data }) {
     content: data.post.html,
   };
   return (
-    <Wrapper>
-      <Meta title={`${drink.title}`} />
-      <DrinkCard drink={drink} />
-    </Wrapper>
+    <Layout>
+      <Wrapper>
+        <Meta title={`${drink.title}`} />
+        <DrinkCard drink={drink} />
+      </Wrapper>
+    </Layout>
   );
 }
 

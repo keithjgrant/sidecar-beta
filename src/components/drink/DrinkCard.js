@@ -121,7 +121,7 @@ const Title = styled.h1`
 `;
 
 const Intro = styled.div`
-  padding-bottom: 1.1em;
+  padding-bottom: 1em;
   border-bottom: 1px solid var(--gray-4);
   color: var(--gray-7);
 `;

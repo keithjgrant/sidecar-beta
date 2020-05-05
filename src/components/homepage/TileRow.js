@@ -1,20 +1,35 @@
 import React from 'react';
+import styled from 'styled-components';
 import DrinkTile from './DrinkTile';
 
-const CLASSNAMES = {
-  '1': 'drink-tile--single',
-  '2': 'drink-tile--double',
-  '3': 'drink-tile--triple',
-};
+const Row = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-gap: var(--gap-size);
+`;
+
+const Heading = styled.div`
+  && {
+    margin-bottom: 0;
+  }
+
+  grid-column: 1 / -1;
+  padding: 0.2rem 0.5rem 0.1rem;
+  color: var(--white);
+  opacity: 0.3;
+  font-size: 0.8rem;
+  text-align: right;
+`;
 
 export default function TileRow({ drinks, heading }) {
-  const className = CLASSNAMES[drinks.length];
   return (
     <>
-      <div className="tile-group__heading">{heading}</div>
-      {drinks.map((drink) => (
-        <DrinkTile key={drink.path} drink={drink} className={className} />
-      ))}
+      <Heading>{heading}</Heading>
+      <Row>
+        {drinks.map((drink) => (
+          <DrinkTile key={drink.path} drink={drink} />
+        ))}
+      </Row>
     </>
   );
 }

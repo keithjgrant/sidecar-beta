@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import Meta from '../components/Meta';
 import HomeTiles from '../components/homepage/HomeTiles';
 
@@ -24,29 +24,43 @@ export const pageQuery = graphql`
   query FeaturedDrinks {
     featured: allMarkdownRemark(
       filter: { frontmatter: { featured: { eq: true } } }
+      limit: 3
     ) {
       edges {
         node {
           frontmatter {
-            date(formatString: "DD MMM YYYY")
             title
+            path
+            date(formatString: "DD MMM YYYY")
             glass
             tags
+            image {
+              url
+              alt
+              align
+            }
           }
         }
       }
     }
     recent: allMarkdownRemark(
+      filter: { frontmatter: { path: { regex: "/^/drinks//" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 2
+      limit: 3
     ) {
       edges {
         node {
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
+            path
+            date(formatString: "MMMM DD, YYYY")
             glass
             tags
+            image {
+              url
+              alt
+              align
+            }
           }
         }
       }
