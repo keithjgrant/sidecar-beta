@@ -6,7 +6,6 @@ import 'typeface-playfair-display';
 import 'typeface-lato';
 
 function Meta({ description, lang, meta, title }) {
-  console.log(lang);
   const { site } = useStaticQuery(
     graphql`
       query {

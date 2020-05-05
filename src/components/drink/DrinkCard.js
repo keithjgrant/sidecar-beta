@@ -1,6 +1,6 @@
 import React from 'react';
 import Markdown from 'react-markdown';
-import CocktailImage from '../CocktailImage';
+import CocktailImage from './CocktailImage';
 import DrinkTags from './DrinkTags';
 import ScaleIndicator from './ScaleIndicator';
 import PrepMethod from './PrepMethod';
@@ -121,6 +121,8 @@ const Title = styled.h1`
 `;
 
 const Intro = styled.div`
+  padding-bottom: 1.1em;
+  border-bottom: 1px solid var(--gray-4);
   color: var(--gray-7);
 `;
 
@@ -135,8 +137,7 @@ export default function DrinkCard({ drink }) {
   return (
     <Main className="h-recipe">
       <Body>
-        {/* TODO: refactor drink-card__image to a prop */}
-        <CocktailImage drink={drink} className="drink-card__image" />
+        <CocktailImage drink={drink} />
         <Content>
           <Title className="p-name">{drink.title}</Title>
           <DrinkTags tags={drink.tags} />
@@ -145,8 +146,11 @@ export default function DrinkCard({ drink }) {
               <Markdown source={drink.intro} />
             </Intro>
           ) : null}
-          {/* TODO: `margin-top: 1em; border-top: 1px solid var(--gray-4)` IF intro present */}
-          <IngredientList items={drink.ingredients} garnish={drink.garnish} />
+          <IngredientList
+            items={drink.ingredients}
+            garnish={drink.garnish}
+            isBeneathIntro={!!drink.intro}
+          />
           <div className="e-instructions">
             <div dangerouslySetInnerHTML={{ __html: drink.content }} />
           </div>

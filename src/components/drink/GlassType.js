@@ -1,4 +1,5 @@
 import React from 'react';
+import { Indicator, Caption } from './Indicator';
 import glasses from '../svg/glasses';
 
 export default function GlassType({ drink }) {
@@ -7,11 +8,9 @@ export default function GlassType({ drink }) {
     return null;
   }
   return (
-    <figure className="style-indicator">
+    <Indicator>
       <GlassSvg />
-      <figcaption>
-        {drink.glass}
-      </figcaption>
-    </figure>
+      <Caption>{drink.glass}</Caption>
+    </Indicator>
   );
 }

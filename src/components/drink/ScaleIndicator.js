@@ -1,5 +1,5 @@
 import React from 'react';
-// import './ScaleIndicator.scss';
+import { Indicator, Caption } from './Indicator';
 
 const angles = [-39, 0, 39];
 
@@ -10,7 +10,7 @@ export default function ScaleIndicator({ value, label }) {
 
   const deg = angles[value - 1];
   return (
-    <figure className="style-indicator">
+    <Indicator>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -63,7 +63,7 @@ export default function ScaleIndicator({ value, label }) {
           />
         </g>
       </svg>
-      <figcaption>{label}</figcaption>
-    </figure>
+      <Caption>{label}</Caption>
+    </Indicator>
   );
 }

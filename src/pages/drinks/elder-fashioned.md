@@ -16,7 +16,7 @@ tags: [
   "gin",
   "plymouth-gin",
   "elderflower-liqueur",
-  "stirred"
+  "stirred",
 ]
 featured: true
 image:
