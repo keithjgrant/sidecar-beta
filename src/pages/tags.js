@@ -3,20 +3,25 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import PageHeading from '../components/PageHeading';
 import Meta from '../components/Meta';
-import DrinkList from '../components/DrinkList';
+import TagList from '../components/TagList';
 
-export default function DrinksPage({ data: { drinks } }) {
+export default function TagsPage({ data: { drinks } }) {
+  const tags = new Set();
+  drinks.edges.forEach(({ node: { frontmatter } }) => {
+    frontmatter.tags.forEach((tag) => tags.add(tag));
+  });
+
   return (
     <Layout>
-      <Meta title="Sidecar: All Drinks" />
-      <PageHeading>All Drinks</PageHeading>
-      <DrinkList drinks={drinks.edges.map((item) => item.node.frontmatter)} />
+      <Meta title="Sidecar: All Tags" />
+      <PageHeading>All Tags</PageHeading>
+      <TagList tags={[...tags]} />
     </Layout>
   );
 }
 
 export const pageQuery = graphql`
-  query AllDrinks {
+  query AllTags {
     drinks: allMarkdownRemark(
       filter: { frontmatter: { path: { regex: "/^/drinks//" } } }
       sort: { order: DESC, fields: [frontmatter___path] }
@@ -24,15 +29,7 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
-            title
-            path
-            date(formatString: "DD MMM YYYY")
-            glass
-            image {
-              url
-              alt
-              align
-            }
+            tags
           }
         }
       }

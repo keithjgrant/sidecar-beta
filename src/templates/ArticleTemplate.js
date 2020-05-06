@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 import Meta from '../components/Meta';
 import styled from 'styled-components';
 
-// TODO: move Wrapper & Article to own file for reuse in Ingredients pages
 const Main = styled.main`
   max-width: 100%;
   margin: 0 auto;
@@ -50,7 +49,6 @@ const Article = styled.article`
 `;
 
 export default function ArticleTemplate({ data }) {
-  console.log(data);
   const { markdownRemark: post } = data;
   return (
     <Layout>

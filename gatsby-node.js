@@ -8,8 +8,9 @@ const path = require('path');
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  const DrinkTemplate = path.resolve(`src/templates/DrinkTemplate.js`);
-  const ArticleTemplate = path.resolve(`src/templates/ArticleTemplate.js`);
+  const DrinkTemplate = path.resolve('src/templates/DrinkTemplate.js');
+  const ArticleTemplate = path.resolve('src/templates/ArticleTemplate.js');
+  const TagTemplate = path.resolve('src/templates/TagTemplate.js');
 
   const result = await graphql(`
     {
@@ -21,6 +22,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               path
+              tags
             }
           }
         }
@@ -31,13 +33,27 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
-  result.data.allMarkdownRemark.edges.forEach(({ node: { frontmatter } }) => {
+  const pages = result.data.allMarkdownRemark.edges;
+  const tags = new Set();
+  pages.forEach(({ node: { frontmatter } }) => {
     createPage({
       path: frontmatter.path,
       component: frontmatter.path.startsWith('/drinks/')
         ? DrinkTemplate
         : ArticleTemplate,
-      context: {}, // additional data can be passed via context
+      context: {},
+    });
+
+    if (frontmatter.tags) {
+      frontmatter.tags.forEach((tag) => tags.add(tag));
+    }
+  });
+
+  tags.forEach((tag) => {
+    createPage({
+      path: `/tags/${tag}`,
+      component: TagTemplate,
+      context: { tag },
     });
   });
 };

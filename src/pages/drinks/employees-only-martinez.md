@@ -21,11 +21,6 @@ tags: [
   maraschino,
   absinthe-bitters,
 ]
-featured:
-image:
-  url: "/images/drinks/.jpg"
-  alt: ""
-  align: "50% 50%"
 intro: |
   Created by _Employees Only_ bar in New York.
 

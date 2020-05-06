@@ -9,10 +9,10 @@ const ContentWrapper = styled.div`
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <Header />
       <ContentWrapper>{children}</ContentWrapper>
-    </div>
+    </>
   );
 };
 
