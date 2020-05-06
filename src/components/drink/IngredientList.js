@@ -45,6 +45,9 @@ export default function IngredientList({
   garnish,
   isBeneathIntro,
 }) {
+  if (!items) {
+    return null;
+  }
   return (
     <Ingredients isBeneathIntro={isBeneathIntro}>
       {items.map((ingredient, i) => (
