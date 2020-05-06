@@ -22,7 +22,7 @@ export default function DrinkTemplate({ data }) {
   return (
     <Layout>
       <Wrapper>
-        <Meta title={`${drink.title}`} />
+        <Meta title={drink.title} />
         <DrinkCard drink={drink} />
       </Wrapper>
     </Layout>

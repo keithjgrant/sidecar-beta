@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import glasses from '../svg/glasses';
 
-const ThumbnailWrapper = styled.div`
+const Wrapper = styled.div`
   grid-column: 1;
   grid-row: 1;
   position: absolute;
@@ -35,7 +35,7 @@ const GENERIC_IMAGE = {
   alt: 'A well-dressed bartender pouring a spirit into a cocktail shaker',
 };
 
-export default function CocktailThumbnail({ drink }) {
+export default function TileImage({ drink }) {
   let { image, glass } = drink;
   // TODO: share lookup function with drink/CocktailImage?
   const GlassSvg = glasses[glass];
@@ -44,7 +44,7 @@ export default function CocktailThumbnail({ drink }) {
   }
 
   return (
-    <ThumbnailWrapper>
+    <Wrapper>
       {image ? (
         <img
           src={image.url}
@@ -56,6 +56,6 @@ export default function CocktailThumbnail({ drink }) {
           <GlassSvg />
         </div>
       )}
-    </ThumbnailWrapper>
+    </Wrapper>
   );
 }

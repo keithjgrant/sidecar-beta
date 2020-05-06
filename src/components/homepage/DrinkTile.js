@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import CocktailThumbnail from './CocktailThumbnail';
+import TileImage from './TileImage';
 
 const TileLink = styled(Link)`
   display: grid;
@@ -52,7 +52,7 @@ const Title = styled.div`
 export default function DrinkTile({ drink }) {
   return (
     <TileLink to={drink.path}>
-      <CocktailThumbnail drink={drink} className="drink-tile__image" />
+      <TileImage drink={drink} />
       <Title>{drink.title}</Title>
     </TileLink>
   );
