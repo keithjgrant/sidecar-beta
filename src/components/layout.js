@@ -9,16 +9,10 @@ const ContentWrapper = styled.div`
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div>
       <Header />
       <ContentWrapper>{children}</ContentWrapper>
-      {/* TODO: Footer component */}
-      {/* <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer> */}
-    </>
+    </div>
   );
 };
 
