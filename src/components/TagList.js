@@ -3,8 +3,6 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const List = styled.ul`
-  width: calc(100vw - 2em);
-  max-width: 800px;
   padding-left: 0;
   list-style: none;
 `;

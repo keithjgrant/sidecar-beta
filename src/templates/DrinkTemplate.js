@@ -1,18 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
+import CardLayout from '../components/layouts/CardLayout';
 import Meta from '../components/Meta';
 import DrinkCard from '../components/drink/DrinkCard';
-import styled from 'styled-components';
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: var(--fill-height);
-  padding-bottom: 0.5em;
-  align-items: center;
-  justify-content: center;
-`;
 
 export default function DrinkTemplate({ data }) {
   const drink = {
@@ -20,12 +10,10 @@ export default function DrinkTemplate({ data }) {
     content: data.post.html,
   };
   return (
-    <Layout>
-      <Wrapper>
-        <Meta title={drink.title} />
-        <DrinkCard drink={drink} />
-      </Wrapper>
-    </Layout>
+    <CardLayout>
+      <Meta title={drink.title} />
+      <DrinkCard drink={drink} />
+    </CardLayout>
   );
 }
 

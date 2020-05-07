@@ -4,13 +4,10 @@ import styled from 'styled-components';
 import CocktailThumbnail from './CocktailThumbnail';
 
 const List = styled.ul`
-  width: calc(100vw - 2em);
-  margin: 0 auto;
   padding-left: 0;
   list-style-type: none;
 
   @media (min-width: 30em) {
-    max-width: 70em;
     display: grid;
     grid-gap: 1em;
     grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));

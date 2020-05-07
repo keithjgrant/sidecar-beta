@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
+import HomepageLayout from '../components/layouts/HomepageLayout';
 import Meta from '../components/Meta';
 import HomeTiles from '../components/homepage/HomeTiles';
 
@@ -10,13 +10,13 @@ function getDrinkObjects(result) {
 
 export default function IndexPage({ data: { recent, featured } }) {
   return (
-    <Layout>
+    <HomepageLayout>
       <Meta title="Home" />
       <HomeTiles
         recent={getDrinkObjects(recent)}
         featured={getDrinkObjects(featured)}
       />
-    </Layout>
+    </HomepageLayout>
   );
 }
 

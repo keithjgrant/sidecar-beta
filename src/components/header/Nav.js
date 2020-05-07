@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-const Navbar = styled.nav`
+const Navbar = styled.div`
   display: flex;
   flex-grow: 1;
   margin: 0;
@@ -30,8 +30,10 @@ const Navbar = styled.nav`
 `;
 
 const DesktopOnlyLink = styled(Link)`
-  @media (max-width: 23em) {
-    display: none;
+  && {
+    @media (max-width: 23em) {
+      display: none;
+    }
   }
 `;
 

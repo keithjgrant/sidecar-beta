@@ -33,13 +33,19 @@ const LogoLink = styled(Link)`
   }
 `;
 
-export default function Logo() {
-  return (
-    <div>
-      <LogoLink to="/">
-        <LogoSvg />
-        Sidecar
-      </LogoLink>
-    </div>
+const Heading = styled.h1`
+  margin: 0;
+`;
+
+export default function Logo({ isHome }) {
+  const content = (
+    <LogoLink to="/">
+      <LogoSvg />
+      Sidecar
+    </LogoLink>
   );
+  if (isHome) {
+    return <Heading>{content}</Heading>;
+  }
+  return <div>{content}</div>;
 }

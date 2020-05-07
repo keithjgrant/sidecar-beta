@@ -21,10 +21,10 @@ const HeaderBar = styled.header`
   }
 `;
 
-export default function Header() {
+export default function Header({ isHome }) {
   return (
     <HeaderBar>
-      <Logo />
+      <Logo isHome={isHome} />
       <Nav />
     </HeaderBar>
   );

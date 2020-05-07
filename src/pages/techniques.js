@@ -1,14 +1,16 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import IndexLayout from '../components/layouts/IndexLayout';
 import Meta from '../components/Meta';
+import PageHeading from '../components/PageHeading';
 import TechniquesList from '../components/TechniquesList';
 
 export default function TechniquesPage() {
   return (
-    <Layout>
+    <IndexLayout>
       <Meta title="Essential Techniques for Cocktail Making" />
+      <PageHeading bleed>Essential Techniques for Cocktail Making</PageHeading>
       <TechniquesList />
-    </Layout>
+    </IndexLayout>
   );
 }
 

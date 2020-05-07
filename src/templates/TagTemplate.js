@@ -1,27 +1,20 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import styled from 'styled-components';
-import Layout from '../components/Layout';
+import DrinkListLayout from '../components/layouts/DrinkListLayout';
 import Meta from '../components/Meta';
 import PageHeading from '../components/PageHeading';
 import DrinkList from '../components/DrinkList';
-
-const Column = styled.div`
-  margin: 0 auto;
-`;
 
 export default function DrinkTemplate({
   data: { drinks },
   pageContext: { tag },
 }) {
   return (
-    <Layout>
+    <DrinkListLayout>
       <Meta title={`Drinks Tagged ‘${tag}’`} />
-      <Column>
-        <PageHeading>Drinks tagged &lsquo;{tag}&rsquo;</PageHeading>
-        <DrinkList drinks={drinks.edges.map((item) => item.node.frontmatter)} />
-      </Column>
-    </Layout>
+      <PageHeading>Drinks tagged &lsquo;{tag}&rsquo;</PageHeading>
+      <DrinkList drinks={drinks.edges.map((item) => item.node.frontmatter)} />
+    </DrinkListLayout>
   );
 }
 

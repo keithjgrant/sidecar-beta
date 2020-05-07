@@ -1,17 +1,17 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
+import DrinkListLayout from '../components/layouts/DrinkListLayout';
 import PageHeading from '../components/PageHeading';
 import Meta from '../components/Meta';
 import DrinkList from '../components/DrinkList';
 
 export default function DrinksPage({ data: { drinks } }) {
   return (
-    <Layout>
+    <DrinkListLayout>
       <Meta title="Sidecar: All Drinks" />
       <PageHeading>All Drinks</PageHeading>
       <DrinkList drinks={drinks.edges.map((item) => item.node.frontmatter)} />
-    </Layout>
+    </DrinkListLayout>
   );
 }
 

@@ -1,14 +1,16 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import IndexLayout from '../components/layouts/IndexLayout';
 import Meta from '../components/Meta';
+import PageHeading from '../components/PageHeading';
 import IngredientsList from '../components/IngredientsList';
 
 export default function IngredientsPage() {
   return (
-    <Layout>
+    <IndexLayout>
       <Meta title="Ingredients: Spirits, Syrups, & Mixers" />
+      <PageHeading bleed>Ingredients: Spirits, Syrups, & Mixers</PageHeading>
       <IngredientsList />
-    </Layout>
+    </IndexLayout>
   );
 }
 

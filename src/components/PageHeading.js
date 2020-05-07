@@ -1,12 +1,17 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const PageHeading = styled.h1`
   align-self: stretch;
-  padding-right: 1rem;
-  padding-left: 1rem;
   text-align: left;
   font-size: 2rem;
   color: var(--gray-8);
+
+  ${(props) =>
+    !props.bleed &&
+    css`
+      padding-right: 1rem;
+      padding-left: 1rem;
+    `}
 `;
 
 export default PageHeading;
