@@ -5,7 +5,7 @@ date: 2018-12-10T12:24:35-05:00
 glass: "coupe"
 sweetness: 2
 booziness: 3
-family: "martini"
+family: martini
 ingredients: [
   "1 oz London dry gin (try Tanqueray)",
   "1 oz Campari",
@@ -13,11 +13,11 @@ ingredients: [
 ]
 garnish: grapefruit twist
 tags: [
-  "gin",
-  "campari",
-  "sweet-vermouth",
-  "stirred",
-  "aperitif",
+  aperitif,
+  gin,
+  campari,
+  sweet-vermouth,
+  stirred,
 ]
 intro: The Negroni is quite sweet, but also bitter and complex. A bold, juniper-heavy gin like Tanqueray stands up to the strong flavors of Campari. An orange twist is traditional, but I like it with grapefruit a bit more.
 ---

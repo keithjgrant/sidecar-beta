@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../header/Header';
+import Footer from '../Footer';
 
 const Main = styled.main`
   width: calc(100vw - 2em);
@@ -14,6 +15,7 @@ export default function SimpleListLayout({ children }) {
     <>
       <Header />
       <Main>{children}</Main>
+      <Footer />
     </>
   );
 }

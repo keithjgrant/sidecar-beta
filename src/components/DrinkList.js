@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import ButtonGroup, { Button } from './ButtonGroup';
+import ButtonGroup, { Options } from './ButtonGroup';
 import CocktailThumbnail from './CocktailThumbnail';
 
 const List = styled.ul`
@@ -75,11 +75,6 @@ function DrinkItem({ drink }) {
   );
 }
 
-const Controls = styled.div`
-  text-align: right;
-  color: var(--gray-8);
-`;
-
 function alphaSort(a, b) {
   const titleA = a.title.toLowerCase();
   const titleB = b.title.toLowerCase();
@@ -93,51 +88,40 @@ function alphaSort(a, b) {
 }
 
 function dateSort(a, b) {
-  if (a.dateObj < b.dateObj) {
+  const aDate = new Date(a.date);
+  const bDate = new Date(b.date);
+  if (aDate < bDate) {
     return 1;
   }
-  if (a.dateObj > b.dateObj) {
+  if (aDate > bDate) {
     return -1;
   }
   return 0;
 }
 
-function addDates(drinks) {
-  return drinks.map((drink) => ({
-    ...drink,
-    dateObj: drink.date ? new Date(drink.date) : null,
-  }));
-}
+export default function DrinkList({ drinks }) {
+  const [sortBy, setSortBy] = useState('name');
 
-export default function DrinkList(props) {
-  const [drinks, setDrinks] = useState(addDates(props.drinks));
-  const [isSortByDate, setIsSortByDate] = useState(false);
-
-  const sortByDate = () => {
-    setIsSortByDate(true);
-    setDrinks(drinks.sort(dateSort));
-  };
-
-  const sortByName = () => {
-    setIsSortByDate(false);
-    setDrinks(drinks.sort(alphaSort));
-  };
-
+  const sorted =
+    sortBy === 'last added' ? drinks.sort(dateSort) : drinks.sort(alphaSort);
+  console.log(sortBy, sorted, drinks);
   return (
     <>
-      <Controls>
-        Sort by:{' '}
-        <ButtonGroup>
-          <Button onClick={sortByName} disabled={!isSortByDate}>
-            Name
-          </Button>
-          <Button onClick={sortByDate} disabled={isSortByDate}>
-            Last added
-          </Button>
+      <div css="text-align: right">
+        <ButtonGroup label="Sort by">
+          <Options
+            name="sort"
+            value={sortBy}
+            options={['name', 'last added']}
+            onChange={setSortBy}
+          />
         </ButtonGroup>
-      </Controls>
+      </div>
+      {!sorted.length ? (
+        <p css="padding: 0 1em">No drinks matched your query</p>
+      ) : null}
       <List>
-        {drinks.map((drink) => (
+        {sorted.map((drink) => (
           <DrinkItem key={drink.path} drink={drink} />
         ))}
       </List>

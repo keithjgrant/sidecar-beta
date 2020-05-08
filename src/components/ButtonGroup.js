@@ -1,16 +1,34 @@
-import styled from 'styled-components';
+import React from 'react';
+import styled, { css } from 'styled-components';
 
-const ButtonGroup = styled.div`
-  display: inline-flex;
+const Controls = styled.div`
+  color: var(--gray-8);
 `;
-export default ButtonGroup;
 
-export const Button = styled.button`
+const Group = styled.div`
+  margin-bottom: 1em;
+  display: inline-flex;
+  flex-wrap: wrap;
+`;
+
+export default function ButtonGroup({ label, children }) {
+  return (
+    <Controls>
+      {label ? <span>{label}: </span> : null}
+      <Group>{children}</Group>
+    </Controls>
+  );
+}
+
+const buttonStyles = css`
+  padding-right: 0.5em;
+  padding-left: 0.5em;
   background: transparent;
   border: 1px solid var(--gray-light);
-  border-right-width: 0;
-  color: var(--brand-primary);
+  color: var(--gray-light);
+  font-weight: bold;
   cursor: pointer;
+  user-select: none;
 
   &:first-child {
     border-top-left-radius: var(--border-radius);
@@ -25,15 +43,53 @@ export const Button = styled.button`
 
   &:hover {
     border-color: var(--brand-primary);
-  }
-
-  &&:disabled {
-    color: var(--gray-light);
-    cursor: default;
-
-    &:hover {
-      color: var(--gray-light);
-      border-color: var(--gray-light);
-    }
+    color: var(--orange-7);
   }
 `;
+
+const disabledStyles = css`
+  color: var(--brand-primary);
+  cursor: default;
+
+  &:hover {
+    color: var(--brand-primary);
+    border-color: var(--gray-light);
+  }
+`;
+
+export const Button = styled.button`
+  ${buttonStyles}
+
+  &&:disabled {
+    ${disabledStyles}
+  }
+`;
+
+const RadioLabel = styled.label`
+  ${buttonStyles}
+
+  ${(props) => (props.disabled ? disabledStyles : null)}
+`;
+
+const Radio = styled.input`
+  display: none;
+`;
+
+export function Options({ name, value, options, onChange }) {
+  return (
+    <>
+      {options.map((val) => (
+        <RadioLabel key={val} disabled={value === val}>
+          <Radio
+            type="radio"
+            name={name}
+            value={val}
+            checked={value === val}
+            onChange={(event) => onChange(event.target.value)}
+          />
+          {val}
+        </RadioLabel>
+      ))}
+    </>
+  );
+}

@@ -5,6 +5,7 @@ date: "2018-01-16T12:22:00-05:00"
 glass: coupe
 sweetness: 3
 booziness: 3
+family: martini
 ingredients: [
   "1 oz London dry gin",
   "1 oz Green Chartreuse",

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../header/Header';
+import Footer from '../Footer';
 
 const Main = styled.main`
   max-width: 100%;
@@ -27,6 +28,7 @@ export default function IndexLayout({ children }) {
     <>
       <Header />
       <Main>{children}</Main>
+      <Footer />
     </>
   );
 }

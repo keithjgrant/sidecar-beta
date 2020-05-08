@@ -5,7 +5,7 @@ date: "2018-01-08T12:21:43-05:00"
 glass: rocks
 sweetness: 2
 booziness: 2
-family: other
+family: martini
 ingredients: [
   "2 oz sweet vermouth",
   "2 oz dry vermouth",

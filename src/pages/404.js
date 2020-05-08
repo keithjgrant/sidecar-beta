@@ -1,12 +1,16 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import ArticleLayout from '../components/layouts/ArticleLayout';
 import Meta from '../components/Meta';
 
 const NotFoundPage = () => (
   <ArticleLayout>
-    <Meta title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Meta title="Not found" />
+    <h1>Not Found</h1>
+    <p>No page found at this address.</p>
+    <p>
+      <Link to="/explore">Explore all drinks</Link>
+    </p>
   </ArticleLayout>
 );
 

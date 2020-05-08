@@ -5,7 +5,7 @@ date: 2019-10-20T12:00:00-08:00
 glass: snifter
 sweetness: 2
 booziness: 2
-family: other
+family: highball
 ingredients: [
   "1½ oz rye whiskey",
   "½ oz cold brew coffee",

@@ -5,7 +5,7 @@ date: "2018-01-15T11:17:50-05:00"
 glass: wine
 sweetness: 3
 booziness: 1
-family: other
+family: fizz
 ingredients: [
   "2 oz orange juice",
   "1 oz London dry gin",

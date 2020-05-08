@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../header/Header';
+import Footer from '../Footer';
 
 const ContentWrapper = styled.div`
   padding-bottom: 2rem;
@@ -17,6 +18,7 @@ export default function CardLayout({ children }) {
     <>
       <Header />
       <ContentWrapper>{children}</ContentWrapper>
+      <Footer />
     </>
   );
 }

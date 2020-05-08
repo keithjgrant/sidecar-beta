@@ -5,7 +5,7 @@ date: "2018-01-16T11:54:50-05:00"
 glass: mug
 sweetness: 3
 booziness: 1
-family: other
+family: highball
 ingredients: [
   "1 oz Irish whiskey",
   "¾ oz burnt sugar syrup",

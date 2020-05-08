@@ -5,7 +5,7 @@ date: 2018-12-10T12:24:35-05:00
 glass: rocks
 sweetness: 2
 booziness: 3
-family: "old fashioned"
+family: old fashioned
 ingredients: [
   "2 oz rye whiskey",
   "½ oz [burnt sugar syrup](/ingredients/burnt-sugar-syrup)",

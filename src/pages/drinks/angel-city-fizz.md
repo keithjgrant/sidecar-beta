@@ -30,6 +30,11 @@ image:
   align: "40% 15%"
 intro: Created by [The Educated Barfly](https://www.youtube.com/watch?v=7HOqstAAZ58)
 ---
-Add all ingredients except IPA in a cocktail shaker. Dry shake, then shake again with plenty of ice. Strain into collins glass.
+Add all ingredients except IPA in a cocktail shaker.
+Dry shake, then shake again with plenty of ice.
+train into collins glass.
 
-Dump the ice from the shaker and pour in the IPA. Swirl the shaker a little so the IPA froths up a bit. Pour frothy IPA over the drink.
+Remove the ice from the shaker.
+Pour in the IPA to combine it with the remnants of the drink still in the shaker.
+Swirl the shaker a little so the IPA froths up a bit.
+Pour frothy IPA over the drink.
