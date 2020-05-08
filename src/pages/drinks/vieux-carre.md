@@ -10,7 +10,7 @@ ingredients: [
   "¾ oz rye whiskey",
   "¾ oz cognac or brandy",
   "¾ oz sweet vermouth",
-  "1 barspoon Bénédictine"",
+  "1 barspoon Bénédictine",
   "2 dashes Angostura bitters",
   "2 dashes Peychaud’s bitters",
 ]

@@ -9,7 +9,7 @@ family: martini
 ingredients: [
   "a splash of absinthe",
   "1½ oz rye whiskey",
-  "¾ oz Bénédictine"",
+  "¾ oz Bénédictine",
   "¾ oz sweet vermouth",
   "2 dashes Peychaud’s bitters",
 ]
