@@ -8,13 +8,14 @@ With that in mind, I certainly don't expect you to have an enormous selection of
 
 If you’re just getting starting with a home bar, these are the bottles I think you should start with.
 You don’t need to go top shelf here.
-Early cocktails were designed to make mediocre spirits taste good, and only in some more modern cocktails is a higher quality base spirit an absolute necessity.
-You should be to get all of these for under $200, plus whatever your local taxes are.
+Early cocktails were designed to make mediocre spirits taste good.
+Some more modern cocktails may require a higher quality spirit to pull off, but these are the exception, not the rule.
+You should be able to get all of these for around $200, plus whatever your local taxes are.
 
 My theory is this: after the initial investment, it costs the same amount to keep a large bar and a small bar stocked if you’re drinking at the same rate.
 Whenever a something is about to go empty, pick up a replacement bottle.
 (In practice, you’ll likely drink a bit more when you have a better selection at home, so don't trust this too far).
-Start with a modest supply, and every now and then add something new to your rotation.
+Start with a modest supply, and every now and then add something new to your shelf.
 
 Once you have everything on this list, you can make any drink on Sidecar tagged [ten-bottle-bar](/tags/ten-bottle-bar).
 

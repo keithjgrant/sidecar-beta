@@ -26,12 +26,20 @@ export default function IngredientsIndex() {
           <TileLink href="/ingredients/simple-syrup">Simple Syrup</TileLink>
         </li>
         <li>
+          <TileLink href="/ingredients/ginger-syrup">Ginger Syrup</TileLink>
+        </li>
+        <li>
           <TileLink href="/ingredients/burnt-sugar-syrup">
             Burnt Sugar Syrup
           </TileLink>
         </li>
         <li>
           <TileLink href="/ingredients/butter-syrup">Butter Syrup</TileLink>
+        </li>
+        <li>
+          <TileLink href="/ingredients/absinthe-bitters">
+            Absinthe Bitters
+          </TileLink>
         </li>
       </TileLinkList>
     </>

@@ -17,15 +17,15 @@ tags: [
   london-dry-gin,
   gin,
   blanc-vermouth,
-  dry-vermouth,
   maraschino,
   absinthe-bitters,
 ]
 intro: |
   Created by _Employees Only_ bar in New York.
 
-  Due to a happy accident, I discovered it also tastes great with dry vermouth substituted for the blanc vermouth, though I guess technically that would make it a Martini rather than a Martinez.
+  If you don’t want to bother mixing up the absinthe bitters, you can substitute by rinsing the glass with a splash of absinthe or Green Chartreuse, leaving the excess in the glass.
 
+  Dry vermouth can also be used in place of blanc vermouth.
 ---
 
 Stir ingredients with plenty of ice. Stir. Strain into a coupe.
