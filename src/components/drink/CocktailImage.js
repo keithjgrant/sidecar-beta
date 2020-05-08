@@ -19,7 +19,7 @@ const Image = styled.img`
   object-fit: cover;
   box-shadow: 0.1em 0.1em 0.3em rgba(0, 0, 0, 0.1);
 
-  @media (min-width: 30em) {
+  @media (min-width: 480px) {
     max-height: initial;
     width: calc(100% + 5rem);
     margin-top: -3rem;
@@ -27,20 +27,24 @@ const Image = styled.img`
     border-radius: var(--border-radius);
   }
 
-  @media (min-width: 40em) {
+  @media (min-width: 640px) {
     min-height: 15em;
   }
 `;
 
 const SvgWrapper = styled.div`
+  padding-top: 1em;
+
   & svg {
     height: auto;
+    max-height: initial;
     max-height: 30vh;
     color: var(--orange-8);
     opacity: 0.3;
 
-    @media (min-width: 30em) {
-      max-height: initial;
+    @media (max-width: 480px) {
+        display: none;
+      }
     }
   }
 `;

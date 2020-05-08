@@ -5,6 +5,10 @@ import glasses from '../svg/glasses';
 const Wrapper = styled.div`
   grid-column: 1;
   grid-row: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -23,8 +27,8 @@ const Wrapper = styled.div`
     color: var(--gray-6);
   }
   svg {
-    height: 7em;
-    padding: 3em 0.5em 1em;
+    height: 5em;
+    padding: 1em 0.5em;
     color: var(--orange-8);
     filter: drop-shadow(2px 4px 6px black);
   }

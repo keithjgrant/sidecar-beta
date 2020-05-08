@@ -35,6 +35,15 @@ const LogoLink = styled(Link)`
 
 const Heading = styled.h1`
   margin: 0;
+  @media (max-width: 480px) {
+    text-align: center;
+  }
+`;
+
+const Wrapper = styled.div`
+  @media (max-width: 480px) {
+    text-align: center;
+  }
 `;
 
 export default function Logo({ isHome }) {
@@ -47,5 +56,5 @@ export default function Logo({ isHome }) {
   if (isHome) {
     return <Heading>{content}</Heading>;
   }
-  return <div>{content}</div>;
+  return <Wrapper>{content}</Wrapper>;
 }
