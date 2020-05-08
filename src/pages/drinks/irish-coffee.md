@@ -15,6 +15,7 @@ ingredients: [
 garnish:
 tags: [
   ten-bottle-bar,
+  hot,
   irish-whiskey,
   coffee,
   burnt-sugar-syrup,

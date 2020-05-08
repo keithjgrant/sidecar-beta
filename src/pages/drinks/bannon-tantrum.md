@@ -12,11 +12,12 @@ ingredients: [
   "½ oz simple syrup"
 ]
 tags: [
-  "summer",
-  "sidecar-original",
-  "vodka",
-  "lemon",
-  "shaken"
+  summer,
+  refreshing,
+  sidecar-original,
+  vodka,
+  lemon,
+  shaken
 ]
 image:
   url: "/images/drinks/bannon-tantrum.jpg"

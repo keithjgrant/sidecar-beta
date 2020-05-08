@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import GrowWrapper from './GrowWrapper';
 import Header from '../header/Header';
 import Footer from '../Footer';
 
 const Main = styled.main`
+  flex: 1;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 1em 2rem;
@@ -49,12 +51,12 @@ const Article = styled.article`
 
 export default function ArticleLayout({ children }) {
   return (
-    <>
+    <GrowWrapper>
       <Header />
       <Main>
         <Article>{children}</Article>
       </Main>
       <Footer />
-    </>
+    </GrowWrapper>
   );
 }

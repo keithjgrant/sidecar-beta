@@ -1,0 +1,27 @@
+---
+title: "Honeymoon"
+path: "/drinks/honeymoon"
+date: 2020-05-08T16:05:14-08:00
+glass: coupe
+sweetness: 2
+booziness: 2
+family:
+ingredients: [
+  "2 oz apple brandy or applejack",
+  "½ oz orange liqueur",
+  "½ oz Bénédictine",
+  "½ oz lemon juice",
+]
+garnish:
+tags: [
+  fruity,
+  benedictine,
+  apple-brandy,
+  orange-liqueur,
+  lemon
+]
+featured:
+intro:
+
+---
+Shake vigorously with ice. Strain into a coupe glass.

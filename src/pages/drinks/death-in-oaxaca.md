@@ -18,6 +18,7 @@ tags: [
   mezcal,
   green-chartreuse,
   sparkling-wine,
+  lime,
   shaken,
 ]
 featured:

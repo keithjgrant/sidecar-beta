@@ -21,6 +21,7 @@ tags: [
   orange-juice,
   wine,
   sparkling-wine,
+  honey,
   shaken,
 ]
 image:

@@ -19,8 +19,8 @@ tags: [
   "rye-whiskey",
   "whiskey",
   "lime",
-  "ginger-syrup",
-  "honey-syrup",
+  "ginger",
+  "honey",
   "beer",
   "shaken"
 ]

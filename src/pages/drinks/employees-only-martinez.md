@@ -25,9 +25,9 @@ intro: |
 
   If you don’t want to bother mixing up the absinthe bitters, you can substitute by rinsing the glass with a splash of absinthe or Green Chartreuse, leaving the excess in the glass.
 
-  Dry vermouth can also be used in place of blanc vermouth.
+  Best with a milder gin like Beefeater (avoid Tanqueray). Dry vermouth can also be used in place of blanc vermouth.
 ---
 
-Stir ingredients with plenty of ice. Stir. Strain into a coupe.
+Stir ingredients with plenty of ice. Strain into a coupe.
 
 Garnish with a lemon twist.

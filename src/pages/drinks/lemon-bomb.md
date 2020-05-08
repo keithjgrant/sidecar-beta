@@ -27,7 +27,7 @@ tags: [
   butter-syrup,
   shaken,
 ]
-featured: true
+featured: 
 image:
   url: "/images/drinks/lemon-bomb.jpg"
   alt: "A creamy-looking yellow cocktail topped with a layer of white foam"

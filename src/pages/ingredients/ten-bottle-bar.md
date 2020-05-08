@@ -124,7 +124,7 @@ If you like the intensely sweet bitterness of a [negroni](/drinks/negroni), get 
 If you’re approaching spring or summer, [elderflower liqueur](/tags/elderflower-liqueur) may be a good choice for some more floral options (you don’t have to splurge on St. Germain; if you can find them, there are less expensive options).
 If you want something fall-like, go for an [apple brandy or applejack](/tags/apple-brandy).
 
-Some other options would be [Benedictine](/tags/benedictine), [Green Chartreuse](/tags/green-chartreuse), [Maraschino liqueur](/tags/maraschino), a [Genever style gin](/ingredients/gin#genever-gin), or [mezcal](/tags/mezcal).
+Some other options would be [Bénédictine"](/tags/benedictine), [Green Chartreuse](/tags/green-chartreuse), [Maraschino liqueur](/tags/maraschino), a [Genever style gin](/ingredients/gin#genever-gin), or [mezcal](/tags/mezcal).
 If you’re totally annoyed I left [vodka](/tags/vodka) off this list, you can get that.
 This is your bar.
 Choose whatever suits your taste!

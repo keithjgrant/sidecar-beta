@@ -7,7 +7,7 @@ sweetness: 3
 booziness: 3
 family: old fashioned
 ingredients: [
-  "1¾ oz rye whiskey",
+  "1½ oz rye whiskey",
   "½ oz brandy",
   "½ oz elderflower liqueur",
   "2 dashes orange bitters",
@@ -18,7 +18,7 @@ tags: [
   "brandy",
   "rye-whiskey",
   "elderflower-liqueur",
-  "ginger-syrup",
+  "ginger",
   "stirred",
 ]
 intro: |
