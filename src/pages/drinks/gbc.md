@@ -16,6 +16,7 @@ ingredients: [
 ]
 garnish: 1 cucumber slice
 tags: [
+  "ten-bottle-bar",
   "summer",
   "refreshing",
   "gin",

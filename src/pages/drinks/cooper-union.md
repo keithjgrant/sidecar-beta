@@ -14,10 +14,10 @@ ingredients: [
 ]
 garnish: lemon twist, discarded
 tags: [
-  smokey,
   whiskey,
   irish-whiskey,
   scotch,
+  smokey,
   elderflower-liqueur,
   stirred,
 ]

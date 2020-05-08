@@ -9,6 +9,11 @@ export default function IngredientsIndex() {
       <SectionHeading>Spirits</SectionHeading>
       <TileLinkList>
         <li>
+          <TileLink href="/ingredients/ten-bottle-bar">
+            Stocking a Ten-Bottle Bar
+          </TileLink>
+        </li>
+        <li>
           <TileLink href="/ingredients/vermouth">Vermouth</TileLink>
         </li>
         <li>

@@ -14,10 +14,11 @@ ingredients: [
 ]
 garnish: orange twist
 tags: [
-  "tequila",
-  "tequila-reposado",
-  "sweet-vermouth",
-  "stirred"
+  ten-bottle-bar,
+  tequila,
+  tequila-reposado,
+  sweet-vermouth,
+  stirred,
 ]
 intro: This is a fun variation on a [Manhattan](/drinks/manhattan/), with tequila in place of the whiskey. Use a high-quality tequila.
 ---

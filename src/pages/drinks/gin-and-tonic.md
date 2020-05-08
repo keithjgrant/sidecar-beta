@@ -13,10 +13,11 @@ ingredients: [
 ]
 garnish:
 tags: [
-  "refreshing",
-  "gin",
-  "lime",
-  "built"
+  ten-bottle-bar,
+  refreshing,
+  gin,
+  lime,
+  built
 ]
 image:
   url: "/images/drinks/gin-and-tonic.jpg"

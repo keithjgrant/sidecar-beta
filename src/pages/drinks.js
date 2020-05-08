@@ -19,7 +19,7 @@ export const pageQuery = graphql`
   query AllDrinks {
     drinks: allMarkdownRemark(
       filter: { frontmatter: { path: { regex: "/^/drinks//" } } }
-      sort: { order: DESC, fields: [frontmatter___path] }
+      sort: { order: ASC, fields: [frontmatter___path] }
     ) {
       edges {
         node {

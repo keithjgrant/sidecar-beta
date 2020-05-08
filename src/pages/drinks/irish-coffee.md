@@ -14,11 +14,12 @@ ingredients: [
 ]
 garnish:
 tags: [
-  "irish-whiskey",
-  "coffee",
-  "burnt-sugar-syrup",
-  "dessert-drink",
-  "built"
+  ten-bottle-bar,
+  irish-whiskey,
+  coffee,
+  burnt-sugar-syrup,
+  dessert-drink,
+  built,
 ]
 image:
   url: "/images/drinks/irish-coffee.jpg"

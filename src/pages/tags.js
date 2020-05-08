@@ -15,7 +15,7 @@ export default function TagsPage({ data: { drinks } }) {
     <SimpleListLayout>
       <Meta title="Sidecar: All Tags" />
       <PageHeading>All Tags</PageHeading>
-      <TagList tags={[...tags]} />
+      <TagList tags={[...tags].sort()} />
     </SimpleListLayout>
   );
 }
@@ -24,7 +24,6 @@ export const pageQuery = graphql`
   query AllTags {
     drinks: allMarkdownRemark(
       filter: { frontmatter: { path: { regex: "/^/drinks//" } } }
-      sort: { order: DESC, fields: [frontmatter___path] }
     ) {
       edges {
         node {

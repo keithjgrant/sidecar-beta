@@ -11,7 +11,7 @@ ingredients: [
   "½ oz brandy",
   "½ oz elderflower liqueur",
   "2 dashes orange bitters",
-  "1 barspoon ginger syrup",
+  "1 barspoon [ginger syrup](/ingredients/ginger-syrup)",
 ]
 garnish:
 tags: [
@@ -23,8 +23,6 @@ tags: [
 ]
 intro: |
   This is my recreation of a drink I once had. The original was made with Templeton Rye and Hennessy Cognac.
-
-  Here’s a video tutorial for [making ginger syrup](https://www.youtube.com/watch?v=5Jx2t0DgoWc).
 ---
 [Stir](/techniques/stirring/) well with plenty of ice. Strain into a coupe.
 

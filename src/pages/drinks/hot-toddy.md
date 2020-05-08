@@ -14,6 +14,7 @@ ingredients: [
 ]
 garnish: lemon twist
 tags: [
+  ten-bottle-bar,
   winter,
   hot,
   bourbon,

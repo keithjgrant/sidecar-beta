@@ -14,10 +14,10 @@ ingredients: [
 ]
 garnish:
 tags: [
-  "gin",
-  "london-dry-gin",
-  "grapefruit",
-  "shaken",
+  gin,
+  london-dry-gin,
+  grapefruit,
+  shaken,
 ]
 image:
   url: "/images/drinks/pinkest-gin.jpg"

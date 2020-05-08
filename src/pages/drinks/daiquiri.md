@@ -12,6 +12,7 @@ ingredients: [
   "¾ oz simple syrup"
 ]
 tags: [
+  "ten-bottle-bar",
   "rum",
   "lime",
   "classic-cocktail",

@@ -13,10 +13,11 @@ ingredients: [
 ]
 garnish: fresh grated nutmeg
 tags: [
-"brandy",
-"cream",
-"shaken",
-"sweet"
+  "ten-bottle-bar",
+  "brandy",
+  "cream",
+  "shaken",
+  "sweet"
 ]
 ---
 Add brandy, cream, and demerara syrup to a cocktail shaker. Shake. Strain into coupe glass.

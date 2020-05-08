@@ -13,11 +13,12 @@ ingredients: [
 ]
 garnish: orange twist, discarded
 tags: [
-  "brandy",
-  "orange-liqueur",
-  "lemon",
-  "classic-cocktail",
-  "shaken",
+  ten-bottle-bar,
+  classic-cocktail,
+  brandy,
+  orange-liqueur,
+  lemon,
+  shaken,
 ]
 ---
 Shake vigorously with ice. Strain into a coupe glass.

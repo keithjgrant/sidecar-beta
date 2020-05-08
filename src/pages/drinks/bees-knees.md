@@ -13,6 +13,7 @@ ingredients: [
 ]
 garnish: lemon twist
 tags: [
+  "ten-bottle-bar",
   "gin",
   "lemon",
   "honey",

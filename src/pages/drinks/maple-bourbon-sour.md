@@ -14,12 +14,13 @@ ingredients: [
 ]
 garnish:
 tags: [
-  "fall",
-  "bourbon",
-  "maple-syrup",
-  "lemon",
-  "egg",
-  "shaken"
+  ten-bottle-bar,
+  fall,
+  bourbon,
+  maple-syrup,
+  lemon,
+  egg,
+  shaken,
 ]
 ---
 

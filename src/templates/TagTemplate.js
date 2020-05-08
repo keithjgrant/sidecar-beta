@@ -22,7 +22,7 @@ export const pageQuery = graphql`
   query DrinksByTag($tag: String!) {
     drinks: allMarkdownRemark(
       filter: { frontmatter: { tags: { in: [$tag] } } }
-      sort: { order: DESC, fields: [frontmatter___path] }
+      sort: { order: ASC, fields: [frontmatter___path] }
     ) {
       edges {
         node {

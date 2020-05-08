@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import ButtonGroup, { Button } from './ButtonGroup';
 import CocktailThumbnail from './CocktailThumbnail';
 
 const List = styled.ul`
@@ -17,6 +18,7 @@ const List = styled.ul`
 const PreviewLink = styled(Link)`
   --thumbnail-size: 3em;
   --heading-size: 1rem;
+  position: relative;
   display: flex;
   align-items: center;
   height: 100%;
@@ -53,16 +55,30 @@ const PreviewContent = styled.div`
   font-family: var(--font-heading);
 `;
 
+const PublishDate = styled.time`
+  position: absolute;
+  right: 0.2em;
+  bottom: 0.2em;
+  font-size: 0.8rem;
+  color: var(--gray-5);
+`;
+
 function DrinkItem({ drink }) {
   return (
     <li>
       <PreviewLink key={drink.basename} to={drink.path}>
         <CocktailThumbnail drink={drink} />
         <PreviewContent>{drink.title}</PreviewContent>
+        <PublishDate>{drink.date}</PublishDate>
       </PreviewLink>
     </li>
   );
 }
+
+const Controls = styled.div`
+  text-align: right;
+  color: var(--gray-8);
+`;
 
 function alphaSort(a, b) {
   const titleA = a.title.toLowerCase();
@@ -76,14 +92,55 @@ function alphaSort(a, b) {
   return 0;
 }
 
-export default function DrinkList({ drinks }) {
-  // TODO: sort alphabetically/date-added switch (and other options?)
-  const sortedDrinks = drinks.sort(alphaSort);
+function dateSort(a, b) {
+  if (a.dateObj < b.dateObj) {
+    return 1;
+  }
+  if (a.dateObj > b.dateObj) {
+    return -1;
+  }
+  return 0;
+}
+
+function addDates(drinks) {
+  return drinks.map((drink) => ({
+    ...drink,
+    dateObj: drink.date ? new Date(drink.date) : null,
+  }));
+}
+
+export default function DrinkList(props) {
+  const [drinks, setDrinks] = useState(addDates(props.drinks));
+  const [isSortByDate, setIsSortByDate] = useState(false);
+
+  const sortByDate = () => {
+    setIsSortByDate(true);
+    setDrinks(drinks.sort(dateSort));
+  };
+
+  const sortByName = () => {
+    setIsSortByDate(false);
+    setDrinks(drinks.sort(alphaSort));
+  };
+
   return (
-    <List>
-      {sortedDrinks.map((drink) => (
-        <DrinkItem key={drink.path} drink={drink} />
-      ))}
-    </List>
+    <>
+      <Controls>
+        Sort by:{' '}
+        <ButtonGroup>
+          <Button onClick={sortByName} disabled={!isSortByDate}>
+            Name
+          </Button>
+          <Button onClick={sortByDate} disabled={isSortByDate}>
+            Last added
+          </Button>
+        </ButtonGroup>
+      </Controls>
+      <List>
+        {drinks.map((drink) => (
+          <DrinkItem key={drink.path} drink={drink} />
+        ))}
+      </List>
+    </>
   );
 }

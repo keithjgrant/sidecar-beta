@@ -15,6 +15,7 @@ ingredients: [
 ]
 garnish:
 tags: [
+  ten-bottle-bar,
   gin,
   orange-liqueur,
   egg,

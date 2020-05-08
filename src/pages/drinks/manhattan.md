@@ -13,10 +13,11 @@ ingredients: [
 ]
 garnish: maraschino cherry
 tags: [
-  "classic-cocktail",
-  "rye-whiskey",
-  "sweet-vermouth",
-  "stirred"
+  ten-bottle-bar,
+  classic-cocktail,
+  rye-whiskey,
+  sweet-vermouth,
+  stirred,
 ]
 ---
 Combine in a shaker with ice. Stir, then strain into a coupe glass.

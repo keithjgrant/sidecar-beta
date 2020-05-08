@@ -15,7 +15,7 @@ ingredients: [
 garnish: cinnamon stick
 tags: [
   coffee,
-  smoke,
+  smokey,
   whiskey,
   rye-whiskey,
   maple-syrup,

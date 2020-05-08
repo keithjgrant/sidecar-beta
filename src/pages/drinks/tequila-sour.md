@@ -15,11 +15,12 @@ ingredients: [
 ]
 garnish:
 tags: [
-  "tequila",
-  "lemon",
-  "burnt-sugar-syrup",
-  "egg",
-  "shaken"
+  ten-bottle-bar,
+  tequila,
+  lemon,
+  burnt-sugar-syrup,
+  egg,
+  shaken,
 ]
 intro: The burnt sugar syrup is my own addition.
 

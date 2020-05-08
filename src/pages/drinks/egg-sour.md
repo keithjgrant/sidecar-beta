@@ -15,6 +15,7 @@ ingredients: [
 ]
 garnish: grated nutmeg
 tags: [
+  "ten-bottle-bar",
   "winter",
   "brandy",
   "orange-liqueur",

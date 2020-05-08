@@ -1,0 +1,136 @@
+---
+title: "Ten Bottle Bar"
+path: "/ingredients/ten-bottle-bar"
+---
+
+This site is geared toward the home bartender.
+With that in mind, I certainly don't expect you to have an enormous selection of ingredients on hand.
+
+If you’re just getting starting with a home bar, these are the bottles I think you should start with.
+You don’t need to go top shelf here.
+Early cocktails were designed to make mediocre spirits taste good, and only in some more modern cocktails is a higher quality base spirit an absolute necessity.
+You should be to get all of these for under $200, plus whatever your local taxes are.
+
+My theory is this: after the initial investment, it costs the same amount to keep a large bar and a small bar stocked if you’re drinking at the same rate.
+Whenever a something is about to go empty, pick up a replacement bottle.
+(In practice, you’ll likely drink a bit more when you have a better selection at home, so don't trust this too far).
+Start with a modest supply, and every now and then add something new to your rotation.
+
+Once you have everything on this list, you can make any drink on Sidecar tagged [ten-bottle-bar](/tags/ten-bottle-bar).
+
+## Rye Whiskey
+I can already hear the protests over the lack of bourbon on this list.
+If I’m sipping it neat, I’d normally take a bourbon over a rye.
+But here’s the thing: countless cocktails call for “bourbon or rye”.
+And in my opinion, rye makes a better drink 90% of the time.
+It has a little more spice to stand out among sweeteners and other flavors in the cocktail.
+Get an overproof bottle (90 or 100 proof) if you can.
+
+Rittenhouse Rye 100 is the gold standard, but in my opinion it’s not always worth the extra money when you’re mixing it.
+Look for George Dickel or Old Overholt.
+You should be able to find these for under $20.
+
+Rye can be harder to find in smaller liquor stores, so if you can’t track one down, go for a bourbon instead, like Evan Williams white label.
+
+## London Dry Gin
+The [variety of gins available](/ingredients/gin) is enormous, and some drinks really rely on a specific type.
+Start with a versatile bottle: a London Dry style gin, but one that isn’t too intensely juniper heavy.
+
+For this, I recommend Beefeater ($15–20).
+It’s not my favorite, but it’s quite versatile.
+Plymouth, while not a London Dry, is probably a safe bet as well. I typically stock Tanqueray, but this is a very juniper-focused gin.
+I get away with it because I keep one or two milder options in my bar for when I need them.
+
+## (Sweet) Vermouth
+Keep a bottle of [vermouth](/ingredients/vermouth) in your fridge.
+And keep track of how old it is — it’s only good for a few months once opened.
+
+I recommend you start with a sweet vermouth.
+Don’t go to the little liquor store on the corner for this: find the biggest store with the best selection in your town.
+Of everything on this list, this is the one item to spend a little more on.
+Under no circumstances should you buy Martini & Rossi sweet vermouth.
+My favorite is Carpano Antica Formula, followed by Cocchi di Torino, then Dolin Rouge.
+
+Antica Formula is a bit bold in flavor (and a bit pricey), however.
+Some would say this makes it too strong for balancing with lighter spirits like gin — I don’t necessarily find this to be the case, but Cocchi is probably the most versatile of the three.
+
+Because it goes bad, don’t try to stock every style of vermouth at once.
+Instead, when you run out, consider swapping in a different style.
+Try a blanc vermouth like Dolin Blanc.
+Or go for a traditional dry vermouth like Noilly Prat.
+Though I’ve found dry vermouth just isn’t used in as many drinks outside a classic martini.
+Sweet vermouth is definitely the style I use the most.
+
+## Brandy
+Many cocktails call for a Cognac.
+But let’s be honest: that’s a lot to spend on a mixer.
+While I enjoy Cognac as much as the next guy, I typically stock a less expensive brandy like St. Remy VSOP or Paul Mason VSOP.
+Just make sure it’s a regular grape brandy though.
+
+I have less experience with a broad range of brandies, however, so this is an area where I’m still trying different things to see what I like.
+I will say I’ve started shying away from E&J VSOP as it’s a bit sweeter its mellow flavor doesn’t stand up as well when mixed.
+
+## Silver Rum
+This should be your cheapest item on the list.
+Get a bottle of Cruzan or similar for around $10.
+
+This is the one item I was most reluctant to put on this list.
+It honestly not something you’ll make a whole variety of drinks with, but it rounds out your bar.
+And if you’ve never had a [classic daiquiri](/drinks/daiquiri), now is your chance.
+
+When you run out, you can certainly swap in a spiced rum or a nice aged rum.
+You can substitute aged rum as the base spirit for almost any [classic cocktail](/tags/classic-cocktail) and end up with a delicious drink.
+
+## Tequila
+Many folks will say you shouldn’t use anything nicer than a silver tequila in a margarita.
+But a lot of distilleries offer a reposado for a comparable price, so I figure why not.
+
+Expect to spend around $25 for this, but you can occasionally find a better deal.
+I generally shop by price on this one.
+Some I’ve found myself coming back to when the price is right are Camarena and Lanazul.
+
+## Orange Liqueur
+As an essential ingredient for a [margarita](/drinks/margarita) or [sidecar](/drinks/sidecar), orange liqueur is a must in every home bar. Unfortunately, just like so many other sprits on this list, the variety of styles of this spirit make for complicated decision making. There are triple secs, brandy-based options like Grand Marnier, and dry curaçaos.
+
+I have eventually decided to not overthink it too much.
+Some styles will work better in some drinks; other styles in other drinks.
+It’s hard to go wrong with Cointreau, if you want to spend that much, but don’t feel like you have to.
+A $15 triple sec is just fine in many drinks, so I suggest you start there.
+When you run out, you can always change it up and see what works best in the drinks you tend to make.
+
+## Angostura Bitters
+Not a lot to say here.
+It’s used in a lot of drinks.
+And yes, I’m counting bitters among the ten bottles.
+We don’t want to break the bank here.
+
+## Orange Bitters
+You’ll also want a bottle of orange bitters. You’ll want this for an [old fashioned](/drinks/old-fashioned), and many of its derivatives.
+
+Look for Fee Brothers or Regans.
+These are slightly different; the former more is like fresh orange citrus and the latter more like bitter orange peel.
+Many bartenders actually combine the two.
+
+There is a third type of bitter you will eventually need: Peychaud’s.
+However, that would put us over 10 bottles, so come back for it later.
+Or perhaps choose it as your wildcard…
+
+## Wildcard
+For the tenth bottle, I leave it up to you.
+Pick something, perhaps a liqueur or an amaro, so you can branch out in a specific direction.
+
+If you like the intensely sweet bitterness of a [negroni](/drinks/negroni), get a bottle of Campari.
+If you’re approaching spring or summer, [elderflower liqueur](/tags/elderflower-liqueur) may be a good choice for some more floral options (you don’t have to splurge on St. Germain; if you can find them, there are less expensive options).
+If you want something fall-like, go for an [apple brandy or applejack](/tags/apple-brandy).
+
+Some other options would be [Benedictine](/tags/benedictine), [Green Chartreuse](/tags/green-chartreuse), [Maraschino liqueur](/tags/maraschino), a [Genever style gin](/ingredients/gin#genever-gin), or [mezcal](/tags/mezcal).
+If you’re totally annoyed I left [vodka](/tags/vodka) off this list, you can get that.
+This is your bar.
+Choose whatever suits your taste!
+
+As you run low on an item, replace it.
+If you start with a solid base like this, it’s easy to add something new every so often when the mood strikes.
+Before you know it, your ten-bottle-bar will be a twenty-bottle-bar and you’ll be able to choose from hundreds of cocktail options.
+
+One last thing: get yourself a several lemons and limes, and at least one orange with a brightly colored, thick, bumpy peel for twists.
+Make yourself a [syrup](/ingredients/simple-syrup) or two, and you should be [ready to go](/tags/ten-bottle-bar).

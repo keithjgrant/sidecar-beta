@@ -13,6 +13,7 @@ ingredients: [
 ]
 garnish: grapefruit twist
 tags: [
+  "ten-bottle-bar",
   "bourbon",
   "grapefruit",
   "shaken"

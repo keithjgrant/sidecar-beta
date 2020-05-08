@@ -13,6 +13,7 @@ ingredients: [
 ]
 garnish: maraschino cherry
 tags: [
+  "ten-bottle-bar",
   "brandy",
   "orange-liqueur",
   "dry-curacao",
