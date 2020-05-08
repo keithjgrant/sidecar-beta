@@ -104,7 +104,6 @@ export default function DrinkList({ drinks }) {
 
   const sorted =
     sortBy === 'last added' ? drinks.sort(dateSort) : drinks.sort(alphaSort);
-  console.log(sortBy, sorted, drinks);
   return (
     <>
       <div css="text-align: right">
