@@ -64,7 +64,7 @@ function Meta({ description, lang, meta, title, image }) {
           content: metaDescription,
         },
         {
-          name: 'twitter:img:src',
+          name: 'twitter:image:src',
           content: metaImage,
         },
         {
