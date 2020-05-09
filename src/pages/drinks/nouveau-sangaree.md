@@ -28,7 +28,10 @@ image:
   url: "/images/drinks/nouveau-sangaree.jpg"
   alt: "A deep red drink in a brandy snifter. An apple slice is balanced on the rim of the glass."
   align: "40% 50%"
-intro:
+intro: |
+  I’m always disappointed by sangria.
+  It's either made with cheap wine and it shows, or it's made with nice wine that would honestly taste better on its own.
+  This drink, however, is what I've always wanted sangria to taste like.
 ---
 Stir ingredients with plenty of ice.
 Strain into a coupe or brandy snifter.
