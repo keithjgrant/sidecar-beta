@@ -18,7 +18,8 @@ tags: [
   benedictine,
   apple-brandy,
   orange-liqueur,
-  lemon
+  lemon,
+  shaken,
 ]
 featured:
 intro:

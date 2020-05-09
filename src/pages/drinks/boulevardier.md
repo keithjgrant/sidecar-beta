@@ -13,12 +13,13 @@ ingredients: [
 ]
 garnish: orange twist or brandied cherry
 tags: [
-  "whiskey",
-  "bourbon",
-  "rye-whiskey",
-  "campari",
-  "sweet-vermouth",
-  "stirred"
+  classic-cocktail,
+  whiskey,
+  bourbon,
+  rye-whiskey,
+  campari,
+  sweet-vermouth,
+  stirred,
 ]
 intro: A close cousin of the [Negroni](/drinks/negroni/). For a more earthy variation, try substituting St. George [Bruto Americano](http://stgeorgespirits.com/spirits/bruto-americano/) for Campari.
 ---

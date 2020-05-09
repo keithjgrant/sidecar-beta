@@ -16,6 +16,7 @@ ingredients: [
 ]
 garnish: lemon twist
 tags: [
+  classic-cocktail,
   benedictine,
   rye-whiskey,
   whiskey,

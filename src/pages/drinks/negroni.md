@@ -13,6 +13,7 @@ ingredients: [
 ]
 garnish: grapefruit twist
 tags: [
+  classic-cocktail,
   aperitif,
   gin,
   campari,

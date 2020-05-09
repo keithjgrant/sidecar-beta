@@ -5,7 +5,7 @@ date: 2020-05-08T15:05:52-08:00
 glass: collins
 sweetness: 3
 booziness: 1
-family:
+family: fizz
 ingredients: [
   "1½ oz Old Tom gin or Plymouth gin",
   "¾ oz orange liqueur",
@@ -18,6 +18,16 @@ ingredients: [
 ]
 garnish: 3 drops orange flower water
 tags: [
+  classic-cocktail,
+  gin,
+  old-tom-gin,
+  plymouth-gin,
+  orange-liqueur,
+  lemon,
+  lime,
+  cream,
+  egg,
+  shaken,
 ]
 featured:
 image:

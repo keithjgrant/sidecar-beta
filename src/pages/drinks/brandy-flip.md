@@ -14,7 +14,9 @@ ingredients: [
 garnish: grated nutmeg
 tags: [
   sweet,
+  brandy,
   egg,
+  shaken,
 ]
 featured:
 intro:
