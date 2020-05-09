@@ -9,9 +9,11 @@ export default function DrinkTemplate({ data }) {
     ...data.post.frontmatter,
     content: data.post.html,
   };
+
+  const image = drink.image ? drink.image.url : null;
   return (
     <CardLayout>
-      <Meta title={drink.title} />
+      <Meta title={drink.title} image={image} />
       <DrinkCard drink={drink} />
     </CardLayout>
   );

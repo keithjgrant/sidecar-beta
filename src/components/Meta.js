@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import 'typeface-playfair-display';
 import 'typeface-lato';
 
-function Meta({ description, lang, meta, title }) {
+function Meta({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -21,6 +21,7 @@ function Meta({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const metaImage = image || 'https://sidecar.us/icons/icon-144x144.png';
 
   return (
     <Helmet
@@ -61,6 +62,10 @@ function Meta({ description, lang, meta, title }) {
         {
           name: 'twitter:description',
           content: metaDescription,
+        },
+        {
+          name: 'twitter:img:src',
+          content: metaImage,
         },
         {
           name: 'apple-mobile-web-app-status-bar-style',
