@@ -32,14 +32,14 @@ tags: [
 featured:
 image:
   url: "/images/drinks/ramos-gin-fizz.jpg"
-  alt: ""
-  align: "50% 50%"
+  alt: "A white foamy drink in a tall narrow glass"
+  align: "50% 30%"
 intro:
   Traditionally, this drink was shaken for ten minutes straight to achieve an impressive foam that rises above the rim of the glass. Thankfully, we’ve since developed techniques to make this a bit easier.
 ---
 Add all ingredients except soda water to a cocktail shaker.
-[Dry shake](/techniques/shaking#dry-shaking) aggressively for at least 15 seconds.
-Add one _large_ ice cube to the shaker and shake again vigorously for 30 seconds or as long as you can take it.
+[Dry shake](/techniques/shaking#dry-shaking) aggressively for at least 30 seconds.
+Add one _large_ ice cube to the shaker and shake again vigorously for a couple minutes or as long as you can take it.
 Strain into a collins glass.
 
 Allow this to sit in the glass for a couple minutes to allow the foam to separate a bit.
