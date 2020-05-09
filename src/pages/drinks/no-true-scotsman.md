@@ -10,7 +10,7 @@ ingredients: [
   "1 oz peaty scotch",
   "¾ oz apple brandy",
   "½ oz orange liqueur",
-  "½ oz honey syrup",
+  "½ oz [honey syrup](/ingredients/simple-syrup#honey-syrup)",
   "¾ oz lemon juice",
 ]
 garnish:

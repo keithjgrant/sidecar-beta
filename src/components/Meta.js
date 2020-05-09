@@ -21,7 +21,7 @@ function Meta({ description, lang, meta, title, image }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const metaImage = image || 'https://sidecar.us/icons/icon-144x144.png';
+  const metaImage = image || '/icons/icon-144x144.png';
 
   return (
     <Helmet
@@ -65,7 +65,7 @@ function Meta({ description, lang, meta, title, image }) {
         },
         {
           name: 'twitter:image:src',
-          content: metaImage,
+          content: `https://sidecar.us${metaImage}`,
         },
         {
           name: 'apple-mobile-web-app-status-bar-style',
