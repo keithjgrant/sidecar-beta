@@ -19,7 +19,7 @@ tags: [
   sweet-vermouth,
   stirred,
 ]
-featured:
+tenBottleCandidate: true
 intro:
   This is especially good with a spicer vermouth, like Antica Formula.
 ---

@@ -16,18 +16,20 @@ ingredients: [
 ]
 garnish: 1 cucumber slice
 tags: [
-  "ten-bottle-bar",
-  "summer",
-  "refreshing",
-  "gin",
-  "lime",
-  "summer",
-  "built"
+  ten-bottle-bar,
+  summer,
+  refreshing,
+  afternoon,
+  gin,
+  lime,
+  summer,
+  built,
 ]
 image:
   url: "/images/drinks/gbc.jpg"
   alt: "A refreshing-looking GBC in a crystal rocks glass"
   align: "50% 50%"
+tenBottleCandidate: true
 ---
 Middle basil leaves, three cucumber slices, and simple syrup in the base of a rocks glass. Add the gin and lime, and crushed ice.
 

@@ -76,7 +76,8 @@ This should be your cheapest item on the list.
 Get a bottle of Cruzan or similar for around $10.
 
 This is the one item I was most reluctant to put on this list.
-It honestly not something you’ll make a whole variety of drinks with, but it rounds out your bar.
+I honestly don’t make a whole variety of drinks with, but it rounds out your bar.
+It will also come in handy if you get into the world of Tiki drinks, which is something I haven’t explored a whole lot.
 And if you’ve never had a [classic daiquiri](/drinks/daiquiri), now is your chance.
 
 When you run out, you can certainly swap in a spiced rum or a nice aged rum.
@@ -124,7 +125,7 @@ If you like the intensely sweet bitterness of a [negroni](/drinks/negroni), get 
 If you’re approaching spring or summer, [elderflower liqueur](/tags/elderflower-liqueur) may be a good choice for some more floral options (you don’t have to splurge on St. Germain; if you can find them, there are less expensive options).
 If you want something fall-like, go for an [apple brandy or applejack](/tags/apple-brandy).
 
-Some other options would be [Bénédictine"](/tags/benedictine), [Green Chartreuse](/tags/green-chartreuse), [Maraschino liqueur](/tags/maraschino), a [Genever style gin](/ingredients/gin#genever-gin), or [mezcal](/tags/mezcal).
+Some other options would be [Bénédictine](/tags/benedictine), [Green Chartreuse](/tags/green-chartreuse), [Maraschino liqueur](/tags/maraschino), a [Genever style gin](/ingredients/gin#genever-gin), or [mezcal](/tags/mezcal).
 If you’re totally annoyed I left [vodka](/tags/vodka) off this list, you can get that.
 This is your bar.
 Choose whatever suits your taste!

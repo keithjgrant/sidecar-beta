@@ -18,11 +18,11 @@ tags: [
   "green-chartreuse",
   "sweet-vermouth"
 ]
-
 image:
   url: "/images/drinks/bijou.jpg"
   alt: ""
   align: "80% 30%"
+  tenBottleCandidate: true
 ---
 Stir the liquids in a cocktail shaker with ice. Strain into a coupe glass.
 

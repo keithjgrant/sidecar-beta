@@ -21,6 +21,7 @@ tags: [
   egg,
   shaken,
 ]
+tenBottleCandidate: true
 intro: I typically use a London dry gin for this, but nearly any type will work.
 
 ---

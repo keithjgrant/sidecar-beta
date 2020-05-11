@@ -12,6 +12,8 @@ garnish:
 tags: [
 ]
 featured:
+tenBottleBar:
+specialSyrups:
 image:
   url: "/images/drinks/.jpg"
   alt: ""

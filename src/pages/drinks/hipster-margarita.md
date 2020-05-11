@@ -17,7 +17,7 @@ tags: [
   lime,
   shaken,
 ]
-
+tenBottleCandidate: true
 ---
 
 Shake vigorously with plenty of ice. Strain into coupe.

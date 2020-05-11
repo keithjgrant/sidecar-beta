@@ -19,6 +19,7 @@ tags: [
   sweet-vermouth,
   stirred,
 ]
+tenBottleCandidate: true
 ---
 Combine in a shaker with ice. Stir, then strain into a coupe glass.
 

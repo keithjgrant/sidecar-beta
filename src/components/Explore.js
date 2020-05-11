@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import Card from './Card';
 import DrinkList from './DrinkList';
 import ButtonGroup, { Options } from './ButtonGroup';
-
-const Card = styled.div`
-  border: 1px solid var(--card-border);
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  margin-bottom: 1rem;
-`;
 
 const CleanLink = styled(Link)`
   text-decoration: none;

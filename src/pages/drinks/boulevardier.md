@@ -21,6 +21,7 @@ tags: [
   sweet-vermouth,
   stirred,
 ]
+tenBottleCandidate: true
 intro: A close cousin of the [Negroni](/drinks/negroni/). For a more earthy variation, try substituting St. George [Bruto Americano](http://stgeorgespirits.com/spirits/bruto-americano/) for Campari.
 ---
 

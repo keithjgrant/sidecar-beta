@@ -21,7 +21,7 @@ tags: [
   lime,
   shaken,
 ]
-featured: 
+tenBottleCandidate: true 
 intro: This is one of the most unique, complexly-flavored drinks I’ve had. Bourbon can be substituted for the Rye.
 
 ---

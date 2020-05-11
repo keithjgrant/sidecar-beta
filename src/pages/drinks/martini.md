@@ -22,6 +22,7 @@ image:
   url: "/images/drinks/martini.jpg"
   alt: ""
   align: "0% 50%"
+tenBottleCandidate: true
 intro: Everyone has an opinion about martinis, and, I’ll be honest, mine is always changing. So here’s a great starting point. You might want to omit the bitters if you're not using a juniper-forward gin.
 ---
 Add to cocktail shaker with plenty of ice. Stir well, then strain into a martini glass.

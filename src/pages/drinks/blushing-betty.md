@@ -18,6 +18,7 @@ tags: [
   "grapefruit",
   "shaken"
 ]
+tenBottleCandidate: true
 ---
 Shake vigorously with ice. Strain into rocks glass over fresh ice.
 

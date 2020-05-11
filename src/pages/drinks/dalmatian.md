@@ -17,5 +17,6 @@ tags: [
   "black-pepper-syrup",
   "shaken"
 ]
+tenBottleCandidate: true
 ---
 Shake vigorously with ice. Strain into a rocks glass with fresh ice.

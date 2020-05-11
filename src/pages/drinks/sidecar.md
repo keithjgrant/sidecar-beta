@@ -20,6 +20,7 @@ tags: [
   lemon,
   shaken,
 ]
+tenBottleCandidate: true
 ---
 Shake vigorously with ice. Strain into a coupe glass.
 

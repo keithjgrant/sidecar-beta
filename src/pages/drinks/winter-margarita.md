@@ -25,7 +25,7 @@ image:
   url: "/images/drinks/winter-margarita.jpg"
   alt: "Two white cocktails with a frothy top in front of a bottle of mezcal and a bottle of tequila"
   align: "50% 50%"
-
+tenBottleCandidate: true
 ---
 
 [Dry shake](/techniques/shaking#dry-shaking) ingredients in a shaker (no ice). Add ice and shake until well chilled. [Double strain](/techniques/straining#double-straining) into a coupe glass with a salted rim.

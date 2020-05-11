@@ -20,6 +20,7 @@ tags: [
   sweet-vermouth,
   stirred,
 ]
+tenBottleCandidate: true
 intro: The Negroni is quite sweet, but also bitter and complex. A bold, juniper-heavy gin like Tanqueray stands up to the strong flavors of Campari. An orange twist is traditional, but I like it with grapefruit a bit more.
 ---
 Stir with plenty of ice. Strain into a coupe glass. It can also be served over ice in a rocks glass.

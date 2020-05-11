@@ -28,6 +28,7 @@ image:
   url: "/images/drinks/indian-winter.jpg"
   alt: "Closeup photo of the cocktail in a martini glass with a star anise floating on top"
   align: "70% 30%"
+tenBottleCandidate: true
 intro: |
   This uses [honey syrup](/ingredients/simple-syrup/#honey-syrup) infused with cardamom pods.
 

@@ -28,6 +28,7 @@ image:
   url: "/images/drinks/vigo.jpg"
   alt: ""
   align: "50% 20%"
+tenBottleCandidate: true
 intro: I didn’t invent this drink, but I did give it the name.
 
 ---

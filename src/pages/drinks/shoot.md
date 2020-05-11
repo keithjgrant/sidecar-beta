@@ -21,6 +21,7 @@ tags: [
   "ginger",
   "stirred",
 ]
+tenBottleCandidate: true
 intro: |
   This is my recreation of a drink I once had. The original was made with Templeton Rye and Hennessy Cognac.
 ---

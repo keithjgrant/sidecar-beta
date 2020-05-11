@@ -19,6 +19,7 @@ tags: [
   cream,
   shaken,
 ]
+tenBottleCandidate: true
 ---
 Add brandy, cream, and demerara syrup to a cocktail shaker. Shake. Strain into coupe glass.
 

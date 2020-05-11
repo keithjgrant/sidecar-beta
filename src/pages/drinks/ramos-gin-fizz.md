@@ -19,6 +19,8 @@ ingredients: [
 garnish: 3 drops orange flower water
 tags: [
   classic-cocktail,
+  afternoon,
+  refreshing,
   gin,
   old-tom-gin,
   plymouth-gin,

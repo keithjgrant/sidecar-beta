@@ -18,5 +18,6 @@ tags: [
   "classic-cocktail",
   "shaken"
 ]
+tenBottleCandidate: true
 ---
 Add all ingredients to a cocktail shaker with plenty of ice. Shake well and strain into a coupe glass.

@@ -13,12 +13,13 @@ ingredients: [
 ]
 garnish: grated nutmeg
 tags: [
+  ten-bottle-bar,
   sweet,
   brandy,
   egg,
   shaken,
 ]
-featured:
+tenBottleCandidate: true
 intro:
 
 ---

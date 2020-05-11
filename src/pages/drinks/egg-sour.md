@@ -27,6 +27,7 @@ image:
   url: "/images/drinks/egg-sour.jpg"
   alt: "A creamy-looking egg sour, filling a small coupe glass to the brim"
   align: "50% 40%"
+tenBottleCandidate: true
 intro: One of my wintertime favorites
 ---
 Add everything except nutmeg to a cocktail shaker. [Dry shake](/techniques/shaking/#dry-shaking); add ice and shake. [Double-strain](/techniques/straining/#double-straining) into a coupe glass.

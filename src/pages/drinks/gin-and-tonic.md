@@ -15,6 +15,7 @@ garnish:
 tags: [
   ten-bottle-bar,
   refreshing,
+  afternoon,
   gin,
   lime,
   built

@@ -20,6 +20,7 @@ tags: [
   sweet-vermouth,
   stirred,
 ]
+tenBottleCandidate: true
 intro: This is a fun variation on a [Manhattan](/drinks/manhattan/), with tequila in place of the whiskey. Use a high-quality tequila.
 ---
 Stir tequila, vermouth, and bitters with plenty of ice. Strain into a coupe glass.

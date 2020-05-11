@@ -21,6 +21,7 @@ tags: [
   "black-pepper-syrup",
   "shaken",
 ]
+tenBottleCandidate: true
 ---
 Combine a small amount of salt, sugar, and pepper, and rim the the edge of a collins glass with the mixture.
 

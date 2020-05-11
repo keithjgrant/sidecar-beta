@@ -23,6 +23,7 @@ image:
   url: "/images/drinks/el-presidente.jpg"
   alt: ""
   align: "80% 40%"
+tenBottleCandidate: true
 intro: Dry vermouth can be substituited for blanc vermouth (resulting in a slightly dryer drink, naturally).
 ---
 Stir all liquids with ice. Strain into a coupe glass. Garnish with orange twist.

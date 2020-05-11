@@ -49,11 +49,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   });
 
+  const customTagPages = ['ten-bottle-bar'];
+
   tags.forEach((tag) => {
+    if (customTagPages.includes(tag)) {
+      return;
+    }
     createPage({
       path: `/tags/${tag}`,
       component: TagTemplate,
-      context: { tag },
+      context: { tag, contentPath: `/_tags/${tag}` },
     });
   });
 };

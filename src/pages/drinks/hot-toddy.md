@@ -20,7 +20,7 @@ tags: [
   bourbon,
   whiskey,
 ]
-featured:
+tenBottleCandidate: true
 intro:
 
 ---

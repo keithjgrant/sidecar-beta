@@ -14,7 +14,6 @@ ingredients: [
 ]
 garnish:
 tags: [
-  ten-bottle-bar,
   fall,
   bourbon,
   maple-syrup,
@@ -22,6 +21,7 @@ tags: [
   egg,
   shaken,
 ]
+tenBottleCandidate: true
 ---
 
 [Dry shake](/techniques/shaking/#dry-shaking) in a shaker without ice. Add ice and shake vigorously. [Double strain](/techniques/straining/#double-straining) into a coupe.

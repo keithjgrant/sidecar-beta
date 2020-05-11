@@ -28,6 +28,7 @@ image:
   url: "/images/drinks/angel-city-fizz.jpg"
   alt: "Narrow glass filled with a golden cocktail, the top half of which is white froth"
   align: "40% 15%"
+tenBottleCandidate: true
 intro: Created by [The Educated Barfly](https://www.youtube.com/watch?v=7HOqstAAZ58)
 ---
 Add all ingredients except IPA in a cocktail shaker.

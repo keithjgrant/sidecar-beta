@@ -22,6 +22,7 @@ tags: [
   egg,
   shaken,
 ]
+tenBottleCandidate: true
 intro: The burnt sugar syrup is my own addition.
 
 ---

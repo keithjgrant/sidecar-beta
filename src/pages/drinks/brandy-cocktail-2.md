@@ -19,6 +19,7 @@ tags: [
   "dry-curacao",
   "stirred"
 ]
+tenBottleCandidate: true
 ---
 
 Stir well with ice. Strain into a coupe glass.

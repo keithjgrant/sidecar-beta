@@ -24,6 +24,7 @@ image:
   url: "/images/drinks/monkey-grass.jpg"
   alt: "Cocktail in a coupe glass, garnished with a lime wheel. A jalapeño is on the table in front of it."
   align: "50% 25%"
+tenBottleCandidate: true
 intro: This is my take on a traditional Gimlet.
 ---
 Shake gin, lime juice, and jalapeño syrup with ice. Strain into a coupe glass.

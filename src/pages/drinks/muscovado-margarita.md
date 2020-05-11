@@ -21,7 +21,7 @@ tags: [
   muscovado-syrup,
   shaken,
 ]
-featured:
+tenBottleCandidate: true
 intro: |
   Use muscovado sugar to make a [simple syrup](/ingredients/simple-syrup) for a deep rich flavor.
 

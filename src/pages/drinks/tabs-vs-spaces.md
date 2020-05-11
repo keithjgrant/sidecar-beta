@@ -25,6 +25,7 @@ image:
   url: "/images/drinks/tabs-vs-spaces.jpg"
   alt: ""
   align: "80% 40%"
+tenBottleCandidate: true
 intro: It’s a programmer joke. I’m a nerd.
 
 ---

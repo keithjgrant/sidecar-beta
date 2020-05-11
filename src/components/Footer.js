@@ -6,6 +6,10 @@ const Wrapper = styled.footer`
   border-top: 1px solid var(--gray-4);
   color: var(--gray-6);
   font-size: 0.8rem;
+
+  a {
+    color: inherit;
+  }
 `;
 
 const Split = styled.div`

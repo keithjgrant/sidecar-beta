@@ -18,7 +18,7 @@ tags: [
   mezcal,
   stirred,
 ]
-featured:
+tenBottleCandidate: true
 intro:
 
 ---

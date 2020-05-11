@@ -2,7 +2,7 @@
 title: "Spiced Rum Milk Punch"
 path: "/drinks/spiced-rum-milk-punch"
 date: 2018-12-10T12:40:11-05:00
-glass: mug
+glass: rocks
 sweetness: 3
 booziness: 1
 family: flip

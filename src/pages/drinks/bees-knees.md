@@ -19,6 +19,7 @@ tags: [
   "honey",
   "shaken"
 ]
+tenBottleCandidate: true
 ---
 Shake vigorously with plenty of ice. Strain into coupe glass.
 

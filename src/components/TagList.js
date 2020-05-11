@@ -17,11 +17,13 @@ const TagLink = styled(Link)`
 export default function TagList({ tags }) {
   return (
     <List>
-      {tags.map((tag) => (
-        <li key={tag}>
-          <TagLink to={`/tags/${tag}`}>{tag}</TagLink>
-        </li>
-      ))}
+      {tags.map((tag) => {
+        return (
+          <li key={tag}>
+            <TagLink to={`/tags/${tag}`}>{tag}</TagLink>
+          </li>
+        );
+      })}
     </List>
   );
 }

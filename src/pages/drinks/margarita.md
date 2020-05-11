@@ -22,6 +22,7 @@ tags: [
   lime,
   shaken,
 ]
+tenBottleCandidate: true
 intro: If you’re feeling extra adventurous, muddle one or two slices of jalapeño in your shaker before adding the ingredients.
 
 ---

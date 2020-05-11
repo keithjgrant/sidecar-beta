@@ -16,13 +16,14 @@ ingredients: [
 garnish:
 tags: [
   sidecar-original,
-  smoke,
+  smokey,
   scotch,
   whiskey,
   apple-brandy,
   orange-liqueur,
   honey,
   lemon,
+  shaken,
 ]
 featured: true
 intro:
