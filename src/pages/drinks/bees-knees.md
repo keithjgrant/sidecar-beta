@@ -9,7 +9,7 @@ family: sour
 ingredients: [
   "2 oz gin",
   "¾ oz lemon juice",
-  "¾ oz honey syrup"
+  "¾ oz [honey syrup](/ingredients/simple-syrup/#honey-syrup)"
 ]
 garnish: lemon twist
 tags: [
@@ -20,6 +20,6 @@ tags: [
   "shaken"
 ]
 ---
-Add gin, lemon juice, and [honey syrup](/ingredients/simple-syrups/#honey-syrup) to a cocktail shaker. Shake. Strain into coupe glass.
+Shake vigorously with plenty of ice. Strain into coupe glass.
 
 Garnish with lemon twist.
