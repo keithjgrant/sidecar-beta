@@ -65,31 +65,57 @@ export const Button = styled.button`
   }
 `;
 
-const RadioLabel = styled.label`
-  ${buttonStyles}
+const RadioButton = styled.button`
+  padding: 0.3em 0.5em;
+  border: 1px solid var(--orange-6);
+  border-radius: 0;
+  outline: 0;
+  font-weight: 400;
+  color: var(--gray-8);
+  color: inherit;
+  background-color: var(--gray-dark);
+  cursor: pointer;
 
-  ${(props) => (props.disabled ? disabledStyles : null)}
+  &:first-child {
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+  }
+
+  &:last-child {
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+  }
+
+  &:hover {
+    color: var(--white);
+  }
+
+  &:focus {
+    outline: var(--focus-outline);
+  }
+
+  &[disabled] {
+    cursor: default;
+    color: var(--white);
+    background: hsl(315, 3.2%, 20%);
+  }
 `;
 
-const Radio = styled.input`
-  display: none;
-`;
-
-export function Options({ name, value, options, onChange }) {
+export function Options({ value, options, onChange }) {
   return (
-    <>
+    <div>
       {options.map((val) => (
-        <RadioLabel key={val} disabled={value === val}>
-          <Radio
-            type="radio"
-            name={name}
-            value={val}
-            checked={value === val}
-            onChange={(event) => onChange(event.target.value)}
-          />
+        <RadioButton
+          key={val}
+          disabled={value === val}
+          onClick={(e) => {
+            e.preventDefault();
+            onChange(val);
+          }}
+        >
           {val}
-        </RadioLabel>
+        </RadioButton>
       ))}
-    </>
+    </div>
   );
 }

@@ -38,4 +38,7 @@
   --card-border: rgba(255, 255, 255, 0.1);
 
   --gap-size: 0.6rem;
+
+  --input-padding: ;
+  --focus-outline: 3px solid hsla(var(--orange-hue), 85%, 70%, 0.7);
 }

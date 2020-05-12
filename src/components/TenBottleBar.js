@@ -1,20 +1,30 @@
 import React, { useState } from 'react';
+import { useLocation, useNavigate } from '@reach/router';
+import qs from 'querystring';
+import styled from 'styled-components';
 import Card from './Card';
-import RadioGroup, { RadioOptions } from './RadioGroup';
-import Select, { SelectOptions } from './Select';
+import { Options } from './ButtonGroup';
+import Select from './Select';
 import Checkbox from './Checkbox';
 import DrinkList from './DrinkList';
 
-const bottleOptions = [
+const nbsp = '\u00A0';
+
+const Form = styled.form`
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-gap: var(--gap-size) 3em;
+`;
+
+const excludeTags = [
   'absinthe',
   'aged-rum',
   'apple-brandy',
-  'bourbon',
   'benedictine',
   'campari',
   'drambuie',
   'elderflower-liqueur',
-  'genever gin',
+  'genever-gin',
   'green-chartreuse',
   'maraschino-liqueur',
   'mezcal',
@@ -22,12 +32,21 @@ const bottleOptions = [
 ];
 
 export default function TenBottleBar({ allDrinks }) {
-  const [vermouth, setVermouth] = useState('sweet');
-  const [tenthBottle, setTenthBottle] = useState('none');
-  const [addSyrups, setAddSyrups] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const query = qs.parse(location.search.replace(/^\?/, ''));
 
-  const bottleTag = tenthBottle.toLowerCase().replace(' ', '-');
-  const excluded = bottleOptions.filter((b) => b != bottleTag);
+  const [vermouth, setVermouth] = useState(
+    ['sweet', 'blanc', 'dry'].includes(query.vermouth)
+      ? query.vermouth
+      : 'sweet'
+  );
+  const [tenthBottle, setTenthBottle] = useState(
+    excludeTags.includes(query.bottle) ? query.bottle : 'none'
+  );
+  const [addSyrups, setAddSyrups] = useState(query.syrups === '1');
+
+  const excluded = excludeTags.filter((b) => b != tenthBottle);
   const drinks = allDrinks.filter((drink) => {
     if (drink.tags.includes('ten-bottle-bar')) {
       if (vermouth === 'sweet' || !drink.tags.includes('sweet-vermouth'))
@@ -45,40 +64,72 @@ export default function TenBottleBar({ allDrinks }) {
   return (
     <>
       <Card>
-        <RadioGroup label="Type of vermouth">
-          <RadioOptions
-            options={['sweet', 'blanc', 'dry']}
+        <Form>
+          <label css="text-align: right">
+            Type{nbsp}of{nbsp}vermouth
+          </label>
+          <Options
+            name="vermouth"
             value={vermouth}
-            onChange={setVermouth}
+            options={['sweet', 'blanc', 'dry']}
+            onChange={(value) => {
+              setVermouth(value);
+              const q = qs.stringify({
+                ...query,
+                vermouth: value,
+              });
+              navigate(`${location.pathname}?${q}`, { replace: true });
+            }}
           />
-        </RadioGroup>
-        <Select label="Tenth bottle" onChange={setTenthBottle}>
-          <SelectOptions
+          <label htmlFor="tenth-bottle" css="text-align: right">
+            Tenth{nbsp}bottle
+          </label>
+          <Select
+            id="tenth-bottle"
+            css="justify-self: start"
             options={[
-              'none',
-              'absinthe',
-              'aged rum',
-              'apple brandy',
-              'bourbon',
-              'Benedictine',
-              'Campari',
-              'drambuie',
-              'elderflower liqueur',
-              'genever gin',
-              'Green Chartreuse',
-              'maraschino liqueur',
-              'mezcal',
-              'vodka',
+              ['none', 'None'],
+              ['absinthe', 'Absinthe'],
+              ['aged-rum', 'Aged Rum'],
+              ['apple-brandy', 'Apple Brandy'],
+              ['benedictine', 'Bénédictine'],
+              ['campari', 'Campari'],
+              // ['drambuie', 'Drambuie'],
+              ['elderflower-liqueur', 'Elderflower Liqueur'],
+              ['genever-gin', 'Genever Gin'],
+              ['green-chartreuse', 'Green Chartreuse'],
+              ['maraschino-liqueur', 'Maraschino Liqueur'],
+              ['mezcal', 'Mezcal'],
+              ['vodka', 'Vodka'],
             ]}
-            onChange={setTenthBottle}
+            value={tenthBottle}
+            onChange={(value) => {
+              setTenthBottle(value);
+              const q = qs.stringify({
+                ...query,
+                bottle: value,
+              });
+              navigate(`${location.pathname}?${q}`, { replace: true });
+            }}
           />
-        </Select>
-        <Checkbox
-          id="include-syrups"
-          label={'Include drinks that use specialty homemade syrups'}
-          checked={addSyrups}
-          onChange={setAddSyrups}
-        />
+          <div css="grid-column: 1 / -1">
+            <Checkbox
+              id="include-syrups"
+              label={
+                'Include drinks that use homemade specialty/infused syrups'
+              }
+              checked={addSyrups}
+              onChange={(value) => {
+                setAddSyrups(value);
+                const q = qs.stringify({
+                  ...query,
+                  syrups: 0 + value,
+                });
+                navigate(`${location.pathname}?${q}`, { replace: true });
+              }}
+            />
+          </div>
+        </Form>
       </Card>
       <DrinkList drinks={drinks} />
     </>
@@ -110,9 +161,9 @@ function vermouthMatches(type, drink) {
   return !tag || tag === `${type}-vermouth`;
 }
 
-function tenthBottleMatches(excludeTags, drink) {
-  for (let i = 0; i < excludeTags.length; i++) {
-    if (drink.tags.includes(excludeTags[i])) {
+function tenthBottleMatches(exclude, drink) {
+  for (let i = 0; i < exclude.length; i++) {
+    if (drink.tags.includes(exclude[i])) {
       return false;
     }
   }

@@ -53,5 +53,5 @@ svg {
 }
 
 :focus {
-  outline: 3px solid hsla(var(--orange-hue), 85%, 70%, 0.7);
+  outline: var(--focus-outline);
 }
