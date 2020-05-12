@@ -39,6 +39,8 @@
 
   --gap-size: 0.6rem;
 
-  --input-padding: ;
   --focus-outline: 3px solid hsla(var(--orange-hue), 85%, 70%, 0.7);
+
+  --input-padding: 0.2em 0.5em;
+  --input-border: 1px solid var(--orange-7);
 }

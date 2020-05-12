@@ -16,7 +16,7 @@ export default function TenBottleBarPage({ data: { drinks } }) {
           If you’ve stocked your{' '}
           <Link to="/ingredients/ten-bottle-bar">Ten Bottle Bar</Link>, you can
           make any of the drinks listed here. Use the options below to filter
-          the results to match your preference.
+          the results to match your bar.
         </p>
       </SimpleContent>
       <TenBottleBar

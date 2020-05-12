@@ -8,13 +8,19 @@ body {
   background-repeat: no-repeat;
   background-color: var(--gray-dark);
   background-image: url(/images/paisley-left.svg);
-  background-size: 500px;
-  background-position: left bottom;
+  background-size: 300px;
+  background-position: left calc(100vh - 515px);
   background-repeat: no-repeat;
   font-family: var(--font-body);
   font-weight: 300;
   line-height: 1.5;
   overflow-x: hidden;
+}
+@media (min-width: 600px) {
+  body {
+    background-size: 500px;
+    background-position: left calc(100vh - 880px);
+  }
 }
 
 a {
@@ -39,8 +45,14 @@ h3 {
   font-weight: 400;
 }
 
-button {
+button,
+input,
+select {
   line-height: inherit;
+}
+
+label:hover {
+  user-select: none;
 }
 
 svg {
@@ -54,4 +66,15 @@ svg {
 
 :focus {
   outline: var(--focus-outline);
+}
+
+.button {
+  padding: var(--input-padding);
+  border: 1px solid var(--brand-primary);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover {
+  color: var(--white);
 }

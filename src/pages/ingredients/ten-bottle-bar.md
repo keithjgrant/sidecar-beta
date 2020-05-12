@@ -17,7 +17,7 @@ Whenever a something is about to go empty, pick up a replacement bottle.
 (In practice, you’ll likely drink a bit more when you have a better selection at home, so don't trust this too far).
 Start with a modest supply, and every now and then add something new to your shelf.
 
-Once you have everything on this list, you can make any drink on Sidecar tagged [ten-bottle-bar](/tags/ten-bottle-bar).
+<a href="/tags/ten-bottle-bar" class="button">Drinks you can make with this ten bottle bar</a>
 
 ## Rye Whiskey
 I can already hear the protests over the lack of bourbon on this list.
@@ -135,4 +135,6 @@ If you start with a solid base like this, it’s easy to add something new every
 Before you know it, your ten-bottle-bar will be a twenty-bottle-bar and you’ll be able to choose from hundreds of cocktail options.
 
 One last thing: get yourself a several lemons and limes, and at least one orange with a brightly colored, thick, bumpy peel for twists.
-Make yourself a [syrup](/ingredients/simple-syrup) or two, and you should be [ready to go](/tags/ten-bottle-bar).
+Make yourself a [syrup](/ingredients/simple-syrup) or two, and you should be ready to go.
+
+<a href="/tags/ten-bottle-bar" class="button">Drinks you can make with these ten bottles</a>

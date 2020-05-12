@@ -15,12 +15,12 @@ const Container = styled.div`
 `;
 
 const StyledSelect = styled.select`
-  padding: 0.3em 1.5em 0.3em 0.5em;
-  border: 1px solid var(--orange-6);
+  padding: var(--input-padding);
+  padding-right: 1.5em;
+  border: var(--input-border);
   border-radius: var(--border-radius);
   outline: 0;
   font-weight: 400;
-  color: var(--gray-8);
   color: inherit;
   background-color: var(--gray-dark);
   cursor: pointer;
@@ -29,7 +29,7 @@ const StyledSelect = styled.select`
 
 const Arrow = styled.div`
   position: absolute;
-  top: 0.7em;
+  top: 0.8em;
   right: 0.5em;
   width: 0;
   height: 0;

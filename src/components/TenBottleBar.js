@@ -1,19 +1,26 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from '@reach/router';
 import qs from 'querystring';
-import styled from 'styled-components';
+import { css } from 'styled-components';
 import Card from './Card';
-import { Options } from './ButtonGroup';
-import Select from './Select';
-import Checkbox from './Checkbox';
+import {
+  GridForm,
+  GridFormLabel,
+  Checkbox,
+  SplitLabel,
+  ButtonGroup,
+  Select,
+} from './forms';
 import DrinkList from './DrinkList';
 
-const nbsp = '\u00A0';
+const checkboxStyles = css`
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
 
-const Form = styled.form`
-  display: grid;
-  grid-template-columns: min-content auto;
-  grid-gap: var(--gap-size) 3em;
+  @media (min-width: 500px) {
+    grid-column: 2;
+  }
 `;
 
 const excludeTags = [
@@ -64,11 +71,9 @@ export default function TenBottleBar({ allDrinks }) {
   return (
     <>
       <Card>
-        <Form>
-          <label css="text-align: right">
-            Type{nbsp}of{nbsp}vermouth
-          </label>
-          <Options
+        <GridForm>
+          <GridFormLabel>Type of vermouth</GridFormLabel>
+          <ButtonGroup
             name="vermouth"
             value={vermouth}
             options={['sweet', 'blanc', 'dry']}
@@ -81,15 +86,13 @@ export default function TenBottleBar({ allDrinks }) {
               navigate(`${location.pathname}?${q}`, { replace: true });
             }}
           />
-          <label htmlFor="tenth-bottle" css="text-align: right">
-            Tenth{nbsp}bottle
-          </label>
+          <GridFormLabel htmlFor="tenth-bottle">Tenth bottle</GridFormLabel>
           <Select
             id="tenth-bottle"
             css="justify-self: start"
             options={[
               ['none', 'None'],
-              ['absinthe', 'Absinthe'],
+              // ['absinthe', 'Absinthe'],
               ['aged-rum', 'Aged Rum'],
               ['apple-brandy', 'Apple Brandy'],
               ['benedictine', 'Bénédictine'],
@@ -112,24 +115,25 @@ export default function TenBottleBar({ allDrinks }) {
               navigate(`${location.pathname}?${q}`, { replace: true });
             }}
           />
-          <div css="grid-column: 1 / -1">
-            <Checkbox
-              id="include-syrups"
-              label={
-                'Include drinks that use homemade specialty/infused syrups'
-              }
-              checked={addSyrups}
-              onChange={(value) => {
-                setAddSyrups(value);
-                const q = qs.stringify({
-                  ...query,
-                  syrups: 0 + value,
-                });
-                navigate(`${location.pathname}?${q}`, { replace: true });
-              }}
-            />
-          </div>
-        </Form>
+          <Checkbox
+            id="include-syrups"
+            css={checkboxStyles}
+            checked={addSyrups}
+            onChange={(value) => {
+              setAddSyrups(value);
+              const q = qs.stringify({
+                ...query,
+                syrups: 0 + value,
+              });
+              navigate(`${location.pathname}?${q}`, { replace: true });
+            }}
+            label={
+              <SplitLabel htmlFor="include-syrups" heading="Specialty syrups">
+                Include drinks that use homemade specialty or infused syrups
+              </SplitLabel>
+            }
+          />
+        </GridForm>
       </Card>
       <DrinkList drinks={drinks} />
     </>

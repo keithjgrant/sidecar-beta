@@ -1,26 +1,7 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-const Controls = styled.div`
-  color: var(--gray-8);
-`;
-
-const Group = styled.div`
-  margin-bottom: 1em;
-  display: inline-flex;
-  flex-wrap: wrap;
-`;
-
-export default function ButtonGroup({ label, children }) {
-  return (
-    <Controls>
-      {label ? <span>{label}: </span> : null}
-      <Group>{children}</Group>
-    </Controls>
-  );
-}
-
-const buttonStyles = css`
+export const Button = styled.button`
   padding-right: 0.5em;
   padding-left: 0.5em;
   background: transparent;
@@ -45,29 +26,21 @@ const buttonStyles = css`
     border-color: var(--brand-primary);
     color: var(--orange-7);
   }
-`;
-
-const disabledStyles = css`
-  color: var(--brand-primary);
-  cursor: default;
-
-  &:hover {
-    color: var(--brand-primary);
-    border-color: var(--gray-light);
-  }
-`;
-
-export const Button = styled.button`
-  ${buttonStyles}
 
   &&:disabled {
-    ${disabledStyles}
+    color: var(--brand-primary);
+    cursor: default;
+
+    &:hover {
+      color: var(--brand-primary);
+      border-color: var(--gray-light);
+    }
   }
 `;
 
 const RadioButton = styled.button`
-  padding: 0.3em 0.5em;
-  border: 1px solid var(--orange-6);
+  padding: var(--input-padding);
+  border: var(--input-border);
   border-radius: 0;
   outline: 0;
   font-weight: 400;
@@ -101,7 +74,7 @@ const RadioButton = styled.button`
   }
 `;
 
-export function Options({ value, options, onChange }) {
+export default function ButtonGroup({ value, options, onChange }) {
   return (
     <div>
       {options.map((val) => (

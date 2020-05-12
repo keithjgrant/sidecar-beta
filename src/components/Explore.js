@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Card from './Card';
+import { GridForm, GridFormLabel, ButtonGroup } from './forms';
 import DrinkList from './DrinkList';
-import ButtonGroup, { Options } from './ButtonGroup';
-
-const CleanLink = styled(Link)`
-  text-decoration: none;
-`;
 
 /*
  * TODO: Add (collapsible) "in my bar" filters
@@ -20,8 +15,9 @@ export default function Explore({ drinks }) {
   return (
     <>
       <Card>
-        <ButtonGroup label="Base spirit">
-          <Options
+        <GridForm>
+          <GridFormLabel>Base Spirit</GridFormLabel>
+          <ButtonGroup
             name="base"
             value={base}
             options={[
@@ -36,9 +32,8 @@ export default function Explore({ drinks }) {
             ]}
             onChange={setBase}
           />
-        </ButtonGroup>
-        <ButtonGroup label="Drink family">
-          <Options
+          <GridFormLabel>Drink family</GridFormLabel>
+          <ButtonGroup
             name="family"
             value={family}
             options={[
@@ -53,8 +48,12 @@ export default function Explore({ drinks }) {
             ]}
             onChange={setFamily}
           />
-        </ButtonGroup>
-        <CleanLink to="/tags">Browse tags »</CleanLink>
+        </GridForm>
+        <div>
+          <Link to="/tags" className="button">
+            Browse tags
+          </Link>
+        </div>
       </Card>
       <DrinkList drinks={filtered} />
     </>

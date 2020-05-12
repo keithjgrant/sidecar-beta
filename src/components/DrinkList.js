@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import ButtonGroup, { Options } from './ButtonGroup';
+import { ButtonGroup } from './forms';
 import CocktailThumbnail from './CocktailThumbnail';
 
 const List = styled.ul`
+  margin: 0;
   padding-left: 0;
   list-style-type: none;
 
@@ -99,6 +100,17 @@ function dateSort(a, b) {
   return 0;
 }
 
+const Container = styled.div`
+  margin-bottom: var(--gap-size);
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+
+  & > *:not(:first-child) {
+    margin-left: var(--gap-size);
+  }
+`;
+
 export default function DrinkList({ drinks }) {
   const [sortBy, setSortBy] = useState('name');
 
@@ -106,16 +118,15 @@ export default function DrinkList({ drinks }) {
     sortBy === 'last added' ? drinks.sort(dateSort) : drinks.sort(alphaSort);
   return (
     <>
-      <div css="text-align: right">
-        <ButtonGroup label="Sort by">
-          <Options
-            name="sort"
-            value={sortBy}
-            options={['name', 'last added']}
-            onChange={setSortBy}
-          />
-        </ButtonGroup>
-      </div>
+      <Container>
+        <div>Sort by</div>
+        <ButtonGroup
+          name="sort"
+          value={sortBy}
+          options={['name', 'last added']}
+          onChange={setSortBy}
+        />
+      </Container>
       {!sorted.length ? (
         <p css="padding: 0 1em">No drinks matched your query</p>
       ) : null}
