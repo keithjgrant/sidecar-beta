@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import glasses from './svg/glasses';
+import glasses from '../svg/glasses';
 
 const ThumbnailWrapper = styled.div`
   img {
