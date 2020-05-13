@@ -34,11 +34,11 @@ export default function DrinkList({ drinks }) {
   const query = qs.parse(location.search.replace(/^\?/, ''));
 
   const [sortBy, setSortBy] = useState(
-    ['name', 'last added'].includes(query.sort) ? query.sort : 'name'
+    ['name', 'date'].includes(query.sort) ? query.sort : 'name'
   );
 
   const sorted =
-    sortBy === 'last added' ? drinks.sort(dateSort) : drinks.sort(alphaSort);
+    sortBy === 'date' ? drinks.sort(dateSort) : drinks.sort(alphaSort);
   return (
     <>
       <Container>
@@ -46,7 +46,10 @@ export default function DrinkList({ drinks }) {
         <ButtonGroup
           name="sort"
           value={sortBy}
-          options={['name', 'last added']}
+          options={[
+            ['name', 'name'],
+            ['date', 'most recent'],
+          ]}
           onChange={(value) => {
             setSortBy(value);
             const q = qs.stringify({ ...query, sort: value });
