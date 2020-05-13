@@ -29,22 +29,21 @@ const Navbar = styled.div`
   }
 `;
 
-const DesktopOnlyLink = styled(Link)`
-  && {
-    @media (max-width: 23em) {
-      display: none;
-    }
-  }
-`;
+// const DesktopOnlyLink = styled(Link)`
+//   && {
+//     @media (max-width: 23em) {
+//       display: none;
+//     }
+//   }
+// `;
 
 export default function Nav() {
   return (
     <Navbar>
       <Link to="/drinks">Drinks</Link>
-      <Link to="/explore">Explore</Link>
       <Link to="/ingredients">Ingredients</Link>
       <Link to="/techniques">Techniques</Link>
-      <DesktopOnlyLink to="/about">About</DesktopOnlyLink>
+      <Link to="/about">About</Link>
     </Navbar>
   );
 }

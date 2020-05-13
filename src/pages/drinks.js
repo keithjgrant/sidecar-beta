@@ -3,14 +3,14 @@ import { graphql } from 'gatsby';
 import DrinkListLayout from '../components/layouts/DrinkListLayout';
 import PageHeading from '../components/PageHeading';
 import Meta from '../components/Meta';
-import DrinkList from '../components/DrinkList';
+import Explore from '../components/Explore';
 
 export default function DrinksPage({ data: { drinks } }) {
   return (
     <DrinkListLayout>
       <Meta title="Sidecar: All Drinks" />
       <PageHeading>All Drinks</PageHeading>
-      <DrinkList drinks={drinks.edges.map((item) => item.node.frontmatter)} />
+      <Explore drinks={drinks.edges.map((item) => item.node.frontmatter)} />
     </DrinkListLayout>
   );
 }
@@ -28,6 +28,8 @@ export const pageQuery = graphql`
             path
             date(formatString: "DD MMM YYYY")
             glass
+            family
+            tags
             image {
               url
               alt
