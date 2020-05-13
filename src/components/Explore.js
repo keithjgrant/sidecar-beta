@@ -65,7 +65,7 @@ export default function Explore({ drinks }) {
         </GridForm>
         <div>
           <Link to="/tags" className="button">
-            Browse tags
+            Browse tags...
           </Link>
         </div>
       </Card>

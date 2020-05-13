@@ -8,7 +8,6 @@ const RadioButton = styled.button`
   outline: 0;
   font-weight: 400;
   color: var(--gray-8);
-  color: inherit;
   background-color: var(--gray-dark);
   cursor: pointer;
   box-shadow: 0 4px 4px hsla(315, 5%, 7%, 0.4);
@@ -24,6 +23,7 @@ const RadioButton = styled.button`
   }
 
   &:hover {
+    color: var(--brand-primary);
     color: var(--white);
     box-shadow: none;
   }
@@ -34,7 +34,7 @@ const RadioButton = styled.button`
 
   &[disabled] {
     cursor: default;
-    color: var(--white);
+    color: var(--brand-primary);
     background: hsl(315, 3.2%, 20%);
     box-shadow: none;
   }
