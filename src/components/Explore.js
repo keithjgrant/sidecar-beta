@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import { useLocation, useNavigate } from '@reach/router';
+import qs from 'querystring';
 import Card from './Card';
 import { GridForm, GridFormLabel, ButtonGroup } from './forms';
 import DrinkList from './DrinkList';
@@ -8,8 +10,12 @@ import DrinkList from './DrinkList';
  * TODO: Add (collapsible) "in my bar" filters
  */
 export default function Explore({ drinks }) {
-  const [base, setBase] = useState('all');
-  const [family, setFamily] = useState('all');
+  const location = useLocation();
+  const navigate = useNavigate();
+  const query = qs.parse(location.search.replace(/^\?/, ''));
+
+  const [base, setBase] = useState(query.base || 'all');
+  const [family, setFamily] = useState(query.family || 'all');
 
   const filtered = drinks.filter(byBase(base)).filter(byFamily(family));
   return (
@@ -30,7 +36,11 @@ export default function Explore({ drinks }) {
               'vodka',
               'whiskey',
             ]}
-            onChange={setBase}
+            onChange={(value) => {
+              setBase(value);
+              const q = qs.stringify({ ...query, base: value });
+              navigate(`${location.pathname}?${q}`, { replace: true });
+            }}
           />
           <GridFormLabel>Drink family</GridFormLabel>
           <ButtonGroup
@@ -46,7 +56,11 @@ export default function Explore({ drinks }) {
               'sidecar',
               'sour',
             ]}
-            onChange={setFamily}
+            onChange={(value) => {
+              setFamily(value);
+              const q = qs.stringify({ ...query, family: value });
+              navigate(`${location.pathname}?${q}`, { replace: true });
+            }}
           />
         </GridForm>
         <div>
