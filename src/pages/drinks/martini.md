@@ -13,18 +13,24 @@ ingredients: [
 ]
 garnish: lemon twist
 tags: [
-  "gin",
-  "dry-vermouth",
-  "classic-cocktail",
-  "stirred"
+  classic-cocktail,
+  gin,
+  dry-vermouth,
+  stirred,
 ]
 image:
   url: "/images/drinks/martini.jpg"
   alt: ""
   align: "0% 50%"
 tenBottleCandidate: true
-intro: Everyone has an opinion about martinis, and, I’ll be honest, mine is always changing. So here’s a great starting point. You might want to omit the bitters if you're not using a juniper-forward gin.
+intro: |
+  Everyone has an opinion about martinis, and, I’ll be honest, mine is always changing.
+  So here’s a great starting point.
+
+  Consider your choice of gin.
+  I recommend Plymouth.
+  If it’s dry and juniper-forward like Tanqueray, you might want to omit the bitters and use an olive instead of a twist.
 ---
-Add to cocktail shaker with plenty of ice. Stir well, then strain into a martini glass.
+Add to cocktail shaker with plenty of ice. Stir well, then strain into a martini glass or Nick and Nora.
 
 Garnish with a lemon twist.

@@ -26,14 +26,14 @@ Beefeater is versatile (and affordable) option.
 It is the go-to for many bartenders.
 You can use it in just about anything that calls for a london dry gin.
 
-[Drinks tagged london-dry-gin](/tags/london-dry-gin/)
+<a href="/tags/london-dry-gin" class="button">Drinks that use London Dry gin</a>
 
 ## Old Tom Gin
 *Old Tom* gin, while similar, is notably sweeter than a London Dry gin. It works well in a [martinez](/drinks/martinez).
 
 Look for Hayman’s or Ransom brands.
 
-[Drinks tagged old-tom-gin](/tags/old-tom-gin/)
+<a href="/tags/old-tom-gin" class="button">Drinks that use Old Tom gin</a>
 
 ## Genever Gin
 For something completely different, turn to *Genever* (or *Jenever* or *Dutch Style*) Gin.
@@ -47,7 +47,7 @@ The names *New American* or *International* style may be applied to similar gins
 
 Bols Genever is a well-known Genever-style gin.
 
-[Drinks tagged genever-gin](/tags/genever-gin/)
+<a href="/tags/genever-gin" class="button">Drinks that use Genever gin</a>
 
 ## Other gins
 Some gins simply defy categorization.
@@ -68,6 +68,6 @@ This is my personal favorite gin, though it certainly does not work in every gin
 
 If you have Aviation available, try a [pilot’s license](/drinks/pilots-license).
 
-### Hendrick’S
+### Hendrick’s
 Hendrick’s is another spirit that helped the modern rebirth of gin.
 Cucumber is the dominant flavor, but it is balanced out with a blend of other botanicals and citrus.

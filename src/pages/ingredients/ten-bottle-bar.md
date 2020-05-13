@@ -38,28 +38,22 @@ The [variety of gins available](/ingredients/gin) is enormous, and some drinks r
 Start with a versatile bottle: a London Dry style gin, but one that isn’t too intensely juniper heavy.
 
 For this, I recommend Beefeater ($15–20).
-It’s not my favorite, but it’s quite versatile.
-Plymouth, while not a London Dry, is probably a safe bet as well. I typically stock Tanqueray, but this is a very juniper-focused gin.
+It’s not my absolute top selection, but it works in almost any drink that calls for gin.
+Plymouth, while not a London Dry, is probably a safe bet as well. I typically stock Tanqueray, but this is a very juniper-heavy gin.
 I get away with it because I keep one or two milder options in my bar for when I need them.
 
 ## (Sweet) Vermouth
 Keep a bottle of [vermouth](/ingredients/vermouth) in your fridge.
-And keep track of how old it is — it’s only good for a few months once opened.
+And keep track of how old it is. It’s only good for a few months once opened.
 
-I recommend you start with a sweet vermouth.
+I recommend you start with a sweet vermouth — then rotate it with the other styles when you need to replace the bottle.
 Don’t go to the little liquor store on the corner for this: find the biggest store with the best selection in your town.
 Of everything on this list, this is the one item to spend a little more on.
 Under no circumstances should you buy Martini & Rossi sweet vermouth.
-My favorite is Carpano Antica Formula, followed by Cocchi di Torino, then Dolin Rouge.
+Cocchi di Torino is a nice versatile choice.
 
-Antica Formula is a bit bold in flavor (and a bit pricey), however.
-Some would say this makes it too strong for balancing with lighter spirits like gin — I don’t necessarily find this to be the case, but Cocchi is probably the most versatile of the three.
-
-Because it goes bad, don’t try to stock every style of vermouth at once.
-Instead, when you run out, consider swapping in a different style.
-Try a blanc vermouth like Dolin Blanc.
-Or go for a traditional dry vermouth like Noilly Prat.
-Though I’ve found dry vermouth just isn’t used in as many drinks outside a classic martini.
+When you’re ready to rotate it out, try a blanc vermouth like Dolin Blanc.
+Or go for a traditional dry vermouth like Dolin dry, though I’ve found dry vermouth just isn’t used in as many drinks outside a classic martini.
 Sweet vermouth is definitely the style I use the most.
 
 ## Brandy
@@ -76,8 +70,8 @@ This should be your cheapest item on the list.
 Get a bottle of Cruzan or similar for around $10.
 
 This is the one item I was most reluctant to put on this list.
-I honestly don’t make a whole variety of drinks with this (I use a aged rum more frequently).
-But this will come in handy if you get into the world of Tiki drinks, which is something I haven’t explored a whole lot.
+I personally don’t make a large variety of drinks with this — I use a aged rum more frequently —
+but this will come in handy if you get into the world of Tiki drinks.
 And if you’ve never had a [classic daiquiri](/drinks/daiquiri), now is your chance.
 
 When you run out, you can certainly swap in a spiced rum or a nice aged rum.
