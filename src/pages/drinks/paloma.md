@@ -5,7 +5,7 @@ date: 2019-10-20T15:10:56-08:00
 glass: collins
 sweetness: 3
 booziness: 1
-family: highball
+family: fizz
 ingredients: [
   "2 oz tequila",
   "½ oz lime juice",

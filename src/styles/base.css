@@ -72,6 +72,9 @@ svg {
   padding: var(--input-padding);
   border: 1px solid var(--brand-primary);
   border-radius: var(--border-radius);
+  background-color: var(--gray-dark);
+  color: var(--brand-primary);
+  font-weight: 400;
   text-decoration: none;
   cursor: pointer;
 }

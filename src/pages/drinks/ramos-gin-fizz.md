@@ -35,7 +35,7 @@ featured:
 image:
   url: "/images/drinks/ramos-gin-fizz.jpg"
   alt: "A white foamy drink in a tall narrow glass"
-  align: "50% 30%"
+  align: "50% 25%"
 intro:
   Traditionally, this drink was shaken for ten minutes straight to achieve an impressive foam that rises above the rim of the glass. Thankfully, we’ve since developed techniques to make this a bit easier.
 ---

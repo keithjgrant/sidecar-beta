@@ -76,8 +76,8 @@ This should be your cheapest item on the list.
 Get a bottle of Cruzan or similar for around $10.
 
 This is the one item I was most reluctant to put on this list.
-I honestly don’t make a whole variety of drinks with, but it rounds out your bar.
-It will also come in handy if you get into the world of Tiki drinks, which is something I haven’t explored a whole lot.
+I honestly don’t make a whole variety of drinks with this (I use a aged rum more frequently).
+But this will come in handy if you get into the world of Tiki drinks, which is something I haven’t explored a whole lot.
 And if you’ve never had a [classic daiquiri](/drinks/daiquiri), now is your chance.
 
 When you run out, you can certainly swap in a spiced rum or a nice aged rum.

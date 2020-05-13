@@ -27,7 +27,7 @@ featured:
 image:
   url: "/images/drinks/nouveau-sangaree.jpg"
   alt: "A deep red drink in a brandy snifter. An apple slice is balanced on the rim of the glass."
-  align: "40% 50%"
+  align: "30% 50%"
 intro: |
   I’m always disappointed by sangria.
   It's either made with cheap wine and it shows, or it's made with nice wine that would honestly taste better on its own.
@@ -37,5 +37,5 @@ Stir ingredients with plenty of ice.
 Strain into a coupe or brandy snifter.
 
 Slice a very thin wedge of green apple.
-Sprinkle it with grated cinnamon and/or nutmeg.
-Gently float the apple atop the drink.
+Sprinkle one side with grated cinnamon and/or nutmeg.
+Gently float the apple atop the drink, with the spices on the top.

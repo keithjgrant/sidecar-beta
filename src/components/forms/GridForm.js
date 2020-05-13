@@ -5,15 +5,20 @@ const nbsp = '\u00A0';
 
 const GridForm = styled.form`
   display: grid;
-  grid-template-columns: min-content auto;
   grid-gap: var(--gap-size);
   align-items: baseline;
+
+  @media (min-width: 650px) {
+    grid-template-columns: min-content auto;
+  }
 `;
 
 export default GridForm;
 
 const Label = styled.label`
-  text-align: right;
+  @media (min-width: 650px) {
+    text-align: right;
+  }
 `;
 
 export function GridFormLabel({ props, children }) {

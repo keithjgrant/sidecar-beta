@@ -5,7 +5,7 @@ date: 2019-10-20T12:00:00-08:00
 glass: flute
 sweetness: 2
 booziness: 2
-family: sidecar
+family: fizz
 ingredients: [
   "1 oz mezcal",
   "⅜ oz Green Chartreuse",
