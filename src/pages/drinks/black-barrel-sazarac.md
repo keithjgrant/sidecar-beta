@@ -8,7 +8,7 @@ booziness: 2
 family: old fashioned
 ingredients: [
   "a splash of absinthe",
-  "2 oz aged rum"
+  "2 oz aged rum",
   "¼ oz light agave",
   "1 tsp white crème de cacao (optional)",
   "4 dashes Peychaud’s bitters",
