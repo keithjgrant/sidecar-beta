@@ -26,10 +26,6 @@ tenBottleCandidate: true
 intro: |
   Everyone has an opinion about martinis, and, I’ll be honest, mine is always changing.
   So here’s a great starting point.
-
-  Consider your choice of gin.
-  I recommend Plymouth.
-  If it’s dry and juniper-forward like Tanqueray, you might want to omit the bitters and use an olive instead of a twist.
 ---
 Add to cocktail shaker with plenty of ice. Stir well, then strain into a martini glass or Nick and Nora.
 
