@@ -23,7 +23,6 @@ tags: [
 ]
 
 ---
-
 Chill a rocks glass in the freezer.
 
 Pour a splash of absinthe into the glass; swirl it around to coat the inside of the glass, then pour it out.

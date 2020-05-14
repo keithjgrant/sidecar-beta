@@ -7,21 +7,26 @@ sweetness:
 booziness:
 family:
 ingredients: [
+  "¾ oz",
+  "½ oz",
+  "¼ oz",
 ]
 garnish:
 tags: [
 ]
 featured:
-tenBottleBar:
-specialSyrups:
+tenBottleCandidate:
 image:
   url: "/images/drinks/.jpg"
   alt: ""
   align: "50% 50%"
+source: 
 intro:
 
 ---
+Stir with plenty of ice. Strain into a coupe glass.
 
-1/4: ¼
-1/2: ½
-3/4: ¾
+Garnish with
+
+---
+Shake vigorously with ice. Strain into a rocks glass over fresh ice.

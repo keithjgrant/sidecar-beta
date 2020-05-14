@@ -16,4 +16,4 @@ fi
 echo -e "Creating: ${GREEN}src/pages/drinks/${SLUG}.md${NC}"
 sed "s/title:/title: \"${NAME}\"/" DRINK_TEMPLATE.md > ${FILE}
 sed -i '' "s/path:/path: \"\/drinks\/${SLUG}\"/" $FILE
-sed -i '' "s/date:/date: ${DATE}/" $FILE
+sed -i '' "s/^date:/date: ${DATE}/" $FILE
