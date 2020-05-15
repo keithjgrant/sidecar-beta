@@ -6,6 +6,7 @@ import glasses from '../svg/glasses';
 const ThumbnailWrapper = styled.div`
   height: var(--thumbnail-size);
   width: var(--thumbnail-size);
+  overflow: hidden;
 
   svg {
     height: 7em;
@@ -15,15 +16,15 @@ const ThumbnailWrapper = styled.div`
 `;
 
 export default function CocktailThumbnail({ drink, image }) {
-  console.log(image);
   const GlassSvg = glasses[drink.glass] || glasses.rocks;
 
   return (
     <ThumbnailWrapper>
       {drink.image && image ? (
         <Image
-          fluid={image.fluid}
+          fixed={image.fixed}
           alt={drink.image.alt}
+          style={{ height: '100%', maxWidth: 'var(--thumbnail-size)' }}
           imgStyle={{ objectPosition: drink.image.align }}
         />
       ) : (

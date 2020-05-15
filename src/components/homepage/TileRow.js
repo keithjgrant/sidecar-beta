@@ -21,14 +21,17 @@ const Heading = styled.div`
   text-align: right;
 `;
 
-export default function TileRow({ drinks, heading }) {
+export default function TileRow({ drinks, heading, imageMap }) {
   return (
     <>
       <Heading>{heading}</Heading>
       <Row>
-        {drinks.map((drink) => (
-          <DrinkTile key={drink.path} drink={drink} />
-        ))}
+        {drinks.map((drink) => {
+          const slug = drink.path.replace(/^\/drinks\//, '');
+          return (
+            <DrinkTile key={drink.path} drink={drink} image={imageMap[slug]} />
+          );
+        })}
       </Row>
     </>
   );

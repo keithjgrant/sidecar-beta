@@ -26,6 +26,10 @@ const Indicator = styled.div`
   height: 20px;
   background: var(--gray-8);
 
+  ${Label}:hover & {
+    outline: 2px solid var(--white);
+  }
+
   ${Input}:focus ~ & {
     outline: var(--focus-outline);
   }

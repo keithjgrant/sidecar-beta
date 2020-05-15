@@ -47,15 +47,15 @@ const Tile = styled(Link)`
   }
 `;
 
-export default function HomeTiles({ featured, recent }) {
+export default function HomeTiles({ featured, recent, imageMap }) {
   return (
     <Tiles>
       <Tagline>A curated collection of cocktails</Tagline>
       <Tile to="/drinks">Drinks</Tile>
       <Tile to="/tags">Tags</Tile>
       <Tile to="/about">About Sidecar</Tile>
-      <TileRow drinks={featured} heading="Featured" />
-      <TileRow drinks={recent} heading="Recently added" />
+      <TileRow drinks={featured} heading="Featured" imageMap={imageMap} />
+      <TileRow drinks={recent} heading="Recently added" imageMap={imageMap} />
     </Tiles>
   );
 }

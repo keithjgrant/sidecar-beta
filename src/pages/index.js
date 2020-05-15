@@ -8,13 +8,18 @@ function getDrinkObjects(result) {
   return result.edges.map((item) => item.node.frontmatter);
 }
 
-export default function IndexPage({ data: { recent, featured } }) {
+export default function IndexPage({ data: { recent, featured, images } }) {
+  const imageMap = {};
+  images.edges.forEach(({ node: { name, childImageSharp } }) => {
+    imageMap[name] = childImageSharp;
+  });
   return (
     <HomepageLayout>
       <Meta title="Home" />
       <HomeTiles
         recent={getDrinkObjects(recent)}
         featured={getDrinkObjects(featured)}
+        imageMap={imageMap}
       />
     </HomepageLayout>
   );
@@ -60,6 +65,23 @@ export const pageQuery = graphql`
               url
               alt
               align
+            }
+          }
+        }
+      }
+    }
+    images: allFile(
+      filter: {
+        relativePath: { regex: "/^drinks//" }
+        sourceInstanceName: { eq: "images" }
+      }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fixed(width: 250, webpQuality: 80) {
+              ...GatsbyImageSharpFixed_withWebp
             }
           }
         }

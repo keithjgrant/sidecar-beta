@@ -49,10 +49,10 @@ const Title = styled.div`
   color: var(--gray-7);
 `;
 
-export default function DrinkTile({ drink }) {
+export default function DrinkTile({ drink, image }) {
   return (
     <TileLink to={drink.path}>
-      <TileImage drink={drink} />
+      <TileImage drink={drink} image={image} />
       <Title>{drink.title}</Title>
     </TileLink>
   );

@@ -3,7 +3,7 @@ import SectionHeading from './SectionHeading';
 import TileLinkList from './tiles/TileLinkList';
 import TileLink from './tiles/TileLink';
 
-export default function TechniquesList() {
+export default function TechniquesList({ thumbnails }) {
   return (
     <>
       <SectionHeading>Skills</SectionHeading>
@@ -11,8 +11,8 @@ export default function TechniquesList() {
         <li>
           <TileLink
             href="/techniques/building"
-            imageUrl="/images/drinks/pilots-license.jpg"
-            imagePosition="50% 40%"
+            image={thumbnails.building}
+            imagePosition="50% 70%"
           >
             Building
           </TileLink>
@@ -20,8 +20,8 @@ export default function TechniquesList() {
         <li>
           <TileLink
             href="/techniques/shaking"
-            imageUrl="/images/drinks/angel-city-fizz.jpg"
-            imagePosition="50% 40%"
+            image={thumbnails.shaking}
+            imagePosition="50% 15%"
           >
             Shaking
           </TileLink>
@@ -29,8 +29,8 @@ export default function TechniquesList() {
         <li>
           <TileLink
             href="/techniques/stirring"
-            imageUrl="/images/drinks/pilots-license.jpg"
-            imagePosition="50% 70%"
+            image={thumbnails.stirring}
+            imagePosition="50% 40%"
           >
             Stirring
           </TileLink>

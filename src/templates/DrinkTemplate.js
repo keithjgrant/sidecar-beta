@@ -45,7 +45,7 @@ export const pageQuery = graphql`
     image: file(relativePath: { eq: $imagePath }) {
       relativePath
       childImageSharp {
-        fluid(maxWidth: 450) {
+        fluid(maxWidth: 450, webpQuality: 85) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

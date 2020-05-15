@@ -6,7 +6,11 @@ import Meta from '../../components/Meta';
 import SimpleContent from '../../components/SimpleContent';
 import TenBottleBar from '../../components/TenBottleBar';
 
-export default function TenBottleBarPage({ data: { drinks } }) {
+export default function TenBottleBarPage({ data: { drinks, images } }) {
+  const imageMap = {};
+  images.edges.forEach(({ node: { name, childImageSharp } }) => {
+    imageMap[name] = childImageSharp;
+  });
   return (
     <DrinkListLayout>
       <Meta title="Drinks From Your Ten Bottle Bar" />
@@ -21,6 +25,7 @@ export default function TenBottleBarPage({ data: { drinks } }) {
       </SimpleContent>
       <TenBottleBar
         allDrinks={drinks.edges.map((item) => item.node.frontmatter)}
+        imageMap={imageMap}
       />
     </DrinkListLayout>
   );
@@ -44,6 +49,23 @@ export const pageQuery = graphql`
               url
               alt
               align
+            }
+          }
+        }
+      }
+    }
+    images: allFile(
+      filter: {
+        relativePath: { regex: "/^drinks//" }
+        sourceInstanceName: { eq: "images" }
+      }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fixed(width: 130, webpQuality: 80) {
+              ...GatsbyImageSharpFixed_withWebp
             }
           }
         }

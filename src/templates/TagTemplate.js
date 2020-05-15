@@ -7,9 +7,13 @@ import DrinkList from '../components/DrinkList';
 import SimpleContent from '../components/SimpleContent';
 
 export default function TagTemplate({
-  data: { drinks, content },
+  data: { drinks, content, images },
   pageContext: { tag },
 }) {
+  const imageMap = {};
+  images.edges.forEach(({ node: { name, childImageSharp } }) => {
+    imageMap[name] = childImageSharp;
+  });
   return (
     <DrinkListLayout>
       <Meta title={`Drinks Tagged ‘${tag}’`} />
@@ -17,7 +21,10 @@ export default function TagTemplate({
       {content ? (
         <SimpleContent dangerouslySetInnerHTML={{ __html: content.html }} />
       ) : null}
-      <DrinkList drinks={drinks.edges.map((item) => item.node.frontmatter)} />
+      <DrinkList
+        drinks={drinks.edges.map((item) => item.node.frontmatter)}
+        imageMap={imageMap}
+      />
     </DrinkListLayout>
   );
 }
@@ -47,6 +54,23 @@ export const pageQuery = graphql`
     }
     content: markdownRemark(frontmatter: { path: { eq: $contentPath } }) {
       html
+    }
+    images: allFile(
+      filter: {
+        relativePath: { regex: "/^drinks//" }
+        sourceInstanceName: { eq: "images" }
+      }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fixed(width: 130, webpQuality: 80) {
+              ...GatsbyImageSharpFixed_withWebp
+            }
+          }
+        }
+      }
     }
   }
 `;

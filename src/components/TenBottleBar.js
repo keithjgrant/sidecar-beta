@@ -38,7 +38,7 @@ const excludeTags = [
   'vodka',
 ];
 
-export default function TenBottleBar({ allDrinks }) {
+export default function TenBottleBar({ allDrinks, imageMap }) {
   const location = useLocation();
   const navigate = useNavigate();
   const query = qs.parse(location.search.replace(/^\?/, ''));
@@ -135,7 +135,7 @@ export default function TenBottleBar({ allDrinks }) {
           />
         </GridForm>
       </Card>
-      <DrinkList drinks={drinks} />
+      <DrinkList drinks={drinks} imageMap={imageMap} />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { arrayOf, shape } from 'prop-types';
 import { useLocation, useNavigate } from '@reach/router';
 import qs from 'querystring';
 import styled from 'styled-components';
@@ -71,6 +72,10 @@ export default function DrinkList({ drinks, imageMap }) {
     </>
   );
 }
+DrinkList.propTypes = {
+  drinks: arrayOf(shape).isRequired,
+  imageMap: shape().isRequired,
+};
 
 function alphaSort(a, b) {
   const titleA = a.title.toLowerCase();

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Image from 'gatsby-image';
 import glasses from '../svg/glasses';
 
 const Wrapper = styled.div`
@@ -34,26 +35,17 @@ const Wrapper = styled.div`
   }
 `;
 
-const GENERIC_IMAGE = {
-  url: '/images/bartender.jpg',
-  alt: 'A well-dressed bartender pouring a spirit into a cocktail shaker',
-};
-
-export default function TileImage({ drink }) {
-  let { image, glass } = drink;
-  // TODO: share lookup function with drink/CocktailImage?
-  const GlassSvg = glasses[glass];
-  if (!image && !GlassSvg) {
-    image = GENERIC_IMAGE;
-  }
+export default function TileImage({ drink, image }) {
+  const GlassSvg = glasses[drink.glass] || glasses.rocks;
 
   return (
     <Wrapper>
-      {image ? (
-        <img
-          src={image.url}
-          alt={image.alt}
-          style={{ objectPosition: image.align || '50%' }}
+      {drink.image && image ? (
+        <Image
+          fixed={image.fixed}
+          alt={drink.image.alt}
+          style={{ width: '100%' }}
+          imgStyle={{ objectPosition: drink.image.align }}
         />
       ) : (
         <div className="svg-wrapper">
