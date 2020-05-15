@@ -55,7 +55,9 @@ export default function CocktailImage({ drink, imageData }) {
       {image && imageData ? (
         <Image
           fluid={imageData.childImageSharp.fluid}
+          fixed={imageData.childImageSharp.fixed}
           alt={image.alt}
+          style={{ minWidth: '100%' }}
           imgStyle={{ objectPosition: image.align }}
         />
       ) : (

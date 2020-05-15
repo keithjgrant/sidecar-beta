@@ -86,6 +86,7 @@ const Content = styled.div`
   display: flex;
   grid-column: 2;
   flex-direction: column;
+  margin-top: 1.2rem;
   padding: 0 1em 1em;
 
   .e-instructions {
@@ -93,6 +94,7 @@ const Content = styled.div`
   }
 
   @media (min-width: 30em) {
+    margin-top: 0;
     padding: 0;
   }
 `;
