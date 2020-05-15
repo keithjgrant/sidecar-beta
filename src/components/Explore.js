@@ -7,7 +7,7 @@ import { GridForm, GridFormLabel, ButtonGroup } from './forms';
 import CollapsibleSection from './CollapsibleSection';
 import DrinkList from './DrinkList';
 
-export default function Explore({ drinks }) {
+export default function Explore({ drinks, imageMap }) {
   const location = useLocation();
   const navigate = useNavigate();
   const query = qs.parse(location.search.replace(/^\?/, ''));
@@ -70,7 +70,7 @@ export default function Explore({ drinks }) {
           </div>
         </Card>
       </CollapsibleSection>
-      <DrinkList drinks={filtered} />
+      <DrinkList drinks={filtered} imageMap={imageMap} />
     </>
   );
 }

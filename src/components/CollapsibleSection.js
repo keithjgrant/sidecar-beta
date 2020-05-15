@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 const Toggle = styled.button`
   position: relative;
-  margin-left: 1.2rem;
+  margin-left: 0.6rem;
   padding-right: 1.8em;
 
   &::after {

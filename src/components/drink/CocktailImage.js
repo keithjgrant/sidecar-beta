@@ -1,12 +1,7 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Img from 'gatsby-image';
 import glasses from '../svg/glasses';
-
-const GENERIC_IMAGE = {
-  url: '/images/bartender.jpg',
-  alt: 'A well-dressed bartender pouring a spirit into a cocktail shaker',
-};
 
 const Wrapper = styled.div`
   grid-column: 1;
@@ -19,11 +14,6 @@ const Image = styled(Img)`
   border-top-left-radius: var(--border-radius);
   object-fit: cover;
   box-shadow: 0.1em 0.1em 0.3em rgba(0, 0, 0, 0.1);
-
-  ${(props) => css`
-  & img {
-    object-position ${props.position} !important;
-  }`}
 
   @media (min-width: 480px) {
     max-height: initial;
@@ -58,10 +48,7 @@ const SvgWrapper = styled.div`
 export default function CocktailImage({ drink, imageData }) {
   let { image, glass } = drink;
   // TODO: share lookup function with ../CocktailThumbnail?
-  const GlassSvg = glasses[glass];
-  if (!image && !GlassSvg) {
-    image = GENERIC_IMAGE;
-  }
+  const GlassSvg = glasses[glass] || glasses.rocks;
 
   return (
     <Wrapper>
@@ -69,8 +56,7 @@ export default function CocktailImage({ drink, imageData }) {
         <Image
           fluid={imageData.childImageSharp.fluid}
           alt={image.alt}
-          objectPosition={image.align}
-          position={image.align}
+          imgStyle={{ objectPosition: image.align }}
         />
       ) : (
         <SvgWrapper>

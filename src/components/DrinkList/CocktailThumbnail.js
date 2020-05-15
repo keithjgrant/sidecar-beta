@@ -1,16 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import Image from 'gatsby-image';
 import glasses from '../svg/glasses';
 
 const ThumbnailWrapper = styled.div`
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    color: var(--gray-6);
-    object-fit: cover;
-    object-position: center center;
-  }
+  height: var(--thumbnail-size);
+  width: var(--thumbnail-size);
+
   svg {
     height: 7em;
     padding: 3em 0.5em 1em;
@@ -18,26 +14,17 @@ const ThumbnailWrapper = styled.div`
   }
 `;
 
-const GENERIC_IMAGE = {
-  url: '/images/bartender.jpg',
-  alt: 'A well-dressed bartender pouring a spirit into a cocktail shaker',
-};
-
-export default function CocktailThumbnail({ drink }) {
-  let { image, glass } = drink;
-  // TODO: share lookup function with drink/CocktailImage?
-  const GlassSvg = glasses[glass];
-  if (!image && !GlassSvg) {
-    image = GENERIC_IMAGE;
-  }
+export default function CocktailThumbnail({ drink, image }) {
+  console.log(image);
+  const GlassSvg = glasses[drink.glass] || glasses.rocks;
 
   return (
     <ThumbnailWrapper>
-      {image ? (
-        <img
-          src={image.url}
-          alt={image.alt}
-          style={{ objectPosition: image.align || '50%' }}
+      {drink.image && image ? (
+        <Image
+          fluid={image.fluid}
+          alt={drink.image.alt}
+          imgStyle={{ objectPosition: drink.image.align }}
         />
       ) : (
         <div className="svg-wrapper">

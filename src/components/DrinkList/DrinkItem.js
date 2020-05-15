@@ -51,11 +51,11 @@ const PublishDate = styled.time`
   color: var(--gray-5);
 `;
 
-export default function DrinkItem({ drink }) {
+export default function DrinkItem({ drink, image }) {
   return (
     <li>
       <PreviewLink key={drink.basename} to={drink.path}>
-        <CocktailThumbnail drink={drink} />
+        <CocktailThumbnail drink={drink} image={image} />
         <PreviewContent>{drink.title}</PreviewContent>
         <PublishDate>{drink.date}</PublishDate>
       </PreviewLink>

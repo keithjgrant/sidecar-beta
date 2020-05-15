@@ -28,7 +28,7 @@ const Container = styled.div`
   }
 `;
 
-export default function DrinkList({ drinks }) {
+export default function DrinkList({ drinks, imageMap }) {
   const location = useLocation();
   const navigate = useNavigate();
   const query = qs.parse(location.search.replace(/^\?/, ''));
@@ -61,9 +61,12 @@ export default function DrinkList({ drinks }) {
         <p css="padding: 0 1em">No drinks matched your query</p>
       ) : null}
       <List>
-        {sorted.map((drink) => (
-          <DrinkItem key={drink.path} drink={drink} />
-        ))}
+        {sorted.map((drink) => {
+          const slug = drink.path.replace(/^\/drinks\//, '');
+          return (
+            <DrinkItem key={drink.path} drink={drink} image={imageMap[slug]} />
+          );
+        })}
       </List>
     </>
   );

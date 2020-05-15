@@ -5,12 +5,19 @@ import PageHeading from '../components/PageHeading';
 import Meta from '../components/Meta';
 import Explore from '../components/Explore';
 
-export default function DrinksPage({ data: { drinks } }) {
+export default function DrinksPage({ data: { drinks, images } }) {
+  const imageMap = {};
+  images.edges.forEach(({ node: { name, childImageSharp } }) => {
+    imageMap[name] = childImageSharp;
+  });
   return (
     <DrinkListLayout>
       <Meta title="Sidecar: All Drinks" />
       <PageHeading>All Drinks</PageHeading>
-      <Explore drinks={drinks.edges.map((item) => item.node.frontmatter)} />
+      <Explore
+        drinks={drinks.edges.map((item) => item.node.frontmatter)}
+        imageMap={imageMap}
+      />
     </DrinkListLayout>
   );
 }
@@ -34,6 +41,23 @@ export const pageQuery = graphql`
               url
               alt
               align
+            }
+          }
+        }
+      }
+    }
+    images: allFile(
+      filter: {
+        relativePath: { regex: "/^drinks//" }
+        sourceInstanceName: { eq: "images" }
+      }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid(maxWidth: 96, maxHeight: 96) {
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
