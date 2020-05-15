@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import LogoSvg from './LogoSvg';
 
 const LogoLink = styled(Link)`
-  padding: 0.3rem;
+  padding: 0.8rem 0.3rem 0.3rem;
   color: var(--gray-3);
   font-size: 1.6rem;
   font-family: var(--font-heading);

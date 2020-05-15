@@ -7,9 +7,11 @@ import Explore from '../components/Explore';
 
 export default function DrinksPage({ data: { drinks, images } }) {
   const imageMap = {};
-  images.edges.forEach(({ node: { name, childImageSharp } }) => {
-    imageMap[name] = childImageSharp;
-  });
+  if (images && images.edges) {
+    images.edges.forEach(({ node: { name, childImageSharp } }) => {
+      imageMap[name] = childImageSharp;
+    });
+  }
   return (
     <DrinkListLayout>
       <Meta title="Sidecar: All Drinks" />
@@ -56,8 +58,8 @@ export const pageQuery = graphql`
         node {
           name
           childImageSharp {
-            fixed(width: 130, webpQuality: 80) {
-              ...GatsbyImageSharpFixed_withWebp
+            fluid(maxWidth: 130, webpQuality: 80) {
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

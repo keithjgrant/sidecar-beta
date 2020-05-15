@@ -23,6 +23,7 @@ export default function CocktailThumbnail({ drink, image }) {
       {drink.image && image ? (
         <Image
           fixed={image.fixed}
+          fluid={image.fluid}
           alt={drink.image.alt}
           style={{ height: '100%', maxWidth: 'var(--thumbnail-size)' }}
           imgStyle={{ objectPosition: drink.image.align }}
