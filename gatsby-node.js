@@ -36,12 +36,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const pages = result.data.allMarkdownRemark.edges;
   const tags = new Set();
   pages.forEach(({ node: { frontmatter } }) => {
+    const isDrink = frontmatter.path.startsWith('/drinks/');
     createPage({
       path: frontmatter.path,
-      component: frontmatter.path.startsWith('/drinks/')
-        ? DrinkTemplate
-        : ArticleTemplate,
-      context: {},
+      imagePath: isDrink ? `${frontmatter.path.substr(1)}.jpg` : '',
+      component: isDrink ? DrinkTemplate : ArticleTemplate,
+      context: {
+        imagePath: isDrink ? `${frontmatter.path.substr(1)}.jpg` : '',
+      },
     });
 
     if (frontmatter.tags) {

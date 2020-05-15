@@ -133,11 +133,11 @@ const PublishDate = styled.div`
   text-align: right;
 `;
 
-export default function DrinkCard({ drink }) {
+export default function DrinkCard({ drink, imageData }) {
   return (
     <Main className="h-recipe">
       <Body>
-        <CocktailImage drink={drink} />
+        <CocktailImage drink={drink} imageData={imageData} />
         <Content>
           <Title className="p-name">{drink.title}</Title>
           <DrinkTags tags={drink.tags} />

@@ -14,13 +14,13 @@ export default function DrinkTemplate({ data }) {
   return (
     <CardLayout>
       <Meta title={drink.title} image={image} />
-      <DrinkCard drink={drink} />
+      <DrinkCard drink={drink} imageData={data.image} />
     </CardLayout>
   );
 }
 
 export const pageQuery = graphql`
-  query DrinkPostByPath($path: String!) {
+  query DrinkPostByPath($path: String!, $imagePath: String!) {
     post: markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
@@ -40,6 +40,14 @@ export const pageQuery = graphql`
           align
         }
         intro
+      }
+    }
+    image: file(relativePath: { eq: $imagePath }) {
+      relativePath
+      childImageSharp {
+        fluid(maxWidth: 450) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
       }
     }
   }

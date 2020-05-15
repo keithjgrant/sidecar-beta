@@ -20,7 +20,7 @@ tags: [
 ]
 featured: true
 image:
-  url: "/images/drinks/elder-fashion.jpg"
+  url: "/images/drinks/elder-fashioned.jpg"
   alt: "A crystal-clear cocktail in a rocks glass on a bar mat. Beside it is a vegetable peeler, a grapefruit, and a cocktail shaker."
   align: "50% 50%"
 intro: The right gin is essential in this cocktail. It cannot be overly piney or floral. Stick with Plymouth if you can. In a pinch, you can get away with Hendrick’s and its cucumber flavor. Most other gins I’ve tried have not fared as well.
