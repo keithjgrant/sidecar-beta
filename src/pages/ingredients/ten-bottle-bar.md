@@ -58,7 +58,7 @@ Sweet vermouth is definitely the style I use the most.
 
 ## 4. Brandy
 Many cocktails call for a Cognac.
-But let’s be honest: that’s a lot to spend on a mixer.
+But let’s be honest: that’s a lot to spend on something unless you’re sipping it neat.
 While I enjoy Cognac as much as the next guy, I typically stock a less expensive brandy like St. Remy VSOP or Paul Mason VSOP.
 Just make sure it’s a regular grape brandy though.
 
