@@ -3,7 +3,7 @@ title: "Black Barrel Sazarac"
 path: "/drinks/black-barrel-sazarac"
 date: 2020-05-14T09:05:14-08:00
 glass: rocks
-sweetness: 3
+sweetness: 2
 booziness: 2
 family: old fashioned
 ingredients: [
