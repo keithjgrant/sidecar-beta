@@ -12,6 +12,7 @@ ingredients: [
   "¾ oz lime juice",
 ]
 tags: [
+  sidecar-original,
   tequila,
   ipa-syrup,
   lime,
