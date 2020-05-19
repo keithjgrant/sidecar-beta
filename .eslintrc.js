@@ -2,8 +2,10 @@ module.exports = {
   extends: [
     'eslint:recommended', // extending recommended config and config derived from eslint-config-prettier
     'plugin:react/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
   ],
-  plugins: ['react'],
+  plugins: ['react', 'import'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: '6',
