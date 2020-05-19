@@ -13,7 +13,7 @@ const TileLinkList = styled.ul`
     display: block;
     height: 100%;
     min-height: 5rem;
-    padding: 1.2rem 1rem;
+    padding: 1.2rem 1rem 1.6rem;
     border: 1px solid var(--card-border);
     border-radius: var(--border-radius);
     background-color: var(--card-bg);
@@ -29,6 +29,17 @@ const TileLinkList = styled.ul`
 
     @media (min-width: 500px) {
       min-height: 8rem;
+    }
+  }
+
+  @media (pointer: coarse) {
+    grid-template-columns: initial;
+    max-width: 100vw;
+    overflow: auto;
+
+    & > li {
+      grid-row: 1;
+      width: 40vw;
     }
   }
 `;

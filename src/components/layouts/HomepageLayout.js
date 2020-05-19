@@ -1,16 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import Header from '../header/Header';
-
-const ContentWrapper = styled.div`
-  padding-bottom: 2rem;
-`;
+import isPwa from '../../util/isPwa';
 
 export default function HomepageLayout({ children }) {
   return (
     <>
-      <Header isHome />
-      <ContentWrapper>{children}</ContentWrapper>
+      {!isPwa() ? <Header isHome /> : null}
+      <div>{children}</div>
     </>
   );
 }

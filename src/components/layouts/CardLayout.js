@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import GrowWrapper from './GrowWrapper';
-import MobileHeader from '../header/MobileHeader';
+import PwaHeader from '../header/PwaHeader';
 import Footer from '../Footer';
 import isPwa from '../../util/isPwa';
 
@@ -18,7 +18,7 @@ const ContentWrapper = styled.div`
 export default function CardLayout({ children }) {
   return (
     <GrowWrapper>
-      {isPwa() ? <MobileHeader /> : null}
+      {isPwa() ? <PwaHeader /> : null}
       <ContentWrapper>{children}</ContentWrapper>
       <Footer />
     </GrowWrapper>

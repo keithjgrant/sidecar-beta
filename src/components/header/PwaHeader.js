@@ -35,7 +35,7 @@ const Right = styled.div`
   grid-column: 3;
 `;
 
-export default function Header({ title, controls }) {
+export default function PwaHeader({ title, controls }) {
   return (
     <HeaderBar>
       <Left>

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import GrowWrapper from './GrowWrapper';
 import Header from '../header/Header';
-import MobileHeader from '../header/MobileHeader';
+import PwaHeader from '../header/PwaHeader';
 import PageHeading from '../../components/PageHeading';
 import Footer from '../Footer';
 import isPwa from '../../util/isPwa';
@@ -21,7 +21,7 @@ const Main = styled.main`
 export default function DrinkListLayout({ title, children }) {
   return (
     <GrowWrapper>
-      {isPwa() ? <MobileHeader title={title} /> : <Header />}
+      {isPwa() ? <PwaHeader title={title} /> : <Header />}
       <Main>
         {!isPwa() ? <PageHeading>{title}</PageHeading> : null}
         {children}

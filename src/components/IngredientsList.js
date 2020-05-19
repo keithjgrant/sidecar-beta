@@ -20,7 +20,7 @@ export default function IngredientsIndex() {
           <TileLink href="/ingredients/gin">Gin</TileLink>
         </li>
       </TileLinkList>
-      <SectionHeading>Syrups & mixers</SectionHeading>
+      <SectionHeading>Syrups</SectionHeading>
       <TileLinkList>
         <li>
           <TileLink href="/ingredients/simple-syrup">Simple Syrup</TileLink>
@@ -39,6 +39,9 @@ export default function IngredientsIndex() {
         <li>
           <TileLink href="/ingredients/butter-syrup">Butter Syrup</TileLink>
         </li>
+      </TileLinkList>
+      <SectionHeading>Mixers, etc.</SectionHeading>
+      <TileLinkList>
         <li>
           <TileLink href="/ingredients/absinthe-bitters">
             Absinthe Bitters

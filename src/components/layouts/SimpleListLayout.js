@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../header/Header';
-import MobileHeader from '../header/MobileHeader';
+import PwaHeader from '../header/PwaHeader';
 import PageHeading from '../PageHeading';
 import Footer from '../Footer';
 import isPwa from '../../util/isPwa';
@@ -16,7 +16,7 @@ const Main = styled.main`
 export default function SimpleListLayout({ title, children }) {
   return (
     <>
-      {isPwa() ? <MobileHeader title={title} /> : <Header />}
+      {isPwa() ? <PwaHeader title={title} /> : <Header />}
       <Main>
         {!isPwa() ? <PageHeading>All Tags</PageHeading> : null}
         {children}

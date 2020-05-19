@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import GrowWrapper from './GrowWrapper';
 import Header from '../header/Header';
-import MobileHeader from '../header/MobileHeader';
+import PwaHeader from '../header/PwaHeader';
 import Footer from '../Footer';
 import isPwa from '../../util/isPwa';
 
@@ -54,7 +54,7 @@ const Article = styled.article`
 export default function ArticleLayout({ title, children }) {
   return (
     <GrowWrapper>
-      {isPwa() ? <MobileHeader title={title} /> : <Header />}
+      {isPwa() ? <PwaHeader title={title} /> : <Header />}
       <Main>
         <Article>
           {!isPwa() ? <h1>{title}</h1> : null}

@@ -5,6 +5,7 @@ import TileRow from './TileRow';
 
 const Tiles = styled.div`
   padding: 1em 1em calc(1em - var(--gap-size));
+  margin-bottom: 1rem;
   display: grid;
   grid-template-rows: auto 3fr 1fr 1fr auto 30vw auto 30vw;
 
