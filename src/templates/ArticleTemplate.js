@@ -6,9 +6,9 @@ import Meta from '../components/Meta';
 export default function ArticleTemplate({ data }) {
   const { markdownRemark: post } = data;
   return (
-    <ArticleLayout>
+    <ArticleLayout title={post.frontmatter.title} backHref="/">
       <Meta title={post.frontmatter.title} />
-      <h1>{post.frontmatter.title}</h1>
+      {/* <h1>{post.frontmatter.title}</h1> */}
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </ArticleLayout>
   );

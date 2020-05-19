@@ -15,9 +15,9 @@ export default function TagTemplate({
     imageMap[name] = childImageSharp;
   });
   return (
-    <DrinkListLayout>
+    <DrinkListLayout title={`Tag: ${tag}`} backHref="/tags">
       <Meta title={`Drinks Tagged ‘${tag}’`} />
-      <PageHeading>Drinks tagged &lsquo;{tag}&rsquo;</PageHeading>
+      {/* <PageHeading>Drinks tagged &lsquo;{tag}&rsquo;</PageHeading> */}
       {content ? (
         <SimpleContent dangerouslySetInnerHTML={{ __html: content.html }} />
       ) : null}

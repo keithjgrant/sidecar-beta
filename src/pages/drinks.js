@@ -13,9 +13,9 @@ export default function DrinksPage({ data: { drinks, images } }) {
     });
   }
   return (
-    <DrinkListLayout>
+    <DrinkListLayout title="All Drinks">
       <Meta title="Sidecar: All Drinks" />
-      <PageHeading>All Drinks</PageHeading>
+      {/* <PageHeading>All Drinks</PageHeading> */}
       <Explore
         drinks={drinks.edges.map((item) => item.node.frontmatter)}
         imageMap={imageMap}

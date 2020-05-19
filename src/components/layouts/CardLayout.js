@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import GrowWrapper from './GrowWrapper';
-import Header from '../header/Header';
+import MobileHeader from '../header/MobileHeader';
 import Footer from '../Footer';
 
 const ContentWrapper = styled.div`
@@ -17,7 +17,7 @@ const ContentWrapper = styled.div`
 export default function CardLayout({ children }) {
   return (
     <GrowWrapper>
-      <Header />
+      <MobileHeader backHref="/drinks" />
       <ContentWrapper>{children}</ContentWrapper>
       <Footer />
     </GrowWrapper>

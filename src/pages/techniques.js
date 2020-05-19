@@ -7,9 +7,9 @@ import TechniquesList from '../components/TechniquesList';
 
 export default function TechniquesPage({ data }) {
   return (
-    <IndexLayout>
+    <IndexLayout title="Techniques" backHref="/">
       <Meta title="Essential Techniques for Cocktail Making" />
-      <PageHeading bleed>Essential Techniques for Cocktail Making</PageHeading>
+      {/* <PageHeading bleed>Essential Techniques for Cocktail Making</PageHeading> */}
       <TechniquesList thumbnails={data} />
     </IndexLayout>
   );

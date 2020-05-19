@@ -12,9 +12,9 @@ export default function TagsPage({ data: { drinks } }) {
   });
 
   return (
-    <SimpleListLayout>
+    <SimpleListLayout title="All Tags" backHref="/drinks">
       <Meta title="Sidecar: All Tags" />
-      <PageHeading>All Tags</PageHeading>
+      {/* <PageHeading>All Tags</PageHeading> */}
       <TagList tags={[...tags].sort()} />
     </SimpleListLayout>
   );

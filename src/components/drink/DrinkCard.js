@@ -13,7 +13,8 @@ const Main = styled.main`
   line-height: 1.2;
 
   @media (min-width: 25em) {
-    margin: 1em;
+    margin: 0 1em 1em;
+    ${'' /* TODO: 1em top margin if desktop nav? */}
 
     ${'' /* if no image: padding-top: 1em */}
   }

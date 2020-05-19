@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import GrowWrapper from './GrowWrapper';
 import Header from '../header/Header';
+import MobileHeader from '../header/MobileHeader';
 import Footer from '../Footer';
 
 const Main = styled.main`
@@ -15,10 +16,10 @@ const Main = styled.main`
   }
 `;
 
-export default function DrinkListLayout({ children }) {
+export default function DrinkListLayout({ title, backHref = '/', children }) {
   return (
     <GrowWrapper>
-      <Header />
+      <MobileHeader title={title} backHref={backHref} />
       <Main>{children}</Main>
       <Footer />
     </GrowWrapper>

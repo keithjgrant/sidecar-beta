@@ -6,9 +6,9 @@ import IngredientsList from '../components/IngredientsList';
 
 export default function IngredientsPage() {
   return (
-    <IndexLayout>
+    <IndexLayout title="Ingredients" backHref="/">
       <Meta title="Ingredients: Spirits, Syrups, & Mixers" />
-      <PageHeading bleed>Ingredients: Spirits, Syrups, & Mixers</PageHeading>
+      {/* <PageHeading bleed>Ingredients: Spirits, Syrups, & Mixers</PageHeading> */}
       <IngredientsList />
     </IndexLayout>
   );

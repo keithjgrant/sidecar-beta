@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../header/Header';
+import MobileHeader from '../header/MobileHeader';
 import Footer from '../Footer';
 
 const Main = styled.main`
@@ -10,10 +10,10 @@ const Main = styled.main`
   padding-bottom: 2rem;
 `;
 
-export default function SimpleListLayout({ children }) {
+export default function SimpleListLayout({ title, backHref, children }) {
   return (
     <>
-      <Header />
+      <MobileHeader title={title} backHref={backHref} />
       <Main>{children}</Main>
       <Footer />
     </>

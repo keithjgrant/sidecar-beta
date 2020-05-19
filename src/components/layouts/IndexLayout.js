@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import GrowWrapper from './GrowWrapper';
 import Header from '../header/Header';
+import MobileHeader from '../header/MobileHeader';
 import Footer from '../Footer';
 
 const Main = styled.main`
@@ -28,10 +29,11 @@ const IndexGrid = styled.div`
   }
 `;
 
-export default function IndexLayout({ children }) {
+export default function IndexLayout({ title, backHref, children }) {
   return (
     <GrowWrapper>
-      <Header />
+      {/* <Header /> */}
+      <MobileHeader title={title} backHref={backHref} />
       <Main>
         <IndexGrid>{children}</IndexGrid>
       </Main>
