@@ -1,10 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const isInStandaloneMode = () =>
-  window.matchMedia('(display-mode: standalone)').matches ||
-  window.navigator.standalone ||
-  document.referrer.includes('android-app://');
+const isInStandaloneMode = () => {
+  if (typeof window === 'undefined') {
+    return false;
+  }
+  return (
+    window.matchMedia('(display-mode: standalone)').matches ||
+    window.navigator.standalone ||
+    document.referrer.includes('android-app://')
+  );
+};
 
 const Wrapper = styled.footer`
   padding: 1rem;
