@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import DrinkListLayout from '../../components/layouts/DrinkListLayout';
-import PageHeading from '../../components/PageHeading';
 import Meta from '../../components/Meta';
 import SimpleContent from '../../components/SimpleContent';
 import TenBottleBar from '../../components/TenBottleBar';
@@ -12,9 +11,8 @@ export default function TenBottleBarPage({ data: { drinks, images } }) {
     imageMap[name] = childImageSharp;
   });
   return (
-    <DrinkListLayout>
+    <DrinkListLayout title="Your Ten Bottle Bar">
       <Meta title="Drinks From Your Ten Bottle Bar" />
-      <PageHeading>Your Ten Bottle Bar</PageHeading>
       <SimpleContent>
         <p>
           If you’ve stocked your{' '}

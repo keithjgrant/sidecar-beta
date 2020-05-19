@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import DrinkListLayout from '../components/layouts/DrinkListLayout';
-import PageHeading from '../components/PageHeading';
 import Meta from '../components/Meta';
 import Explore from '../components/Explore';
 
@@ -15,7 +14,6 @@ export default function DrinksPage({ data: { drinks, images } }) {
   return (
     <DrinkListLayout title="All Drinks">
       <Meta title="Sidecar: All Drinks" />
-      {/* <PageHeading>All Drinks</PageHeading> */}
       <Explore
         drinks={drinks.edges.map((item) => item.node.frontmatter)}
         imageMap={imageMap}

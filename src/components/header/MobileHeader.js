@@ -35,11 +35,11 @@ const Right = styled.div`
   grid-column: 3;
 `;
 
-export default function Header({ backHref, title, controls }) {
+export default function Header({ title, controls }) {
   return (
     <HeaderBar>
       <Left>
-        <BackButton href={backHref} />
+        <BackButton />
       </Left>
       {title ? <Title>{title}</Title> : null}
       <Right>{controls}</Right>

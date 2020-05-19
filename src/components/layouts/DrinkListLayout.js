@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import GrowWrapper from './GrowWrapper';
 import Header from '../header/Header';
 import MobileHeader from '../header/MobileHeader';
+import PageHeading from '../../components/PageHeading';
 import Footer from '../Footer';
+import isPwa from '../../util/isPwa';
 
 const Main = styled.main`
   flex: 1;
@@ -16,11 +18,14 @@ const Main = styled.main`
   }
 `;
 
-export default function DrinkListLayout({ title, backHref = '/', children }) {
+export default function DrinkListLayout({ title, children }) {
   return (
     <GrowWrapper>
-      <MobileHeader title={title} backHref={backHref} />
-      <Main>{children}</Main>
+      {isPwa() ? <MobileHeader title={title} /> : <Header />}
+      <Main>
+        {!isPwa() ? <PageHeading>{title}</PageHeading> : null}
+        {children}
+      </Main>
       <Footer />
     </GrowWrapper>
   );

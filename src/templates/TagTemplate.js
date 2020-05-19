@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import DrinkListLayout from '../components/layouts/DrinkListLayout';
 import Meta from '../components/Meta';
-import PageHeading from '../components/PageHeading';
 import DrinkList from '../components/DrinkList';
 import SimpleContent from '../components/SimpleContent';
 
@@ -15,9 +14,8 @@ export default function TagTemplate({
     imageMap[name] = childImageSharp;
   });
   return (
-    <DrinkListLayout title={`Tag: ${tag}`} backHref="/tags">
+    <DrinkListLayout title={`Tag: ${tag}`}>
       <Meta title={`Drinks Tagged ‘${tag}’`} />
-      {/* <PageHeading>Drinks tagged &lsquo;{tag}&rsquo;</PageHeading> */}
       {content ? (
         <SimpleContent dangerouslySetInnerHTML={{ __html: content.html }} />
       ) : null}

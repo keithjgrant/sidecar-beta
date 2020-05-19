@@ -4,12 +4,17 @@ import IndexLayout from '../components/layouts/IndexLayout';
 import Meta from '../components/Meta';
 import PageHeading from '../components/PageHeading';
 import TechniquesList from '../components/TechniquesList';
+import isPwa from '../util/isPwa';
 
 export default function TechniquesPage({ data }) {
   return (
-    <IndexLayout title="Techniques" backHref="/">
+    <IndexLayout title="Techniques">
       <Meta title="Essential Techniques for Cocktail Making" />
-      {/* <PageHeading bleed>Essential Techniques for Cocktail Making</PageHeading> */}
+      {!isPwa() ? (
+        <PageHeading bleed>
+          Essential Techniques for Cocktail Making
+        </PageHeading>
+      ) : null}
       <TechniquesList thumbnails={data} />
     </IndexLayout>
   );

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import GrowWrapper from './GrowWrapper';
 import MobileHeader from '../header/MobileHeader';
 import Footer from '../Footer';
+import isPwa from '../../util/isPwa';
 
 const ContentWrapper = styled.div`
   flex: 1;
@@ -17,7 +18,7 @@ const ContentWrapper = styled.div`
 export default function CardLayout({ children }) {
   return (
     <GrowWrapper>
-      <MobileHeader backHref="/drinks" />
+      {isPwa() ? <MobileHeader /> : null}
       <ContentWrapper>{children}</ContentWrapper>
       <Footer />
     </GrowWrapper>

@@ -1,25 +1,29 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 import CaretLeft from '../svg/CaretLeft';
 
-const BackLink = styled(Link)`
+const Button = styled.button`
   display: inline-block;
   padding: 1rem 1.8rem 0.9rem;
+  border: 0;
+  background: transparent;
+  color: var(--brand-primary);
+  cursor: pointer;
 
   &:hover {
     color: var(--white);
   }
 `;
 
-export default function BackButton({ href, alt }) {
-  // const goBack = (e) => {
-  //   e.preventDef
-  // }
+export default function BackButton({ alt }) {
+  const onClick = (e) => {
+    e.preventDefault();
+    window.history.back();
+  };
 
   return (
-    <BackLink to={href || '/'}>
+    <Button onClick={onClick}>
       <CaretLeft title={alt} />
-    </BackLink>
+    </Button>
   );
 }

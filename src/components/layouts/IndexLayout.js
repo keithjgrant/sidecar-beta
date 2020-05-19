@@ -4,6 +4,7 @@ import GrowWrapper from './GrowWrapper';
 import Header from '../header/Header';
 import MobileHeader from '../header/MobileHeader';
 import Footer from '../Footer';
+import isPwa from '../../util/isPwa';
 
 const Main = styled.main`
   flex: 1;
@@ -29,11 +30,10 @@ const IndexGrid = styled.div`
   }
 `;
 
-export default function IndexLayout({ title, backHref, children }) {
+export default function IndexLayout({ title, children }) {
   return (
     <GrowWrapper>
-      {/* <Header /> */}
-      <MobileHeader title={title} backHref={backHref} />
+      {isPwa() ? <MobileHeader title={title} /> : <Header />}
       <Main>
         <IndexGrid>{children}</IndexGrid>
       </Main>

@@ -4,6 +4,7 @@ import GrowWrapper from './GrowWrapper';
 import Header from '../header/Header';
 import MobileHeader from '../header/MobileHeader';
 import Footer from '../Footer';
+import isPwa from '../../util/isPwa';
 
 const Main = styled.main`
   flex: 1;
@@ -50,13 +51,15 @@ const Article = styled.article`
   }
 `;
 
-export default function ArticleLayout({ title, backHref, children }) {
+export default function ArticleLayout({ title, children }) {
   return (
     <GrowWrapper>
-      {/* <Header /> */}
-      <MobileHeader title={title} backHref={backHref} />
+      {isPwa() ? <MobileHeader title={title} /> : <Header />}
       <Main>
-        <Article>{children}</Article>
+        <Article>
+          {!isPwa() ? <h1>{title}</h1> : null}
+          {children}
+        </Article>
       </Main>
       <Footer />
     </GrowWrapper>

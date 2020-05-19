@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import Header from '../header/Header';
 import MobileHeader from '../header/MobileHeader';
+import PageHeading from '../PageHeading';
 import Footer from '../Footer';
+import isPwa from '../../util/isPwa';
 
 const Main = styled.main`
   width: calc(100vw - 2em);
@@ -10,11 +13,14 @@ const Main = styled.main`
   padding-bottom: 2rem;
 `;
 
-export default function SimpleListLayout({ title, backHref, children }) {
+export default function SimpleListLayout({ title, children }) {
   return (
     <>
-      <MobileHeader title={title} backHref={backHref} />
-      <Main>{children}</Main>
+      {isPwa() ? <MobileHeader title={title} /> : <Header />}
+      <Main>
+        {!isPwa() ? <PageHeading>All Tags</PageHeading> : null}
+        {children}
+      </Main>
       <Footer />
     </>
   );

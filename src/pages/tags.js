@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import SimpleListLayout from '../components/layouts/SimpleListLayout';
-import PageHeading from '../components/PageHeading';
 import Meta from '../components/Meta';
 import TagList from '../components/TagList';
 
@@ -12,9 +11,8 @@ export default function TagsPage({ data: { drinks } }) {
   });
 
   return (
-    <SimpleListLayout title="All Tags" backHref="/drinks">
+    <SimpleListLayout title="All Tags">
       <Meta title="Sidecar: All Tags" />
-      {/* <PageHeading>All Tags</PageHeading> */}
       <TagList tags={[...tags].sort()} />
     </SimpleListLayout>
   );

@@ -3,12 +3,15 @@ import IndexLayout from '../components/layouts/IndexLayout';
 import Meta from '../components/Meta';
 import PageHeading from '../components/PageHeading';
 import IngredientsList from '../components/IngredientsList';
+import isPwa from '../util/isPwa';
 
 export default function IngredientsPage() {
   return (
-    <IndexLayout title="Ingredients" backHref="/">
+    <IndexLayout title="Ingredients">
       <Meta title="Ingredients: Spirits, Syrups, & Mixers" />
-      {/* <PageHeading bleed>Ingredients: Spirits, Syrups, & Mixers</PageHeading> */}
+      {!isPwa() ? (
+        <PageHeading bleed>Ingredients: Spirits, Syrups, & Mixers</PageHeading>
+      ) : null}
       <IngredientsList />
     </IndexLayout>
   );
