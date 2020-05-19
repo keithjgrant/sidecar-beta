@@ -1,17 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const isInStandaloneMode = () => {
-  if (typeof window === 'undefined') {
-    return false;
-  }
-  return (
-    window.matchMedia('(display-mode: standalone)').matches ||
-    window.navigator.standalone ||
-    document.referrer.includes('android-app://')
-  );
-};
-
 const Wrapper = styled.footer`
   padding: 1rem;
   border-top: 1px solid var(--gray-4);
@@ -32,10 +21,6 @@ const Split = styled.div`
 
 const year = new Date().getFullYear();
 
-if (isInStandaloneMode()) {
-  console.log('webapp is installed');
-}
-
 export default function Footer() {
   return (
     <Wrapper>
@@ -44,10 +29,7 @@ export default function Footer() {
           © 2018–{year} <a href="https://keithjgrant.com">Keith J. Grant</a>.
           All rights reserved.
         </div>
-        <div css="text-align: right">
-          Don’t you dare drink and drive.
-          {isInStandaloneMode() ? 'i' : '.'}
-        </div>
+        <div css="text-align: right">Don’t you dare drink and drive.</div>
       </Split>
     </Wrapper>
   );
