@@ -2,19 +2,16 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import IndexLayout from '../components/layouts/IndexLayout';
 import Meta from '../components/Meta';
-import PageHeading from '../components/PageHeading';
+import { BrowserHeading } from '../components/PageHeading';
 import TechniquesList from '../components/TechniquesList';
-import isPwa from '../util/isPwa';
 
 export default function TechniquesPage({ data }) {
   return (
     <IndexLayout title="Techniques">
       <Meta title="Essential Techniques for Cocktail Making" />
-      {!isPwa() ? (
-        <PageHeading bleed>
-          Essential Techniques for Cocktail Making
-        </PageHeading>
-      ) : null}
+      <BrowserHeading bleed>
+        Essential Techniques for Cocktail Making
+      </BrowserHeading>
       <TechniquesList thumbnails={data} />
     </IndexLayout>
   );

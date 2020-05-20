@@ -4,7 +4,6 @@ import GrowWrapper from './GrowWrapper';
 import Header from '../header/Header';
 import PwaHeader from '../header/PwaHeader';
 import Footer from '../Footer';
-import isPwa from '../../util/isPwa';
 
 const Main = styled.main`
   flex: 1;
@@ -51,13 +50,20 @@ const Article = styled.article`
   }
 `;
 
+const Heading = styled.h1`
+  @media (display-mode: standalone) {
+    display: none;
+  }
+`;
+
 export default function ArticleLayout({ title, children }) {
   return (
     <GrowWrapper>
-      {isPwa() ? <PwaHeader title={title} /> : <Header />}
+      <PwaHeader title={title} />
+      <Header />
       <Main>
         <Article>
-          {!isPwa() ? <h1>{title}</h1> : null}
+          <Heading>{title}</Heading>
           {children}
         </Article>
       </Main>

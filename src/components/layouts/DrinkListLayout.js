@@ -5,7 +5,6 @@ import Header from '../header/Header';
 import PwaHeader from '../header/PwaHeader';
 import PageHeading from '../../components/PageHeading';
 import Footer from '../Footer';
-import isPwa from '../../util/isPwa';
 
 const Main = styled.main`
   flex: 1;
@@ -18,12 +17,19 @@ const Main = styled.main`
   }
 `;
 
+const Heading = styled(PageHeading)`
+  @media (display-mode: standalone) {
+    display: none;
+  }
+`;
+
 export default function DrinkListLayout({ title, children }) {
   return (
     <GrowWrapper>
-      {isPwa() ? <PwaHeader title={title} /> : <Header />}
+      <PwaHeader title={title} />
+      <Header />
       <Main>
-        {!isPwa() ? <PageHeading>{title}</PageHeading> : null}
+        <Heading>{title}</Heading>
         {children}
       </Main>
       <Footer />

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import BackButton from './BackButton';
 
 const HeaderBar = styled.header`
+  display: none;
   position: sticky;
   top: 0;
   background-image: linear-gradient(
@@ -11,12 +12,15 @@ const HeaderBar = styled.header`
     transparent 100%
   );
   z-index: 1;
-  display: grid;
   margin-bottom: 1rem;
   grid-template-columns: 1fr auto 1fr;
   align-items: baseline;
   background-color: transparent;
   color: var(--brand-primary);
+
+  @media (display-mode: standalone) {
+    display: grid;
+  }
 `;
 
 const Title = styled.h1`

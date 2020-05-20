@@ -4,7 +4,6 @@ import Logo from './Logo';
 import Nav from './Nav';
 
 const HeaderBar = styled.header`
-  display: flex;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: baseline;
@@ -18,6 +17,10 @@ const HeaderBar = styled.header`
 
   @media (min-width: 35em) {
     grid-template-columns: 1fr auto 1fr;
+  }
+
+  @media (display-mode: standalone) {
+    display none;
   }
 `;
 

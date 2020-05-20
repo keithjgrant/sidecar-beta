@@ -15,3 +15,11 @@ const PageHeading = styled.h1`
 `;
 
 export default PageHeading;
+
+const BrowserHeading = styled(PageHeading)`
+  @media (display-mode: standalone) {
+    display: none;
+  }
+`;
+
+export { BrowserHeading };

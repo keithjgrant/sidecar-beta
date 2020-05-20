@@ -4,7 +4,6 @@ import Header from '../header/Header';
 import PwaHeader from '../header/PwaHeader';
 import PageHeading from '../PageHeading';
 import Footer from '../Footer';
-import isPwa from '../../util/isPwa';
 
 const Main = styled.main`
   width: calc(100vw - 2em);
@@ -13,12 +12,19 @@ const Main = styled.main`
   padding-bottom: 2rem;
 `;
 
+const Heading = styled(PageHeading)`
+  @media (display-mode: standalone) {
+    display: none;
+  }
+`;
+
 export default function SimpleListLayout({ title, children }) {
   return (
     <>
-      {isPwa() ? <PwaHeader title={title} /> : <Header />}
+      <PwaHeader title={title} />
+      <Header />
       <Main>
-        {!isPwa() ? <PageHeading>All Tags</PageHeading> : null}
+        <Heading>All Tags</Heading>
         {children}
       </Main>
       <Footer />
