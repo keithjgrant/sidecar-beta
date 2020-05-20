@@ -18,6 +18,10 @@ const PreviewLink = styled(Link)`
     color: var(--white);
   }
 
+  &:focus {
+    z-index: 1;
+  }
+
   img,
   .svg-wrapper {
     display: block;

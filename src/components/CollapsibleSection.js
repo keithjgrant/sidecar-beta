@@ -28,7 +28,7 @@ const Toggle = styled.button`
 
 const Drawer = styled.div`
   margin-top: 0.4em;
-  transition: height 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: height 0.3s var(--ease-out-cubic);
   overflow: hidden;
 `;
 

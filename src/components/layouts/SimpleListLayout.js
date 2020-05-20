@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PageAnimationWrapper from '../PageAnimationWrapper';
 import Header from '../header/Header';
 import PwaHeader from '../header/PwaHeader';
 import PageHeading from '../PageHeading';
@@ -20,7 +21,7 @@ const Heading = styled(PageHeading)`
 
 export default function SimpleListLayout({ title, children }) {
   return (
-    <>
+    <PageAnimationWrapper>
       <PwaHeader title={title} />
       <Header />
       <Main>
@@ -28,6 +29,6 @@ export default function SimpleListLayout({ title, children }) {
         {children}
       </Main>
       <Footer />
-    </>
+    </PageAnimationWrapper>
   );
 }

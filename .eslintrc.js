@@ -41,5 +41,6 @@ module.exports = {
     console: true,
     __dirname: true,
     exports: true,
+    Image: true,
   },
 };

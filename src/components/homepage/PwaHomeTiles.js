@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import LogoSvg from '../header/LogoSvg';
 
-const Tiles = styled.div`
+const PwaTiles = styled.div`
   max-width: 500px;
   min-height: 100vh;
   margin: 0 auto;
@@ -32,7 +32,7 @@ const Heading = styled.h1`
   }
 `;
 
-const Tile = styled(Link)`
+const PwaTile = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +52,7 @@ const Tile = styled(Link)`
 
 export default function PwaHomeTiles() {
   return (
-    <Tiles>
+    <PwaTiles>
       <TitleTile>
         <Heading>
           <LogoSvg /> Sidecar
@@ -63,10 +63,10 @@ export default function PwaHomeTiles() {
           for the home bartender
         </div>
       </TitleTile>
-      <Tile to="/drinks">Drinks</Tile>
-      <Tile to="/ingredients">Ingredients</Tile>
-      <Tile to="/techniques">Techniques</Tile>
-      <Tile to="/about">About</Tile>
-    </Tiles>
+      <PwaTile to="/drinks">Drinks</PwaTile>
+      <PwaTile to="/ingredients">Ingredients</PwaTile>
+      <PwaTile to="/techniques">Techniques</PwaTile>
+      <PwaTile to="/about">About</PwaTile>
+    </PwaTiles>
   );
 }
