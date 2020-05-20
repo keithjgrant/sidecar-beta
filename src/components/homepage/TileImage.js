@@ -4,17 +4,28 @@ import Image from 'gatsby-image';
 import glasses from '../svg/glasses';
 
 const Wrapper = styled.div`
-  grid-column: 1;
-  grid-row: 1;
   height: 100%;
+  width: 100%;
+  max-width: var(--tile-size);
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   top: 0;
-  right: 0;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 1px solid var(--gray-3);
+  background-color: var(--card-bg);
+  overflow: hidden;
+
+  &:hover {
+    border-color: var(--gray-4);
+    & svg {
+      color: var(--white);
+    }
+  }
 
   img,
   svg {
@@ -28,8 +39,8 @@ const Wrapper = styled.div`
     color: var(--gray-6);
   }
   svg {
-    height: 5em;
-    padding: 1em 0.5em;
+    height: 4.5em;
+    padding: 1.25em 0.5em;
     color: var(--orange-8);
     filter: drop-shadow(2px 4px 6px black);
   }

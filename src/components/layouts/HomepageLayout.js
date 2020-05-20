@@ -1,11 +1,80 @@
 import React from 'react';
-import Header from '../header/Header';
+import styled from 'styled-components';
+import Img from 'gatsby-image';
+import LogoSvg from '../header/LogoSvg';
 
-export default function HomepageLayout({ children }) {
+const nbsp = '\u00A0';
+
+const Banner = styled(Img)`
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+`;
+
+const Header = styled.header`
+  position: absolute;
+  top: 10vh;
+  width: 50%;
+  text-align: center;
+  color: var(--white);
+  z-index: 1;
+
+  & > h1 {
+    min-width: max-content;
+    margin-bottom: 0.8rem;
+    color: var(--brand-primary);
+  }
+
+  & > div {
+    margin-left: 1rem;
+  }
+`;
+
+const Parallax = styled.div`
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+`;
+
+const Back = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(2);
+  overflow: hidden;
+`;
+
+const Front = styled.main`
+  margin-top: 50vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(0);
+  z-index: 1;
+`;
+
+export default function HomepageLayout({ heroImage, children }) {
   return (
-    <>
-      <Header isHome />
-      <div>{children}</div>
-    </>
+    <Parallax>
+      <Back>
+        <Header>
+          <h1>
+            <LogoSvg /> Sidecar
+          </h1>
+          <div css="">
+            A curated collection of{nbsp}cocktails
+            <br />
+            for the home bartender
+          </div>
+        </Header>
+        <Banner fluid={heroImage.childImageSharp.fluid} />
+      </Back>
+      <Front>{children}</Front>
+    </Parallax>
   );
 }

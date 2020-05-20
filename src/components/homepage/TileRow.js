@@ -4,35 +4,39 @@ import DrinkTile from './DrinkTile';
 
 const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  ${'' /* margin: 0 1rem; */}
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: calc(25vw - 1.5rem);
   grid-gap: var(--gap-size);
+
+  @media (min-width: 700px) {
+    --tile-size: 10em;
+    grid-template-rows: var(--tile-size);
+  }
+  ${'' /*
+  @media (min-width: 810px) {
+    margin: 0 auto;
+  } */}
 `;
 
 const Heading = styled.div`
-  && {
-    margin-bottom: 0;
-  }
-
-  grid-column: 1 / -1;
-  padding: 0.2rem 0.5rem 0.1rem;
-  color: var(--white);
-  opacity: 0.3;
-  font-size: 0.8rem;
+  grid-row: 1;
+  align-self: end;
+  font-family: var(--font-heading);
+  color: var(--gray-8);
   text-align: right;
 `;
 
-export default function TileRow({ drinks, heading, imageMap }) {
+export default function TileRow({ drinks, heading, imageMap, className }) {
   return (
-    <>
+    <Row className={className}>
       <Heading>{heading}</Heading>
-      <Row>
-        {drinks.map((drink) => {
-          const slug = drink.path.replace(/^\/drinks\//, '');
-          return (
-            <DrinkTile key={drink.path} drink={drink} image={imageMap[slug]} />
-          );
-        })}
-      </Row>
-    </>
+      {drinks.map((drink) => {
+        const slug = drink.path.replace(/^\/drinks\//, '');
+        return (
+          <DrinkTile key={drink.path} drink={drink} image={imageMap[slug]} />
+        );
+      })}
+    </Row>
   );
 }

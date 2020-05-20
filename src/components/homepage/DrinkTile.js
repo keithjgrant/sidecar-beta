@@ -4,12 +4,10 @@ import styled from 'styled-components';
 import TileImage from './TileImage';
 
 const TileLink = styled(Link)`
+  grid-row: 1;
   display: grid;
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--card-border);
-  border-radius: var(--border-radius);
-  background-color: var(--card-bg);
 
   &:hover {
     color: var(--white);

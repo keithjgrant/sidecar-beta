@@ -3,30 +3,26 @@ import { graphql } from 'gatsby';
 import HomepageLayout from '../components/layouts/HomepageLayout';
 import Meta from '../components/Meta';
 import HomeTiles from '../components/homepage/HomeTiles';
-import PwaHomeTiles from '../components/homepage/PwaHomeTiles';
-import isPwa from '../util/isPwa';
 
 function getDrinkObjects(result) {
   return result.edges.map((item) => item.node.frontmatter);
 }
 
-export default function IndexPage({ data: { recent, featured, images } }) {
+export default function IndexPage({
+  data: { recent, featured, images, heroImage },
+}) {
   const imageMap = {};
   images.edges.forEach(({ node: { name, childImageSharp } }) => {
     imageMap[name] = childImageSharp;
   });
   return (
-    <HomepageLayout>
+    <HomepageLayout heroImage={heroImage}>
       <Meta title="Home" />
-      {isPwa() ? (
-        <PwaHomeTiles />
-      ) : (
-        <HomeTiles
-          recent={getDrinkObjects(recent)}
-          featured={getDrinkObjects(featured)}
-          imageMap={imageMap}
-        />
-      )}
+      <HomeTiles
+        recent={getDrinkObjects(recent)}
+        featured={getDrinkObjects(featured)}
+        imageMap={imageMap}
+      />
     </HomepageLayout>
   );
 }
@@ -90,6 +86,14 @@ export const pageQuery = graphql`
               ...GatsbyImageSharpFixed_withWebp
             }
           }
+        }
+      }
+    }
+    heroImage: file(relativePath: { eq: "hero.jpg" }) {
+      relativePath
+      childImageSharp {
+        fluid(maxHeight: 800, webpQuality: 85) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

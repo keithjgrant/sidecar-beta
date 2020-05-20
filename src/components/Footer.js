@@ -21,15 +21,17 @@ const Split = styled.div`
 
 const year = new Date().getFullYear();
 
-export default function Footer() {
+export default function Footer({ content, className }) {
   return (
-    <Wrapper>
+    <Wrapper className={className}>
       <Split>
         <div>
           © 2018–{year} <a href="https://keithjgrant.com">Keith J. Grant</a>.
           All rights reserved.
         </div>
-        <div css="text-align: right">Don’t you dare drink and drive.</div>
+        <div css="text-align: right">
+          {content || 'Don’t you dare drink and drive.'}
+        </div>
       </Split>
     </Wrapper>
   );
