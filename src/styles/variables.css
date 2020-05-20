@@ -44,4 +44,7 @@
 
   --input-padding: 0.2em 0.5em;
   --input-border: 1px solid var(--orange-7);
+
+  --ease-in-cubic: cubic-bezier(0.32, 0, 0.67, 0);
+  --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
 }

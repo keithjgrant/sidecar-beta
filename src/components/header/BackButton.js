@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
+import { Context } from '../PageAnimationWrapper';
 import CaretLeft from '../svg/CaretLeft';
 
 const Button = styled.button`
@@ -16,8 +17,11 @@ const Button = styled.button`
 `;
 
 export default function BackButton({ alt }) {
-  const onClick = (e) => {
+  const context = useContext(Context);
+
+  const onClick = async (e) => {
     e.preventDefault();
+    await context.animateOut();
     window.history.back();
   };
 

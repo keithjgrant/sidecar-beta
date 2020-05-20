@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PageAnimationWrapper from '../PageAnimationWrapper';
 import Header from '../header/Header';
 import PwaHeader from '../header/PwaHeader';
 import PageHeading from '../PageHeading';
@@ -15,13 +16,13 @@ const Main = styled.main`
 
 export default function SimpleListLayout({ title, children }) {
   return (
-    <>
+    <PageAnimationWrapper>
       {isPwa() ? <PwaHeader title={title} /> : <Header />}
       <Main>
         {!isPwa() ? <PageHeading>All Tags</PageHeading> : null}
         {children}
       </Main>
       <Footer />
-    </>
+    </PageAnimationWrapper>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PageAnimationWrapper from '../PageAnimationWrapper';
 import GrowWrapper from './GrowWrapper';
 import Header from '../header/Header';
 import PwaHeader from '../header/PwaHeader';
@@ -20,13 +21,15 @@ const Main = styled.main`
 
 export default function DrinkListLayout({ title, children }) {
   return (
-    <GrowWrapper>
-      {isPwa() ? <PwaHeader title={title} /> : <Header />}
-      <Main>
-        {!isPwa() ? <PageHeading>{title}</PageHeading> : null}
-        {children}
-      </Main>
-      <Footer />
-    </GrowWrapper>
+    <PageAnimationWrapper>
+      <GrowWrapper>
+        {isPwa() ? <PwaHeader title={title} /> : <Header />}
+        <Main>
+          {!isPwa() ? <PageHeading>{title}</PageHeading> : null}
+          {children}
+        </Main>
+        <Footer />
+      </GrowWrapper>
+    </PageAnimationWrapper>
   );
 }

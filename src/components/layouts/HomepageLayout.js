@@ -6,7 +6,7 @@ export default function HomepageLayout({ children }) {
   return (
     <>
       {!isPwa() ? <Header isHome /> : null}
-      <div>{children}</div>
+      <main>{children}</main>
     </>
   );
 }

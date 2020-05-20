@@ -2,7 +2,7 @@ export default function isPwa() {
   if (typeof window === 'undefined') {
     return false;
   }
-  if (window.location.search.includes('pwa=1')) {
+  if (window.location.search.includes('pwa=1') || true) {
     return true;
   }
   return (
