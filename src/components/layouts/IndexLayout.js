@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PageAnimationWrapper from '../PageAnimationWrapper';
 import GrowWrapper from './GrowWrapper';
 import Header from '../header/Header';
 import PwaHeader from '../header/PwaHeader';
@@ -31,13 +32,15 @@ const IndexGrid = styled.div`
 
 export default function IndexLayout({ title, children }) {
   return (
-    <GrowWrapper>
-      <PwaHeader title={title} />
-      <Header />
-      <Main>
-        <IndexGrid>{children}</IndexGrid>
-      </Main>
-      <Footer />
-    </GrowWrapper>
+    <PageAnimationWrapper>
+      <GrowWrapper>
+        <PwaHeader title={title} />
+        <Header />
+        <Main>
+          <IndexGrid>{children}</IndexGrid>
+        </Main>
+        <Footer />
+      </GrowWrapper>
+    </PageAnimationWrapper>
   );
 }

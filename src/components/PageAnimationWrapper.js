@@ -22,10 +22,12 @@ const backAnimation = keyframes`
 `;
 
 const Wrapper = styled.div`
-  &.in {
-    animation: ${inAnimation} 0.2s ease-in;
-    animation-fill-mode: forwards;
-    transform-origin: center 40vh;
+  @media (display-mode: standalone) {
+    &.in {
+      animation: ${inAnimation} 0.2s ease-in;
+      animation-fill-mode: forwards;
+      transform-origin: center 40vh;
+    }
   }
 
   &.out {

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PageAnimationWrapper from '../PageAnimationWrapper';
 import GrowWrapper from './GrowWrapper';
 import PwaHeader from '../header/PwaHeader';
 import Header from '../header/Header';
@@ -17,11 +18,13 @@ const ContentWrapper = styled.div`
 
 export default function CardLayout({ children }) {
   return (
-    <GrowWrapper>
-      <PwaHeader />
-      <Header />
-      <ContentWrapper>{children}</ContentWrapper>
-      <Footer />
-    </GrowWrapper>
+    <PageAnimationWrapper>
+      <GrowWrapper>
+        <PwaHeader />
+        <Header />
+        <ContentWrapper>{children}</ContentWrapper>
+        <Footer />
+      </GrowWrapper>
+    </PageAnimationWrapper>
   );
 }

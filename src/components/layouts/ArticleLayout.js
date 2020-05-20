@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PageAnimationWrapper from '../PageAnimationWrapper';
 import GrowWrapper from './GrowWrapper';
 import Header from '../header/Header';
 import PwaHeader from '../header/PwaHeader';
@@ -58,16 +59,18 @@ const Heading = styled.h1`
 
 export default function ArticleLayout({ title, children }) {
   return (
-    <GrowWrapper>
-      <PwaHeader title={title} />
-      <Header />
-      <Main>
-        <Article>
-          <Heading>{title}</Heading>
-          {children}
-        </Article>
-      </Main>
-      <Footer />
-    </GrowWrapper>
+    <PageAnimationWrapper>
+      <GrowWrapper>
+        <PwaHeader title={title} />
+        <Header />
+        <Main>
+          <Article>
+            <Heading>{title}</Heading>
+            {children}
+          </Article>
+        </Main>
+        <Footer />
+      </GrowWrapper>
+    </PageAnimationWrapper>
   );
 }
