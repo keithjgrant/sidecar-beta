@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import GrowWrapper from './GrowWrapper';
 import PwaHeader from '../header/PwaHeader';
+import Header from '../header/Header';
 import Footer from '../Footer';
 
 const ContentWrapper = styled.div`
@@ -18,6 +19,7 @@ export default function CardLayout({ children }) {
   return (
     <GrowWrapper>
       <PwaHeader />
+      <Header />
       <ContentWrapper>{children}</ContentWrapper>
       <Footer />
     </GrowWrapper>

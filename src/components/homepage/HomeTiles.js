@@ -10,7 +10,6 @@ const Card = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 1rem 0 0;
   background-color: var(--gray-dark);
 `;
 
@@ -21,13 +20,10 @@ const CardBoxDark = styled.div`
 
 const CardBoxHighlight = styled.div`
   max-width: 800px;
+  margin: 0 1rem;
   padding: 1rem 0;
   border: 1px solid var(--brand-primary);
   border-radius: var(--border-radius);
-
-  @media (min-width: 400px) {
-    margin: 0 1rem;
-  }
 
   @media (min-width: 810px) {
     margin: 0 auto;
@@ -52,6 +48,7 @@ const MainLinks = styled.div`
     align-items: center;
     justify-content: center;
     padding: 0.3em 0.5em;
+    color: var(--gray-8);
 
     &:hover {
       color: var(--white);

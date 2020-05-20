@@ -9,14 +9,12 @@ import IngredientList from './IngredientList';
 import styled from 'styled-components';
 
 const Main = styled.main`
+  padding-top: 2rem;
   margin: 0;
   line-height: 1.2;
 
   @media (min-width: 25em) {
     margin: 0 1em 1em;
-    ${'' /* TODO: 1em top margin if desktop nav? */}
-
-    ${'' /* if no image: padding-top: 1em */}
   }
 
   @media (min-width: 30em) {
@@ -25,6 +23,10 @@ const Main = styled.main`
 
   @media (min-width: 40em) {
     display: flex;
+  }
+
+  @media (display-mode: standalone) {
+    padding-top: 0;
   }
 `;
 
