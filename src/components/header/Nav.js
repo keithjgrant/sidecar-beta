@@ -29,14 +29,6 @@ const Navbar = styled.div`
   }
 `;
 
-// const DesktopOnlyLink = styled(Link)`
-//   && {
-//     @media (max-width: 23em) {
-//       display: none;
-//     }
-//   }
-// `;
-
 export default function Nav() {
   return (
     <Navbar>

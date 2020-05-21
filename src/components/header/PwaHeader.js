@@ -9,10 +9,10 @@ const HeaderBar = styled.header`
   background-image: linear-gradient(
     to bottom,
     var(--gray-dark) 65%,
-    transparent 100%
+    hsla(315, 3.2%, 24.7%, 0) 100%
   );
   z-index: 1;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   grid-template-columns: 1fr auto 1fr;
   align-items: baseline;
   background-color: transparent;
