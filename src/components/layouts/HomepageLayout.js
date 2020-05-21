@@ -61,7 +61,10 @@ const Front = styled.main`
 export default function HomepageLayout({ heroImage, children }) {
   let iOS = false;
   if (typeof navigator === undefined) {
-    iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    // iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    iOS =
+      /iPad|iPhone|iPod/.test(navigator.platform) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   }
 
   return (
