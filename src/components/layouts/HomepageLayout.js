@@ -82,7 +82,9 @@ export default function HomepageLayout({ heroImage, children }) {
         </Header>
         <Banner fluid={heroImage.childImageSharp.fluid} />
       </Back>
-      <Front>{children}</Front>
+      <Front>
+        {children};{iOS && '..'}
+      </Front>
     </Parallax>
   );
 }
