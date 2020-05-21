@@ -31,8 +31,3 @@ You can infuse just about anything you can think of. Here are some ideas:
 The right flavored syrup can take an otherwise simple cocktail to the next level. Don’t be shy with the flavoring; you can always dilute it down with regular simple syrup if it comes out too strong.
 
 See also [burnt-sugar-syrup](/ingredients/burnt-sugar-syrup/)
-
-## Honey Syrup
-Honey is just a little too thick to incorporate easily into cocktails. You can make a syrup by adding a little water and heating to dissolve the honey in. For every 100 grams of honey, add 64 grams of water (about a 3:2 ratio). This will result in a syrup with about the same sweetness as simple syrup.
-
-You can add infusions to honey syrup the same ways as you can with simple syrup. I infuse cardamom to make a cardomom honey syrup for the [Indian Winter](/drinks/indian-winter/) cocktail.

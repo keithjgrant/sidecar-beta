@@ -26,6 +26,9 @@ export default function IngredientsIndex() {
           <TileLink href="/ingredients/simple-syrup">Simple Syrup</TileLink>
         </li>
         <li>
+          <TileLink href="/ingredients/honey-syrup">Honey Syrup</TileLink>
+        </li>
+        <li>
           <TileLink href="/ingredients/ginger-syrup">Ginger Syrup</TileLink>
         </li>
         <li>

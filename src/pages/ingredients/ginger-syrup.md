@@ -29,3 +29,5 @@ Once the depth reduces back to the same level you noted with the spoon, it is re
 Strain out the chunks of ginger.
 Allow the syrup to cool and pour into a bottle.
 The syrup will keep in the fridge for several weeks.
+
+<a class="button" href="/tags/ginger">Drinks that use ginger syrup</a>

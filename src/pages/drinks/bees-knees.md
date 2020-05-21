@@ -9,7 +9,7 @@ family: sour
 ingredients: [
   "2 oz gin",
   "¾ oz lemon juice",
-  "¾ oz [honey syrup](/ingredients/simple-syrup/#honey-syrup)"
+  "¾ oz [honey syrup](/ingredients/honey-syrup)"
 ]
 garnish: lemon twist
 tags: [

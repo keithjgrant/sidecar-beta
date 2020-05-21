@@ -20,6 +20,12 @@ tags: [
   stirred,
 ]
 tenBottleCandidate: true
+image:
+  url: "/images/drinks/manhattan.jpg"
+  alt: "Manhattan cocktail"
+  align: "30% 60%"
+  photographer: "Drew Beamer"
+  creditUrl: "https://unsplash.com/@drew_beamer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 ---
 Combine in a shaker with ice. Stir, then strain into a coupe glass.
 

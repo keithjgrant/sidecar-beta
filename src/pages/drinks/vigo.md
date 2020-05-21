@@ -10,7 +10,7 @@ ingredients: [
   "2 oz orange juice",
   "1 oz London dry gin",
   "1 oz blanc vermouth",
-  "¼ oz honey syrup",
+  "¼ oz [honey syrup](/ingredients/honey-syrup)",
   "2 oz sparkling wine",
 ]
 garnish:

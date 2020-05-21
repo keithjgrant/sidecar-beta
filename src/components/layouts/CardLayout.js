@@ -16,14 +16,14 @@ const ContentWrapper = styled.div`
   justify-content: center;
 `;
 
-export default function CardLayout({ children }) {
+export default function CardLayout({ footerContent, children }) {
   return (
     <PageAnimationWrapper>
       <GrowWrapper>
         <PwaHeader />
         <Header />
         <ContentWrapper>{children}</ContentWrapper>
-        <Footer />
+        <Footer content={footerContent} />
       </GrowWrapper>
     </PageAnimationWrapper>
   );

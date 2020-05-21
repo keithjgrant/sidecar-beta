@@ -9,8 +9,8 @@ family: fizz
 ingredients: [
   "1½ oz overproof rye whiskey",
   "¾ oz lime juice",
-  "¾ oz ginger syrup",
-  "½ oz honey syrup",
+  "¾ oz [ginger syrup](/ingredients/ginger-syrup)",
+  "½ oz [honey syrup](/ingredients/honey-syrup)",
   "1 egg white",
   "top with about 3 oz floral IPA"
 ]

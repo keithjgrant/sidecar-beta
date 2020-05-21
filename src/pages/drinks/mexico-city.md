@@ -10,9 +10,8 @@ ingredients: [
   "2 oz tequila reposado or añejo",
   "1 oz sweet vermouth",
   "1 dashes Angostura bitters",
-  "brandied cherry"
 ]
-garnish: orange twist
+garnish: orange twist, brandied cherry
 tags: [
   ten-bottle-bar,
   tequila,
@@ -21,6 +20,12 @@ tags: [
   stirred,
 ]
 tenBottleCandidate: true
+image:
+  url: "/images/drinks/manhattan.jpg"
+  alt: "Manhattan cocktail"
+  align: "30% 60%"
+  photographer: "Emi Adreeva"
+  creditUrl: "https://unsplash.com/@emiandreeva?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 intro: This is a fun variation on a [Manhattan](/drinks/manhattan/), with tequila in place of the whiskey. Use a high-quality tequila.
 ---
 Stir tequila, vermouth, and bitters with plenty of ice. Strain into a coupe glass.

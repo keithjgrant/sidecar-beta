@@ -14,4 +14,4 @@ Add all ingredients to a saucepan and heat, stirring occasionally, just until th
 Allow syrup to cool then transfer to an airtight bottle.
 Keeps in the fridge for several weeks.
 
-Drinks tagged [IPA syrup](/tags/ipa-syrup)
+<a class="button" href="/tags/ipa-syrup">Drinks that use IPA syrup</a>

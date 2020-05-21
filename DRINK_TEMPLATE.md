@@ -20,7 +20,9 @@ image:
   url: "/images/drinks/.jpg"
   alt: ""
   align: "50% 50%"
-source: 
+  photographer: ""
+  creditUrl: ""
+source:
 intro:
 
 ---

@@ -9,7 +9,7 @@ family: sour
 ingredients: [
   "1½ oz vodka",
   "½ oz lemon juice",
-  "½ oz honey cardamom syrup",
+  "½ oz [honey cardamom syrup](/ingredients/honey-syrup)",
   "1 egg white",
   "2 drops Angostura bitters"
 ]
@@ -30,7 +30,7 @@ image:
   align: "70% 30%"
 tenBottleCandidate: true
 intro: |
-  This uses [honey syrup](/ingredients/simple-syrup/#honey-syrup) infused with cardamom pods.
+  This uses [honey syrup](/ingredients/honey-syrup) infused with cardamom pods.
 
   Recipe found at [The Charming Detroiter](http://thecharmingdetroiter.com/indian-winter-a-cardamom-winter-cocktail/)
 ---
