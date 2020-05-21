@@ -61,7 +61,7 @@ const Front = styled.main`
 export default function HomepageLayout({ heroImage, children }) {
   let iOS = false;
   let foo;
-  if (typeof navigator !== undefined) {
+  if (typeof navigator !== 'undefined') {
     // iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     iOS =
       /iPad|iPhone|iPod/.test(navigator.platform) ||
