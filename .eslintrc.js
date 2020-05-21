@@ -42,5 +42,6 @@ module.exports = {
     __dirname: true,
     exports: true,
     Image: true,
+    navigator: true,
   },
 };
