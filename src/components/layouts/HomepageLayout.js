@@ -65,7 +65,8 @@ export default function HomepageLayout({ heroImage, children }) {
     // iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     iOS =
       /iPad|iPhone|iPod/.test(navigator.platform) ||
-      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      (['iPhone', 'iPad', 'MacIntel'].includes(navigator.platform) &&
+        navigator.maxTouchPoints > 1);
     foo = navigator.platform + ' ' + navigator.maxTouchPoints;
   }
 
