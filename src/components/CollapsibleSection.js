@@ -34,7 +34,7 @@ const Drawer = styled.div`
 
 export default function CollapsibleSection({ label, startExpanded, children }) {
   const [isExpanded, setIsExpanded] = useState(startExpanded);
-  const [height, setHeight] = useState(0);
+  const [height, setHeight] = useState(isExpanded ? 'auto' : 0);
   const ref = useRef(null);
   const toggle = (e) => {
     e.preventDefault();
@@ -57,7 +57,7 @@ export default function CollapsibleSection({ label, startExpanded, children }) {
       <Drawer
         ref={ref}
         css={css`
-          height: ${height}px;
+          height: ${height === 'auto' ? 'auto' : `${height}px`};
         `}
       >
         {children}

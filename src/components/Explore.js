@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
-import { useLocation, useNavigate } from '@reach/router';
-import qs from 'querystring';
 import Card from './Card';
 import { GridForm, GridFormLabel, ButtonGroup } from './forms';
 import CollapsibleSection from './CollapsibleSection';
 import DrinkList from './DrinkList';
+import { getParams, setParam } from '../util/qs';
 
 export default function Explore({ drinks, imageMap }) {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const query = qs.parse(location.search.replace(/^\?/, ''));
+  const params = getParams();
 
-  const [base, setBase] = useState(query.base || 'all');
-  const [family, setFamily] = useState(query.family || 'all');
-  const filtersSet = query.base || query.family;
+  const [base, setBase] = useState(params.base || 'all');
+  const [family, setFamily] = useState(params.family || 'all');
+  const filtersSet = !!(params.base || params.family);
 
   const filtered = drinks.filter(byBase(base)).filter(byFamily(family));
   return (
@@ -38,8 +35,7 @@ export default function Explore({ drinks, imageMap }) {
               ]}
               onChange={(value) => {
                 setBase(value);
-                const q = qs.stringify({ ...query, base: value });
-                navigate(`${location.pathname}?${q}`, { replace: true });
+                setParam('base', value);
               }}
             />
             <GridFormLabel>Drink family</GridFormLabel>
@@ -58,8 +54,7 @@ export default function Explore({ drinks, imageMap }) {
               ]}
               onChange={(value) => {
                 setFamily(value);
-                const q = qs.stringify({ ...query, family: value });
-                navigate(`${location.pathname}?${q}`, { replace: true });
+                setParam('family', value);
               }}
             />
           </GridForm>

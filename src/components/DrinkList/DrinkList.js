@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { arrayOf, shape } from 'prop-types';
-import { useLocation, useNavigate } from '@reach/router';
-import qs from 'querystring';
 import styled from 'styled-components';
 import DrinkItem from './DrinkItem';
 import { ButtonGroup } from '../forms';
+import { getParams, setParam } from '../../util/qs';
 
 const List = styled.ul`
   margin: 0;
@@ -30,12 +29,10 @@ const Container = styled.div`
 `;
 
 export default function DrinkList({ drinks, imageMap }) {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const query = qs.parse(location.search.replace(/^\?/, ''));
+  const params = getParams();
 
   const [sortBy, setSortBy] = useState(
-    ['name', 'date'].includes(query.sort) ? query.sort : 'name'
+    ['name', 'date'].includes(params.sort) ? params.sort : 'name'
   );
 
   const sorted =
@@ -53,8 +50,7 @@ export default function DrinkList({ drinks, imageMap }) {
           ]}
           onChange={(value) => {
             setSortBy(value);
-            const q = qs.stringify({ ...query, sort: value });
-            navigate(`${location.pathname}?${q}`, { replace: true });
+            setParam('sort', value);
           }}
         />
       </Container>
