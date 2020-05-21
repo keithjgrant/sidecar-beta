@@ -59,9 +59,14 @@ const Front = styled.main`
 `;
 
 export default function HomepageLayout({ heroImage, children }) {
+  let iOS = false;
+  if (typeof navigator === undefined) {
+    iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  }
+
   return (
-    <Parallax>
-      <Back>
+    <Parallax style={iOS ? { perspective: 'initial' } : null}>
+      <Back style={iOS ? { transform: 'initial' } : null}>
         <Header>
           <h1>
             <LogoSvg /> Sidecar
