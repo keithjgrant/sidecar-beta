@@ -64,6 +64,11 @@ svg {
   box-sizing: border-box;
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid var(--gray-light);
+}
+
 :focus {
   outline: var(--focus-outline);
 }
@@ -80,4 +85,12 @@ svg {
 }
 .button:hover {
   color: var(--white);
+}
+
+.credits {
+  padding-top: 1em;
+  color: var(--gray-7);
+}
+.credits a {
+  color: inherit;
 }

@@ -22,3 +22,7 @@ I’m annoyed when a recipe tells me what brand of liquor to use. I’m not goin
 That said, every now and then, it really does matter. An [Elder Fashioned](/drinks/elder-fashioned) doesn’t work without Plymouth Gin and the [Bannon Tantrum](/drinks/bannon-tantrum) was designed specifically for Dry Fly Vodka’s unique flavor. So I strive to only specify name brands when I think it truly matters.
 
 Some of my recipes might be balanced for a specific brand, but can easily work with another brand &mdash; though the measurements potentially require a little tweaking to get the flavor balance right. (This is particularly the case when it comes to liqueurs.) In these cases, I indicate the brand I use in parentheses and leave it to you to make any adjustments you might find necessary.
+
+<hr />
+
+<div class="credits">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a></div>
