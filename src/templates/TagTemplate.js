@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import DrinkListLayout from '../components/layouts/DrinkListLayout';
 import Meta from '../components/Meta';
 import DrinkList from '../components/DrinkList';
@@ -19,6 +19,9 @@ export default function TagTemplate({
       {content ? (
         <SimpleContent dangerouslySetInnerHTML={{ __html: content.html }} />
       ) : null}
+      <Link className="button" to="/tags">
+        Browse all tags
+      </Link>
       <DrinkList
         drinks={drinks.edges.map((item) => item.node.frontmatter)}
         imageMap={imageMap}
