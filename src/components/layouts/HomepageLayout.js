@@ -60,11 +60,13 @@ const Front = styled.main`
 
 export default function HomepageLayout({ heroImage, children }) {
   let iOS = false;
-  if (typeof navigator === undefined) {
+  let foo;
+  if (typeof navigator !== undefined) {
     // iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     iOS =
       /iPad|iPhone|iPod/.test(navigator.platform) ||
       (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    foo = navigator.platform + ' ' + navigator.maxTouchPoints;
   }
 
   return (
@@ -84,6 +86,7 @@ export default function HomepageLayout({ heroImage, children }) {
       </Back>
       <Front>
         {children};{iOS && '..'}
+        {foo}
       </Front>
     </Parallax>
   );
