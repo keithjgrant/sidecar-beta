@@ -11,6 +11,7 @@ export default function DrinkTemplate({ data }) {
     ...data.post.frontmatter,
     content: data.post.html,
   };
+  const slug = drink.path.replace('/drinks/', '');
 
   const image = drink.image ? drink.image.url : null;
   let photoCredit;
@@ -27,8 +28,9 @@ export default function DrinkTemplate({ data }) {
       </span>
     );
   }
+  console.log(drink);
   return (
-    <CardLayout footerContent={photoCredit}>
+    <CardLayout drinkName={slug} footerContent={photoCredit}>
       <Meta title={drink.title} image={image} />
       <DrinkCard drink={drink} imageData={data.image} />
     </CardLayout>
@@ -42,6 +44,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "DD MMM YYYY")
+        path
         glass
         sweetness
         booziness

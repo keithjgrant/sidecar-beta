@@ -17,11 +17,11 @@ const ContentWrapper = styled.div`
   justify-content: center;
 `;
 
-export default function CardLayout({ footerContent, children }) {
+export default function CardLayout({ drinkName, footerContent, children }) {
   return (
     <PageAnimationWrapper>
       <GrowWrapper>
-        <PwaHeader controls={<FavoriteButton />} />
+        <PwaHeader controls={<FavoriteButton drinkName={drinkName} />} />
         <Header />
         <ContentWrapper>{children}</ContentWrapper>
         <Footer content={footerContent} />

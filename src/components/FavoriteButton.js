@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import db from '../util/db';
+import { click } from '../util/haptic';
 import Star from './svg/Star';
 
 const Button = styled.button`
@@ -20,10 +21,18 @@ const Button = styled.button`
   }
 `;
 
-const drinkName = 'manhattan';
-
-export default function FavoriteButton() {
+export default function FavoriteButton({ drinkName }) {
   const [checked, setChecked] = useState(false);
+
+  useEffect(() => {
+    (async () => {
+      const favorite = await db.getFavorite(drinkName);
+      if (favorite) {
+        setChecked(true);
+      }
+    })();
+  }, []);
+
   const onClick = async () => {
     setChecked(!checked);
     if (checked) {
@@ -35,6 +44,7 @@ export default function FavoriteButton() {
     //   const isPersisted = await navigator.storage.persisted();
     //   console.log(`Persisted storage granted: ${isPersisted}`);
     // }
+    click();
   };
   return (
     <Button onClick={onClick} type="button">
