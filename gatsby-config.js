@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Sidecar',
-    description: 'A curated collection of cocktails',
+    description: 'A curated collection of cocktails for the home bartender',
     author: '@keithjgrant',
   },
   plugins: [

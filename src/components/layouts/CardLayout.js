@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PageAnimationWrapper from '../PageAnimationWrapper';
 import GrowWrapper from './GrowWrapper';
 import PwaHeader from '../header/PwaHeader';
+import FavoriteButton from '../FavoriteButton';
 import Header from '../header/Header';
 import Footer from '../Footer';
 
@@ -20,7 +21,7 @@ export default function CardLayout({ footerContent, children }) {
   return (
     <PageAnimationWrapper>
       <GrowWrapper>
-        <PwaHeader />
+        <PwaHeader controls={<FavoriteButton />} />
         <Header />
         <ContentWrapper>{children}</ContentWrapper>
         <Footer content={footerContent} />

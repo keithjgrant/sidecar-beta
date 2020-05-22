@@ -17,7 +17,7 @@ export default function IndexPage({
   });
   return (
     <HomepageLayout heroImage={heroImage}>
-      <Meta title="Home" />
+      <Meta title="Sidecar — Cocktails for the home bartender" />
       <HomeTiles
         recent={getDrinkObjects(recent)}
         featured={getDrinkObjects(featured)}

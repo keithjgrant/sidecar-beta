@@ -14,7 +14,7 @@ const HeaderBar = styled.header`
   z-index: 1;
   padding-bottom: 1rem;
   grid-template-columns: 1fr auto 1fr;
-  align-items: baseline;
+  align-items: center;
   background-color: transparent;
   color: var(--brand-primary);
 
