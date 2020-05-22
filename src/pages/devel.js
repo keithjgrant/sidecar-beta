@@ -10,17 +10,17 @@ export default function DevelPage() {
         <Link to="/">Back to home</Link>
       </p>
       <div>
+        <button type="button" onClick={() => window.navigator.vibrate(10)}>
+          10ms
+        </button>
+        <button type="button" onClick={() => window.navigator.vibrate(15)}>
+          15ms
+        </button>
+        <button type="button" onClick={() => window.navigator.vibrate(20)}>
+          20ms
+        </button>
         <button type="button" onClick={() => window.navigator.vibrate(25)}>
           25ms
-        </button>
-        <button type="button" onClick={() => window.navigator.vibrate(50)}>
-          50ms
-        </button>
-        <button type="button" onClick={() => window.navigator.vibrate(100)}>
-          100ms
-        </button>
-        <button type="button" onClick={() => window.navigator.vibrate(200)}>
-          200ms
         </button>
       </div>
     </IndexLayout>
