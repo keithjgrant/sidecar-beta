@@ -31,6 +31,8 @@ image:
   align: "50% 50%"
 tenBottleCandidate: true
 ---
-Middle basil leaves, three cucumber slices, and simple syrup in the base of a rocks glass. Add the gin and lime, and crushed ice.
+Muddle basil leaves, three cucumber slices, and simple syrup in the base of a rocks glass.
+Add the gin and lime, and crushed ice.
 
-Top with tonic water. Garnish with slice of cucumber.
+Top with tonic water.
+Garnish with slice of cucumber.
