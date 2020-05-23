@@ -25,4 +25,4 @@ Some of my recipes might be balanced for a specific brand, but can easily work w
 
 <hr />
 
-<div class="credits">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a></div>
+<div class="footnote">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a></div>

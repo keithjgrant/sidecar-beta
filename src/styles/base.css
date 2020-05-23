@@ -87,10 +87,10 @@ hr {
   color: var(--white);
 }
 
-.credits {
+.footnote {
   padding-top: 1em;
   color: var(--gray-7);
 }
-.credits a {
+.footnote a {
   color: inherit;
 }

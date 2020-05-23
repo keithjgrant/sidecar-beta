@@ -52,8 +52,8 @@ const getFavorites = async () => {
 // };
 
 const getFavorite = async (drinkName) => {
+  if (!drinkName) return;
   const db = await ready;
-  console.log(db, drinkName);
   return db.get('favorites', drinkName);
 };
 

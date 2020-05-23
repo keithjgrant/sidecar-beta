@@ -28,7 +28,7 @@ export default function DrinkTemplate({ data }) {
       </span>
     );
   }
-  console.log(drink);
+
   return (
     <CardLayout drinkName={slug} footerContent={photoCredit}>
       <Meta title={drink.title} image={image} />
