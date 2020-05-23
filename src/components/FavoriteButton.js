@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
+import Toast from './Toast';
+import Star from './svg/Star';
 import db from '../util/db';
 import { click } from '../util/haptic';
-import Star from './svg/Star';
 
 const Button = styled.button`
   display: inline-block;
@@ -23,6 +25,7 @@ const Button = styled.button`
 
 export default function FavoriteButton({ drinkName }) {
   const [checked, setChecked] = useState(false);
+  const [message, setMessage] = useState('');
 
   useEffect(() => {
     (async () => {
@@ -34,21 +37,31 @@ export default function FavoriteButton({ drinkName }) {
   }, []);
 
   const onClick = async () => {
+    click();
     setChecked(!checked);
     if (checked) {
       db.deleteFavorite(drinkName);
+      setMessage('Removed from');
     } else {
       db.addFavorite(drinkName);
+      setMessage('Added to');
     }
-    // if (navigator.storage && navigator.storage.persist) {
-    //   const isPersisted = await navigator.storage.persisted();
-    //   console.log(`Persisted storage granted: ${isPersisted}`);
-    // }
-    click();
   };
   return (
-    <Button onClick={onClick} type="button">
-      <Star isFilled={checked} />
-    </Button>
+    <>
+      <Button onClick={onClick} type="button">
+        <Star isFilled={checked} />
+      </Button>
+      <Toast
+        message={
+          message && (
+            <span>
+              {message} <Link to="/favorites">favorites</Link>
+            </span>
+          )
+        }
+        onDone={() => setMessage('')}
+      />
+    </>
   );
 }

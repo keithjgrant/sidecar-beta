@@ -20,6 +20,7 @@ const PwaOnly = styled.div`
 
 export default function Favorites({ allDrinks, imageMap }) {
   const [favorites, setFavorites] = useState([]);
+  const [isPersisted, setIsPersisted] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -40,6 +41,15 @@ export default function Favorites({ allDrinks, imageMap }) {
     })();
   }, []);
 
+  useEffect(() => {
+    (async () => {
+      if (navigator.storage && navigator.storage.persist) {
+        const persisted = await navigator.storage.persisted();
+        setIsPersisted(persisted);
+      }
+    })();
+  });
+
   return (
     <>
       {favorites.length ? (
@@ -54,8 +64,8 @@ export default function Favorites({ allDrinks, imageMap }) {
           </NonPwa>
           <PwaOnly>
             <p>
-              Tap the star when viewing a drink recipe to save it to your
-              favorites.
+              No favorites saved. Tap the star when viewing a drink recipe to
+              save it to your favorites.
             </p>
           </PwaOnly>
         </>
@@ -64,6 +74,16 @@ export default function Favorites({ allDrinks, imageMap }) {
         Your favorites are saved locally in your browser. They will not carry
         over between browsers or devices.
       </p>
+      {!isPersisted && (
+        <>
+          .
+          <p css="display: none">
+            Your browser <b>may opt to delete this data</b> later to free up
+            storage. Browser storage should be persistent upon installation of
+            Sidecar to your device.
+          </p>
+        </>
+      )}
     </>
   );
 }
