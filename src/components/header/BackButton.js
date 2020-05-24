@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import styled from 'styled-components';
 import { Context } from '../PageAnimationWrapper';
 import CaretLeft from '../svg/CaretLeft';
+import { long } from '../../util/haptic';
 
 const Button = styled.button`
   display: inline-block;
@@ -18,15 +19,33 @@ const Button = styled.button`
 
 export default function BackButton({ alt }) {
   const context = useContext(Context);
+  const timeout = useRef(null);
 
   const onClick = async (e) => {
     e.preventDefault();
+    const initialPage = window.location.href;
     await context.animateOut();
     window.history.back();
+    setTimeout(() => {
+      if (window.location.href === initialPage) {
+        window.location.href = '/';
+      }
+    }, 500);
+  };
+
+  const onMouseDown = () => {
+    timeout.current = setTimeout(() => {
+      long();
+      window.location.href = '/';
+    }, 1000);
+  };
+
+  const onMouseUp = () => {
+    clearTimeout(timeout.current);
   };
 
   return (
-    <Button onClick={onClick}>
+    <Button onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
       <CaretLeft title={alt} />
     </Button>
   );

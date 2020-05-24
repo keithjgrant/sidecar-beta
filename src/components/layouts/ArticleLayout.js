@@ -31,6 +31,7 @@ const Article = styled.article`
   h2,
   h3 {
     color: inherit;
+    scroll-margin-top: 2.5em;
   }
 
   h1 {
