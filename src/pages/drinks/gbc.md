@@ -20,6 +20,7 @@ tags: [
   summer,
   refreshing,
   afternoon,
+  low-abv,
   gin,
   lime,
   summer,
