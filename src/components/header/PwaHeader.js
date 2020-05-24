@@ -4,6 +4,7 @@ import BackButton from './BackButton';
 
 const HeaderBar = styled.header`
   display: none;
+  display: block;
   position: sticky;
   top: 0;
   background-image: linear-gradient(

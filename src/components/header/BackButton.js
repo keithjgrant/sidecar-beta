@@ -33,19 +33,25 @@ export default function BackButton({ alt }) {
     }, 500);
   };
 
-  const onMouseDown = () => {
+  const onTouchStart = () => {
     timeout.current = setTimeout(() => {
       long();
-      window.location.href = '/';
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 150);
     }, 1000);
   };
 
-  const onMouseUp = () => {
+  const onTouchEnd = () => {
     clearTimeout(timeout.current);
   };
 
   return (
-    <Button onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+    <Button
+      onClick={onClick}
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
+    >
       <CaretLeft title={alt} />
     </Button>
   );
