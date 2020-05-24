@@ -58,7 +58,7 @@ export default function Favorites({ allDrinks, imageMap }) {
         <>
           <NonPwa>
             <p>
-              You must <Link to="/install">install</Link> in order to save
+              You must <Link to="/installation">install</Link> in order to save
               favorites.
             </p>
           </NonPwa>
@@ -79,8 +79,9 @@ export default function Favorites({ allDrinks, imageMap }) {
           .
           <p css="display: none">
             Your browser <b>may opt to delete this data</b> later to free up
-            storage. Browser storage should be persistent upon installation of
-            Sidecar to your device.
+            storage. Browser storage should be persistent upon{' '}
+            <Link to="/installation">installation</Link> of Sidecar to your
+            device.
           </p>
         </>
       )}
