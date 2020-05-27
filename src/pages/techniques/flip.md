@@ -9,11 +9,11 @@ Some flips use cream instead of an egg.
 The basic formula is:
 
 * 2 oz spirit
-* ½ oz syrup
+* ½ oz syrup (often Demerara syrup)
 * 1 whole egg (or 1 oz cream)
 
 This is probably the least commonly seen category of cocktail in modern bars.
-Egg nog may be the only flip commonly known today.
+[Egg nog](/drinks/egg-nog) may be the only flip commonly known today.
 Flips evolved over time from a mixture of beer, rum and sugar heated with a red-hot poker.
 This caused the drink to froth or “flip”, hence the name.
 Over time, the beer and the poker disappeared from use and an egg was added.

@@ -27,4 +27,4 @@ Reverse dry shaking is a method to increase the amount of froth on top of the dr
 
 In theory, this will produce more froth after ice has been diluted in the drink, so the ice doesn't start to break some of the froth up. In my experience, I have a hard time telling whether this works better than a normal dry shake. It’s a bit of a hassle to strain out the ice between shakes, but it does seem to maintain suction in the shaker during the no-ice shake, meaning fewer spills.
 
-[Drinks tagged shaken](/tags/shaken/)
+<a href="/tags/shaken" class="button">Drinks tagged shaken</a>

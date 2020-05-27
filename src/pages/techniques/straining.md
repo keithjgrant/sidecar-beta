@@ -13,4 +13,6 @@ Finally, *Julep strainer* is like a large flat spoon with several holes in it. I
 ## Double Straining
 When you prepare a drink with small bits (such as torn mint leaves), the methods above won’t strain them all out. For these drinks, you should place a regular strainer on your shaker and hold a *fine mesh strainer* above the glass. Pour the drink through both strainers. This is called double straining.
 
-Any drink with egg in it should also be double strained. This will catch any bits of the egg don’t fully incorporate during shaking.
+Any drink with egg in it should also be double strained.
+This will catch any bits of the egg don’t fully incorporate during shaking.
+Some bartenders will double strain most shaken drinks, to filter out any small shards of ice and prevent them from further diluting the drink in the glass.

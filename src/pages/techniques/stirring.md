@@ -19,4 +19,4 @@ You should stir the drink for 20&ndash;30 seconds. This is longer than you think
 
 Finally, strain the drink into the serving glass and add the garnish.
 
-[Drinks tagged stirred](/tags/stirred/)
+<a href="/tags/stirred" class="button">Drinks tagged stirred</a>

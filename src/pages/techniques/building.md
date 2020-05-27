@@ -21,4 +21,4 @@ Highballs, such as a [Gin &amp; Tonic](/drinks/gin-and-tonic/), Jack & Coke, or 
 
 You can give it a quick stir to incorporate everything before adding the garnish, but you don’t need to worry about dilution, as the soda does all the dilution the drink needs.
 
-[Drinks tagged built](/tags/built/)
+<a href="/tags/built" class="button">Drinks tagged built</a>
