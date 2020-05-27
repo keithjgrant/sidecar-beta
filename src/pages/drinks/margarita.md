@@ -11,7 +11,7 @@ ingredients: [
   "¾ oz orange liqueur",
   "¾ oz lime juice",
   "¼ oz light agave syrup",
-  "1 small pinch of salt",
+  "5 drops saline or small pinch of salt",
 ]
 garnish:
 tags: [

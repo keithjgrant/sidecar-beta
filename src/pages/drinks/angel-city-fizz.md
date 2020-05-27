@@ -5,7 +5,7 @@ date: 2019-09-20T12:00:00-08:00
 glass: collins
 sweetness: 2
 booziness: 1
-family: fizz
+family: sour
 ingredients: [
   "1½ oz overproof rye whiskey",
   "¾ oz lime juice",
@@ -16,13 +16,14 @@ ingredients: [
 ]
 garnish:
 tags: [
-  "rye-whiskey",
-  "whiskey",
-  "lime",
-  "ginger",
-  "honey",
-  "beer",
-  "shaken"
+  fizz,
+  rye-whiskey,
+  whiskey,
+  lime,
+  ginger,
+  honey,
+  beer,
+  shaken,
 ]
 image:
   url: "/images/drinks/angel-city-fizz.jpg"

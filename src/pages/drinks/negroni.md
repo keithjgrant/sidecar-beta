@@ -3,7 +3,7 @@ title: "Negroni"
 path: "/drinks/negroni"
 date: 2018-12-10T12:24:35-05:00
 glass: "coupe"
-sweetness: 2
+sweetness: 3
 booziness: 3
 family: martini
 ingredients: [

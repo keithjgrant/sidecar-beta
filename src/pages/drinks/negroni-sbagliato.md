@@ -13,10 +13,10 @@ ingredients: [
 ]
 garnish: orange peel spiral
 tags: [
-  "campari",
-  "sweet-vermouth",
-  "sparkling-wine",
-  "stirred"
+  campari,
+  sweet-vermouth,
+  sparkling-wine,
+  stirred,
 ]
 image:
   url: "/images/drinks/negroni-sbagliato.jpg"

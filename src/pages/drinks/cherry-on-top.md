@@ -5,7 +5,7 @@ date: "2018-01-16T11:57:50-05:00"
 glass: collins
 sweetness: 2
 booziness: 1
-family: highball
+family: sidecar
 ingredients: [
   "5 fresh cherries, pitted",
   "1½ oz vodka",

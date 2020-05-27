@@ -43,25 +43,26 @@ export default function TechniquesList({ thumbnails }) {
         </li>
       </TileLinkList>
       <SectionHeading>Cocktail Families</SectionHeading>
+      <p>All cocktails stem from one of six root recipes:</p>
       <TileLinkList>
         <li>
           <TileLink href="/techniques/sour">Sour</TileLink>
         </li>
-        {/* <li>
-            <TileLink href="/techniques/modified-sour">Modified Sour</TileLink>
-          </li>
-          <li>
-            <TileLink href="/techniques/old-fashioned">Old Fashioned</TileLink>
-          </li>
-          <li>
-            <TileLink href="/techniques/martini">Martini</TileLink>
-          </li>
-          <li>
-            <TileLink href="/techniques/highball">Highball</TileLink>
-          </li>
-          <li>
-            <TileLink href="/techniques/flip">Flip</TileLink>
-          </li> */}
+        <li>
+          <TileLink href="/techniques/sidecar">Sidecar</TileLink>
+        </li>
+        <li>
+          <TileLink href="/techniques/old-fashioned">Old Fashioned</TileLink>
+        </li>
+        <li>
+          <TileLink href="/techniques/martini">Martini</TileLink>
+        </li>
+        <li>
+          <TileLink href="/techniques/highball">Highball</TileLink>
+        </li>
+        <li>
+          <TileLink href="/techniques/flip">Flip</TileLink>
+        </li>
       </TileLinkList>
     </>
   );

@@ -44,13 +44,12 @@ export default function Explore({ drinks, imageMap }) {
               value={family}
               options={[
                 'all',
-                'fizz',
-                'flip',
-                'highball',
-                'martini',
-                'old fashioned',
-                'sidecar',
                 'sour',
+                'sidecar',
+                'old fashioned',
+                'martini',
+                'highball',
+                'flip',
               ]}
               onChange={(value) => {
                 setFamily(value);

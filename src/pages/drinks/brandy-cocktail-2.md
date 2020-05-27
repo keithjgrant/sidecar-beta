@@ -5,7 +5,7 @@ date: 2018-02-02T16:46:48-05:00
 glass: coupe
 sweetness: 2
 booziness: 3
-family: martini
+family: old fashioned
 ingredients: [
   "2 oz brandy",
   "½ oz Dry Curaçao orange liqueur",

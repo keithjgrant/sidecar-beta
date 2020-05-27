@@ -5,7 +5,7 @@ date: 2020-05-08T15:05:52-08:00
 glass: collins
 sweetness: 3
 booziness: 1
-family: fizz
+family: sour
 ingredients: [
   "1½ oz Old Tom gin or Plymouth gin",
   "¾ oz orange liqueur",
@@ -21,6 +21,7 @@ tags: [
   classic-cocktail,
   afternoon,
   refreshing,
+  fizz,
   gin,
   old-tom-gin,
   plymouth-gin,
