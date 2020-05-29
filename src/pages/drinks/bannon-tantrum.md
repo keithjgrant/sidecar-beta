@@ -12,7 +12,7 @@ ingredients: [
   "½ oz simple syrup"
 ]
 tags: [
-  summer,
+  spring,
   refreshing,
   sidecar-original,
   vodka,

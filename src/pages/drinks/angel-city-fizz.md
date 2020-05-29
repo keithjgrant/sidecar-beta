@@ -34,7 +34,7 @@ intro: Created by [The Educated Barfly](https://www.youtube.com/watch?v=7HOqstAA
 ---
 Add all ingredients except IPA in a cocktail shaker.
 Dry shake, then shake again with plenty of ice.
-train into collins glass.
+Strain into collins glass.
 
 Remove the ice from the shaker.
 Pour in the IPA to combine it with the remnants of the drink still in the shaker.
