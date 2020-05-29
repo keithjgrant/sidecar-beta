@@ -1,6 +1,9 @@
 import { openDB } from 'idb/with-async-ittr.js';
 
 const ready = new Promise((resolve) => {
+  if (typeof indexedDB === 'undefined') {
+    return;
+  }
   connect().then(resolve);
 });
 
