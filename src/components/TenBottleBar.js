@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import { useLocation, useNavigate } from '@reach/router';
-import qs from 'querystring';
+import React, { useState, useEffect } from 'react';
 import { css } from 'styled-components';
 import Card from './Card';
 import {
@@ -12,6 +10,7 @@ import {
   Select,
 } from './forms';
 import DrinkList from './DrinkList';
+import { getParams, setParam } from '../util/qs';
 
 const checkboxStyles = css`
   grid-column: 1 / -1;
@@ -39,19 +38,23 @@ const excludeTags = [
 ];
 
 export default function TenBottleBar({ allDrinks, imageMap }) {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const query = qs.parse(location.search.replace(/^\?/, ''));
+  const params = getParams();
 
-  const [vermouth, setVermouth] = useState(
-    ['sweet', 'blanc', 'dry'].includes(query.vermouth)
-      ? query.vermouth
-      : 'sweet'
-  );
-  const [tenthBottle, setTenthBottle] = useState(
-    excludeTags.includes(query.bottle) ? query.bottle : 'none'
-  );
-  const [addSyrups, setAddSyrups] = useState(query.syrups === '1');
+  const [vermouth, setVermouth] = useState('sweet');
+  const [tenthBottle, setTenthBottle] = useState('none');
+  const [addSyrups, setAddSyrups] = useState(0);
+
+  useEffect(() => {
+    if (params.vermouth && params.vermouth !== 'sweet') {
+      setVermouth(params.vermouth);
+    }
+    if (params.bottle && params.bottle !== 'none') {
+      setTenthBottle(params.bottle);
+    }
+    if (params.syrups === '1') {
+      setAddSyrups(1);
+    }
+  }, []);
 
   const excluded = excludeTags.filter((b) => b != tenthBottle);
   const drinks = allDrinks.filter((drink) => {
@@ -79,11 +82,7 @@ export default function TenBottleBar({ allDrinks, imageMap }) {
             options={['sweet', 'blanc', 'dry']}
             onChange={(value) => {
               setVermouth(value);
-              const q = qs.stringify({
-                ...query,
-                vermouth: value,
-              });
-              navigate(`${location.pathname}?${q}`, { replace: true });
+              setParam('vermouth', value);
             }}
           />
           <GridFormLabel htmlFor="tenth-bottle">Tenth bottle</GridFormLabel>
@@ -108,11 +107,7 @@ export default function TenBottleBar({ allDrinks, imageMap }) {
             value={tenthBottle}
             onChange={(value) => {
               setTenthBottle(value);
-              const q = qs.stringify({
-                ...query,
-                bottle: value,
-              });
-              navigate(`${location.pathname}?${q}`, { replace: true });
+              setParam('bottle', value);
             }}
           />
           <Checkbox
@@ -121,11 +116,7 @@ export default function TenBottleBar({ allDrinks, imageMap }) {
             checked={addSyrups}
             onChange={(value) => {
               setAddSyrups(value);
-              const q = qs.stringify({
-                ...query,
-                syrups: 0 + value,
-              });
-              navigate(`${location.pathname}?${q}`, { replace: true });
+              setParam('syrups', 0 + value);
             }}
             label={
               <SplitLabel htmlFor="include-syrups" heading="Specialty syrups">
@@ -148,6 +139,7 @@ const fancySyrups = [
   'burnt-sugar-syrup',
   'jalapeno-syrup',
   'muscovado-syrup',
+  'special-syrup',
 ];
 // non-fancy: simple syrup, demarara, agave
 
