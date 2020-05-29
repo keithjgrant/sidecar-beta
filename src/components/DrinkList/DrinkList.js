@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { arrayOf, shape } from 'prop-types';
 import styled from 'styled-components';
 import DrinkItem from './DrinkItem';
@@ -31,9 +31,13 @@ const Container = styled.div`
 export default function DrinkList({ drinks, imageMap }) {
   const params = getParams();
 
-  const [sortBy, setSortBy] = useState(
-    ['name', 'date'].includes(params.sort) ? params.sort : 'name'
-  );
+  const [sortBy, setSortBy] = useState('name');
+
+  useEffect(() => {
+    if (params.sort === 'date') {
+      setSortBy('date');
+    }
+  }, []);
 
   const sorted =
     sortBy === 'date' ? drinks.sort(dateSort) : drinks.sort(alphaSort);

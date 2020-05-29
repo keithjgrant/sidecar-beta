@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import Card from './Card';
 import { GridForm, GridFormLabel, ButtonGroup } from './forms';
@@ -9,9 +9,18 @@ import { getParams, setParam } from '../util/qs';
 export default function Explore({ drinks, imageMap }) {
   const params = getParams();
 
-  const [base, setBase] = useState(params.base || 'all');
-  const [family, setFamily] = useState(params.family || 'all');
+  const [base, setBase] = useState('all');
+  const [family, setFamily] = useState('all');
   const filtersSet = !!(params.base || params.family);
+
+  useEffect(() => {
+    if (params.base && params.base !== 'all') {
+      setBase(params.base);
+    }
+    if (params.family && params.family !== 'all') {
+      setFamily(params.family);
+    }
+  }, []);
 
   const filtered = drinks.filter(byBase(base)).filter(byFamily(family));
   return (
