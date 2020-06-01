@@ -28,11 +28,6 @@ source:
 intro:
 
 ---
-Stir with plenty of ice. Strain into a coupe glass.
-
-Garnish with
-
----
 Shake vigorously with ice. Strain into a coupe.
 
 Express oils from a lemon twist over the drink, then discard the twist.
