@@ -76,7 +76,6 @@ export default function Favorites({ allDrinks, imageMap }) {
       </p>
       {!isPersisted && (
         <>
-          .
           <p css="display: none">
             Your browser <b>may opt to delete this data</b> later to free up
             storage. Browser storage should be persistent upon{' '}

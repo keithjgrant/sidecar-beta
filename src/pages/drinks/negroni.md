@@ -11,7 +11,7 @@ ingredients: [
   "1 oz Campari",
   "1 oz sweet vermouth (try Cocchi di Torino)",
 ]
-garnish: grapefruit twist
+garnish: grapefruit twist or orange twist
 tags: [
   classic-cocktail,
   aperitif,

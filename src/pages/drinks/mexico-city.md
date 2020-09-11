@@ -9,7 +9,8 @@ family: martini
 ingredients: [
   "2 oz tequila reposado or añejo",
   "1 oz sweet vermouth",
-  "1 dashes Angostura bitters",
+  "2 dashes Angostura bitters",
+  "2 dashes mole bitters",
 ]
 garnish: orange twist, brandied cherry
 tags: [
@@ -21,8 +22,8 @@ tags: [
 ]
 tenBottleCandidate: true
 image:
-  url: "/images/drinks/manhattan.jpg"
-  alt: "Manhattan cocktail"
+  url: "/images/drinks/mexico-city.jpg"
+  alt: "Mexico city cocktail"
   align: "30% 60%"
   photographer: "Emi Adreeva"
   creditUrl: "https://unsplash.com/@emiandreeva?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"

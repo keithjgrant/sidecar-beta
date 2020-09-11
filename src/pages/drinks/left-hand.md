@@ -22,7 +22,7 @@ tags: [
   sweet-vermouth,
   stirred,
 ]
-featured: true
+featured: 
 intro:
   Yes, this is just a [boulevardier](/drinks/boulevardier) with chocolate bitters added, but that’s enough to transform it into an entirely different drink.
 ---

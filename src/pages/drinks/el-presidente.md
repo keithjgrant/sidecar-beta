@@ -7,10 +7,11 @@ sweetness: 2
 booziness: 2
 family: martini
 ingredients: [
-  "1½ oz white rum",
+  "1 oz white rum",
+  "½ oz aged rum",
   "¾ oz curaçao or orange liqueur",
   "¾ oz blanc vermouth",
-  "dash of grenadine"
+  "1 barspoon grenadine"
 ]
 garnish: orange twist
 tags: [
@@ -23,6 +24,7 @@ image:
   url: "/images/drinks/el-presidente.jpg"
   alt: ""
   align: "80% 40%"
+featured: true
 tenBottleCandidate: true
 intro: Dry vermouth can be substituited for blanc vermouth (resulting in a slightly dryer drink, naturally).
 ---
