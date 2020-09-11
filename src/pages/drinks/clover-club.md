@@ -24,6 +24,10 @@ tags: [
   raspberry,
   shaken,
 ]
+image:
+  url: "/images/drinks/clover-club.jpg"
+  alt: "Narrow glass filled with a golden cocktail, the top half of which is white froth"
+  align: "50% 35%"
 tenBottleCandidate: true
 source: https://drinksanddrinking.com/2017/02/21/whats-the-best-recipe-for-a-clover-club/
 intro:

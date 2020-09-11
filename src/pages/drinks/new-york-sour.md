@@ -21,6 +21,10 @@ tags: [
   lemon,
   shaken,
 ]
+image:
+  url: "/images/drinks/new-york-sour.jpg"
+  alt: "Narrow glass filled with a golden cocktail, the top half of which is white froth"
+  align: "50% 50%"
 featured:
 intro:
 
