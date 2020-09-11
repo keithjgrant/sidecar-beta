@@ -23,7 +23,7 @@ tags: [
 ]
 image:
   url: "/images/drinks/new-york-sour.jpg"
-  alt: "Narrow glass filled with a golden cocktail, the top half of which is white froth"
+  alt: "A yellow cocktail in a rocks glass deep red layer of wine floating on top."
   align: "50% 50%"
 featured:
 intro:
