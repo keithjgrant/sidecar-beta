@@ -25,11 +25,6 @@ source:
 intro:
 
 ---
-Stir with plenty of ice. Strain into a coupe glass.
-
-Garnish with
-
----
 Shake vigorously with ice. Strain into a coupe glass.
 
 Garnish with a sprinkle of cayenne pepper in the center of the glass.

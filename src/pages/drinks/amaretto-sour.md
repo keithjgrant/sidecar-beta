@@ -13,7 +13,7 @@ ingredients: [
   "1 barspoon simple syrup",
   "½ egg white"
 ]
-garnish:
+garnish: brandied cherry
 tags: [
   amaretto,
   bourbon,
@@ -36,3 +36,5 @@ intro:
 ---
 Dry shake to break up egg white, then shake again with ice.
 Strain into a rocks glass over fresh ice.
+
+Garnish with a brandied cherry.
