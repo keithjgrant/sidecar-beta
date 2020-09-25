@@ -12,7 +12,7 @@ ingredients: [
   "½ oz Bénédictine",
   "½ oz lemon juice",
 ]
-garnish:
+garnish: lemon twist
 tags: [
   fruity,
   benedictine,
@@ -25,4 +25,7 @@ featured:
 intro:
 
 ---
-Shake vigorously with ice. Strain into a coupe glass.
+Shake vigorously with ice.
+Strain into a coupe glass.
+
+Garnish with a lemon twist.
