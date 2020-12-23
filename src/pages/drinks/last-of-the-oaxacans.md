@@ -7,15 +7,14 @@ sweetness:
 booziness:
 family: sidecar
 ingredients: [
-  "¾ oz London dry gin",
+  "¾ oz mezcal",
   "¾ oz maraschino liqueur",
   "¾ oz Green Charteuse",
   "¾ oz lime juice",
 ]
 garnish: maraschino cherry
 tags: [
-  gin,
-  london-dry-gin,
+  mezcal,
   maraschino,
   green-charteuse,
   lime,
@@ -25,7 +24,7 @@ featured: true
 tenBottleCandidate:
 source:
 intro:
-
+  This is my favorite variation of the [/drinks/last-word](Last Word).
 ---
 Shake vigorously with ice. Strain into a coupe glass.
 
