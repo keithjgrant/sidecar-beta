@@ -1,30 +1,32 @@
 ---
-title: "Last of the Oaxacans"
-path: "/drinks/last-of-the-oaxacans"
-date: 2020-12-23T09:12:55-08:00
+title: "Last Word"
+path: "/drinks/last-word"
+date: 2020-12-23T09:14:55-08:00
 glass: coupe
 sweetness:
 booziness:
 family: sidecar
 ingredients: [
-  "¾ oz mezcal",
+  "¾ oz London dry gin",
   "¾ oz maraschino liqueur",
   "¾ oz Green Charteuse",
   "¾ oz lime juice",
 ]
 garnish: maraschino cherry
 tags: [
-  mezcal,
+  fall,
+  gin,
+  london-dry-gin,
   maraschino,
   green-chartreuse,
   lime,
   shaken
 ]
-featured: true
+featured:
 tenBottleCandidate:
 source:
 intro:
-  This is my favorite variation of the [Last Word](/drinks/last-word).
+  This is best with a bold gin like Tanqueray, Junipero, or a navy strength.
 ---
 Shake vigorously with ice. Strain into a coupe glass.
 
