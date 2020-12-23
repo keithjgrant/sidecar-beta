@@ -16,7 +16,7 @@ garnish: maraschino cherry
 tags: [
   mezcal,
   maraschino,
-  green-charteuse,
+  green-chartreuse,
   lime,
   shaken
 ]
@@ -24,7 +24,7 @@ featured: true
 tenBottleCandidate:
 source:
 intro:
-  This is my favorite variation of the [/drinks/last-word](Last Word).
+  This is my favorite variation of the [Last Word](/drinks/last-word).
 ---
 Shake vigorously with ice. Strain into a coupe glass.
 
