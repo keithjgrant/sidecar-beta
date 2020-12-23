@@ -1,6 +1,6 @@
 ---
-title: "Last Word"
-path: "/drinks/last-word"
+title: "Final Word"
+path: "/drinks/final-word"
 date: 2020-12-23T09:14:55-08:00
 glass: coupe
 sweetness:
