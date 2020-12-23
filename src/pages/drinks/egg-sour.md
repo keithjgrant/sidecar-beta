@@ -28,7 +28,7 @@ image:
   alt: "A creamy-looking egg sour, filling a small coupe glass to the brim"
   align: "50% 40%"
 tenBottleCandidate: true
-intro: One of my wintertime favorites
+intro: One of my wintertime favorites. Works best with higher quality brandy and orange liqueur.
 ---
 Add everything except nutmeg to a cocktail shaker. [Dry shake](/techniques/shaking/#dry-shaking); add ice and shake. [Double-strain](/techniques/straining/#double-straining) into a coupe glass.
 

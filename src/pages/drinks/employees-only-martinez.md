@@ -19,6 +19,7 @@ tags: [
   blanc-vermouth,
   maraschino,
   absinthe-bitters,
+  stirred,
 ]
 intro: |
   Created by _Employees Only_ bar in New York.
